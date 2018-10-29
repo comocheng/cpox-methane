@@ -66,12 +66,6 @@ species(
 )
 
 species(
-    label='C2H6',
-    reactive=True,
-    structure=SMILES("CC"),
-)
-
-species(
     label='CH2O',
     reactive=True,
     structure=SMILES("C=O"),
@@ -84,21 +78,9 @@ species(
 )
 
 species(
-    label='C3H8',
-    reactive=True,
-    structure=SMILES("CCC"),
-)
-
-species(
     label='H',
     reactive=True,
     structure=SMILES("[H]"),
-)
-
-species(
-    label='C2H5',
-    reactive=True,
-    structure=SMILES("C[CH2]"),
 )
 
 species(
@@ -114,21 +96,9 @@ species(
 )
 
 species(
-    label='CH3CHO',
-    reactive=True,
-    structure=SMILES("CC=O"),
-)
-
-species(
     label='OH',
     reactive=True,
     structure=SMILES("[OH]"),
-)
-
-species(
-    label='C2H4',
-    reactive=True,
-    structure=SMILES("C=C"),
 )
 
 #----------
