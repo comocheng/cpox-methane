@@ -6,10 +6,10 @@ database(
     kineticsDepositories = ['training'],
     kineticsFamilies =['surface','default'],
     kineticsEstimator = 'rate rules',
-    bindingEnergies = { # default values for Ni(111)
-                       'C':(-6.364, 'eV/molecule'),
-                       'H':(-2.778, 'eV/molecule'),
-                       'O':(-3.481, 'eV/molecule'),
+    bindingEnergies = { # default values
+                       'C':(-6.364, 'eV/molecule'), # Pt(111)
+                       'H':(-2.778, 'eV/molecule'), # Ni(111), until we find the vaule for Pt(111)
+                       'O':(-3.481, 'eV/molecule'), # Pt(111)
                        }
 )
 
