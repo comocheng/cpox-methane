@@ -1,0 +1,35 @@
+! Species         Shape    LJ-depth  LJ-diam   DiplMom   Polzblty  RotRelaxNum Data     
+! Name            Index    epsilon/k_B sigma     mu        alpha     Zrot      Source   
+N2                  1      97.530     3.621     0.000     1.760     4.000    ! GRI-Mech
+Ar                  0     136.501     3.330     0.000     0.000     0.000    ! GRI-Mech
+He                  0      10.200     2.576     0.000     0.000     0.000    ! NOx2018
+Ne                  0     148.600     3.758     0.000     0.000     0.000    ! Epsilon & sigma estimated with fixed Lennard Jones Parameters. This is the fallback method! Try improving transport databases!
+! X(1)                None
+CH4(2)              2     141.400     3.746     0.000     2.600    13.000    ! GRI-Mech
+O2(3)               1     107.400     3.458     0.000     1.600     3.800    ! GRI-Mech
+CO2(4)              1     244.001     3.763     0.000     2.650     2.100    ! GRI-Mech
+H2O(5)              2     572.402     2.605     1.844     0.000     4.000    ! GRI-Mech
+H2(6)               1      38.000     2.920     0.000     0.790   280.000    ! GRI-Mech
+CO(7)               1      98.100     3.650     0.000     1.950     1.800    ! GRI-Mech
+CH2O(8)             2     498.002     3.590     0.000     0.000     2.000    ! GRI-Mech
+CH3(9)              2     144.001     3.800     0.000     0.000     0.000    ! GRI-Mech
+H(10)               0     145.000     2.050     0.000     0.000     0.000    ! GRI-Mech
+CH3OH(11)           2     481.802     3.626     0.000     0.000     1.000    ! GRI-Mech
+HCO(12)             2     498.002     3.590     0.000     0.000     0.000    ! GRI-Mech
+OH(13)              1      80.000     2.750     0.000     0.000     0.000    ! GRI-Mech
+! CH4X(29)            None
+! OX(15)              None
+! CH3X(17)            None
+! HX(14)              None
+! CH2X(85)            None
+! CHX(21)             None
+! HOX(18)             None
+! H2X(32)             None
+! CXHO(22)            None
+! OCX(16)             None
+! H2OX(31)            None
+! CX(19)              None
+! HOCXO(20)           None
+! COX(33)             None
+! CO2X(30)            None
+! CH4OX(37)           None
