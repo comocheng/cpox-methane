@@ -17,19 +17,34 @@ H(10)               0     145.000     2.050     0.000     0.000     0.000    ! G
 CH3OH(11)           2     481.802     3.626     0.000     0.000     1.000    ! GRI-Mech
 HCO(12)             2     498.002     3.590     0.000     0.000     0.000    ! GRI-Mech
 OH(13)              1      80.000     2.750     0.000     0.000     0.000    ! GRI-Mech
-! CH4X(29)            None
-! OX(15)              None
-! CH3X(17)            None
-! HX(14)              None
-! CH2X(85)            None
-! CHX(21)             None
-! HOX(18)             None
-! H2X(32)             None
-! CXHO(22)            None
-! OCX(16)             None
-! H2OX(31)            None
-! CX(19)              None
-! HOCXO(20)           None
-! COX(33)             None
-! CO2X(30)            None
-! CH4OX(37)           None
+! CH4X(22)            None
+! CH3X(20)            None
+! HX(21)              None
+! CH2X(80)            None
+! CHX(81)             None
+! H2X(26)             None
+! CX(83)              None
+HO2(33)             2     107.400     3.458     0.000     0.000     1.000    ! GRI-Mech
+! HO2X(86)            None
+! OX(98)              None
+! HOX(24)             None
+! H2OX(25)            None
+CH3OO(44)           2     417.000     3.690     1.700     0.000     2.000    ! NOx2018
+CC(77)              2     252.301     4.302     0.000     0.000     1.500    ! GRI-Mech
+! C2H6X(123)          None
+! C2H5X(82)           None
+! C2H4X(84)           None
+! C2H3X(85)           None
+! SX(107)             None
+! CH3OX(30)           None
+! CH4OX(32)           None
+! CH3OX(31)           None
+! CH2OX(100)          None
+! CHOX(102)           None
+CH3O2(75)           2     417.000     3.690     1.700     0.000     2.000    ! NOx2018
+! CH2OX(29)           None
+! CHOX(28)            None
+! COX(198)            None
+! COX(27)             None
+C2H5(122)           2     252.301     4.302     0.000     0.000     1.500    ! GRI-Mech
+S(218)              2     395.000     4.037     1.300     0.000     1.000    ! NOx2018

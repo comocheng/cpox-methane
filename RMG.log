@@ -1,7 +1,7 @@
 Global RMG Settings:
    test_data.directory  = /Users/rwest/Code/Cat/RMG-Py/rmgpy/test_data (Default, relative to RMG-Py source code)
    database.directory   = /Users/rwest/Code/Cat/RMG-database/input (Default, relative to RMG-Py source code)
-RMG execution initiated at Mon Oct 29 11:31:28 2018
+RMG execution initiated at Mon Oct 29 11:48:39 2018
 
 #########################################################
 # RMG-Py - Reaction Mechanism Generator in Python       #
@@ -28,7 +28,7 @@ Reading input file "/Users/rwest/Code/Cat/cpox-methane/input.py"...
 # Data sources
 database(
     thermoLibraries=['surfaceThermoPt', 'primaryThermoLibrary', 'thermo_DFT_CCSDTF12_BAC','DFT_QCI_thermo'],
-    reactionLibraries = [('Deutschmann_Ni', False)],
+    reactionLibraries = [],
     seedMechanisms = [],
     kineticsDepositories = ['training'],
     kineticsFamilies =['surface','default'],
@@ -198,7 +198,6 @@ Loading transport library from PrimaryTransportLibrary.py in /Users/rwest/Code/C
 Loading transport group database from /Users/rwest/Code/Cat/RMG-database/input/transport/groups...
 Warning: Requested depository /Users/rwest/Code/Cat/RMG-database/input/kinetics/families/Surface_Adsorption_Single/training/reactions.py does not exist
 Warning: Requested depository /Users/rwest/Code/Cat/RMG-database/input/kinetics/families/Surface_Adsorption_vdW/training/reactions.py does not exist
-Loading kinetics library Deutschmann_Ni from /Users/rwest/Code/Cat/RMG-database/input/kinetics/libraries/Deutschmann_Ni/reactions.py...
 Loading frequencies group database from /Users/rwest/Code/Cat/RMG-database/input/statmech/groups...
 Loading Platts additivity group database from /Users/rwest/Code/Cat/RMG-database/input/solvation/groups...
 Trimolecular reactions are turned on
@@ -208,42 +207,6 @@ Must be because you turned off the training depository.
 Could not find training depository in family Surface_Adsorption_Single.
 Must be because you turned off the training depository.
 Filling in rate rules in kinetics families by averaging...
-Adding reaction library Deutschmann_Ni to model edge...
-
-Summary of Model Enlargement
----------------------------------
-Added 0 new core species
-Created 9 new edge species
-    HX(14)
-    OX(15)
-    OCX(16)
-    CH3X(17)
-    HOX(18)
-    CX(19)
-    HOCXO(20)
-    CHX(21)
-    CXHO(22)
-Added 0 new core reactions
-Created 14 new edge reactions
-    X(1) + X(1) + H2(6) <=> HX(14) + HX(14)
-    X(1) + X(1) + O2(3) <=> OX(15) + OX(15)
-    X(1) + CO(7) <=> OCX(16)
-    HX(14) + CH3X(17) <=> CH4(2) + X(1) + X(1)
-    CH3X(17) + HOX(18) <=> CH4(2) + X(1) + OX(15)
-    HX(14) + HOX(18) <=> X(1) + X(1) + H2O(5)
-    HOX(18) + HOX(18) <=> X(1) + H2O(5) + OX(15)
-    X(1) + OCX(16) <=> OX(15) + CX(19)
-    HOX(18) + CX(19) <=> HX(14) + OCX(16)
-    OCX(16) + OCX(16) <=> X(1) + CO2(4) + CX(19)
-    OX(15) + OCX(16) <=> X(1) + X(1) + CO2(4)
-    X(1) + HOCXO(20) <=> X(1) + CO2(4) + HX(14)
-    OX(15) + CHX(21) <=> X(1) + CXHO(22)
-    HOX(18) + CXHO(22) <=> HX(14) + HOCXO(20)
-
-After model enlargement:
-    The model core has 0 species and 0 reactions
-    The model edge has 23 species and 14 reactions
-
 NOT generating reactions for unreactive species N2
 
 Summary of Model Enlargement
@@ -256,7 +219,7 @@ Created 0 new edge reactions
 
 After model enlargement:
     The model core has 1 species and 0 reactions
-    The model edge has 22 species and 14 reactions
+    The model edge has 13 species and 0 reactions
 
 
 NOT generating reactions for unreactive species Ar
@@ -271,7 +234,7 @@ Created 0 new edge reactions
 
 After model enlargement:
     The model core has 2 species and 0 reactions
-    The model edge has 22 species and 14 reactions
+    The model edge has 13 species and 0 reactions
 
 
 NOT generating reactions for unreactive species He
@@ -286,7 +249,7 @@ Created 0 new edge reactions
 
 After model enlargement:
     The model core has 3 species and 0 reactions
-    The model edge has 22 species and 14 reactions
+    The model edge has 13 species and 0 reactions
 
 
 NOT generating reactions for unreactive species Ne
@@ -301,7 +264,7 @@ Created 0 new edge reactions
 
 After model enlargement:
     The model core has 4 species and 0 reactions
-    The model edge has 22 species and 14 reactions
+    The model edge has 13 species and 0 reactions
 
 
 Adding species X(1) to model core
@@ -316,7 +279,7 @@ Created 0 new edge reactions
 
 After model enlargement:
     The model core has 5 species and 0 reactions
-    The model edge has 21 species and 14 reactions
+    The model edge has 12 species and 0 reactions
 
 
 Adding species CH4(2) to model core
@@ -331,7 +294,7 @@ Created 0 new edge reactions
 
 After model enlargement:
     The model core has 6 species and 0 reactions
-    The model edge has 20 species and 14 reactions
+    The model edge has 11 species and 0 reactions
 
 
 Adding species O2(3) to model core
@@ -346,7 +309,7 @@ Created 0 new edge reactions
 
 After model enlargement:
     The model core has 7 species and 0 reactions
-    The model edge has 19 species and 14 reactions
+    The model edge has 10 species and 0 reactions
 
 
 Adding species CO2(4) to model core
@@ -361,7 +324,7 @@ Created 0 new edge reactions
 
 After model enlargement:
     The model core has 8 species and 0 reactions
-    The model edge has 18 species and 14 reactions
+    The model edge has 9 species and 0 reactions
 
 
 Adding species H2O(5) to model core
@@ -376,7 +339,7 @@ Created 0 new edge reactions
 
 After model enlargement:
     The model core has 9 species and 0 reactions
-    The model edge has 17 species and 14 reactions
+    The model edge has 8 species and 0 reactions
 
 
 Adding species H2(6) to model core
@@ -391,7 +354,7 @@ Created 0 new edge reactions
 
 After model enlargement:
     The model core has 10 species and 0 reactions
-    The model edge has 16 species and 14 reactions
+    The model edge has 7 species and 0 reactions
 
 
 Adding species CO(7) to model core
@@ -406,7 +369,7 @@ Created 0 new edge reactions
 
 After model enlargement:
     The model core has 11 species and 0 reactions
-    The model edge has 15 species and 14 reactions
+    The model edge has 6 species and 0 reactions
 
 
 Adding species CH2O(8) to model core
@@ -421,7 +384,7 @@ Created 0 new edge reactions
 
 After model enlargement:
     The model core has 12 species and 0 reactions
-    The model edge has 14 species and 14 reactions
+    The model edge has 5 species and 0 reactions
 
 
 Adding species CH3(9) to model core
@@ -436,7 +399,7 @@ Created 0 new edge reactions
 
 After model enlargement:
     The model core has 13 species and 0 reactions
-    The model edge has 13 species and 14 reactions
+    The model edge has 4 species and 0 reactions
 
 
 Adding species H(10) to model core
@@ -451,7 +414,7 @@ Created 0 new edge reactions
 
 After model enlargement:
     The model core has 14 species and 0 reactions
-    The model edge has 12 species and 14 reactions
+    The model edge has 3 species and 0 reactions
 
 
 Adding species CH3OH(11) to model core
@@ -466,7 +429,7 @@ Created 0 new edge reactions
 
 After model enlargement:
     The model core has 15 species and 0 reactions
-    The model edge has 11 species and 14 reactions
+    The model edge has 2 species and 0 reactions
 
 
 Adding species HCO(12) to model core
@@ -481,7 +444,7 @@ Created 0 new edge reactions
 
 After model enlargement:
     The model core has 16 species and 0 reactions
-    The model edge has 10 species and 14 reactions
+    The model edge has 1 species and 0 reactions
 
 
 Adding species OH(13) to model core
@@ -496,7 +459,7 @@ Created 0 new edge reactions
 
 After model enlargement:
     The model core has 17 species and 0 reactions
-    The model edge has 9 species and 14 reactions
+    The model edge has 0 species and 0 reactions
 
 
 Initialization complete. Starting model generation.
@@ -530,266 +493,273 @@ Species with SMILES of [CH2]OC=O named CH2OCHO based on thermo library name
 Species with SMILES of [O]CC=O named OCH2CHO based on thermo library name
 Species with SMILES of [O]CO named HOCH2O based on thermo library name
 Generating kinetics for new reactions...
-For reaction CH4(2) + O2(3) <=> CH3(9) + HO2(38), Ea raised from 216.4 to 231.5 kJ/mol to match endothermicity of reaction.
-For reaction O2(3) + CO2(4) <=> [O]OO[C]=O(45), Ea raised from 401.1 to 405.7 kJ/mol to match endothermicity of reaction.
-For reaction O2(3) + CO2(4) <=> [O]OC([O])=O(46), Ea raised from 217.3 to 222.0 kJ/mol to match endothermicity of reaction.
-For reaction O2(3) + CH2O(8) <=> [CH2]OO[O](47), Ea raised from 358.5 to 363.2 kJ/mol to match endothermicity of reaction.
-For reaction O2(3) + CH2O(8) <=> [O]CO[O](48), Ea raised from 172.4 to 176.3 kJ/mol to match endothermicity of reaction.
-For reaction O2(3) + CH2O(8) <=> HCO(12) + HO2(38), Ea raised from 158.7 to 162.5 kJ/mol to match endothermicity of reaction.
-For reaction O2(3) + CH3OH(11) <=> CH2OH(26) + HO2(38), Ea raised from 178.9 to 195.8 kJ/mol to match endothermicity of reaction.
-For reaction O2(3) + OH(13) <=> [O]OO(51), Ea raised from 14.6 to 20.8 kJ/mol to match endothermicity of reaction.
-For reaction CO2(4) + CH3(9) <=> CH3OCO(60), Ea raised from 88.5 to 94.8 kJ/mol to match endothermicity of reaction.
-For reaction CO2(4) + CH3(9) <=> acetyloxy(61), Ea raised from 58.1 to 65.1 kJ/mol to match endothermicity of reaction.
-For reaction CO2(4) + H(10) <=> formyloxy(40), Ea raised from 47.9 to 52.0 kJ/mol to match endothermicity of reaction.
-For reaction CO2(4) + HCO(12) <=> [O]C(=O)C=O(65), Ea raised from 146.3 to 150.3 kJ/mol to match endothermicity of reaction.
-For reaction CO2(4) + OH(13) <=> O=[C]OO(66), Ea raised from 264.1 to 266.3 kJ/mol to match endothermicity of reaction.
-For reaction CH2O(8) + OH(13) <=> [CH2]OO(80), Ea raised from 140.4 to 146.2 kJ/mol to match endothermicity of reaction.
-For reaction HCO(12) + OH(13) <=> formic_acid(55) Ea raised from -1.8 to -1.8 kJ/mol.
+For reaction CH4(2) + O2(3) <=> CH3(9) + HO2(33), Ea raised from 216.4 to 231.5 kJ/mol to match endothermicity of reaction.
+For reaction O2(3) + CO2(4) <=> [O]OO[C]=O(40), Ea raised from 401.1 to 405.7 kJ/mol to match endothermicity of reaction.
+For reaction O2(3) + CO2(4) <=> [O]OC([O])=O(41), Ea raised from 217.3 to 222.0 kJ/mol to match endothermicity of reaction.
+For reaction O2(3) + CH2O(8) <=> [CH2]OO[O](42), Ea raised from 358.5 to 363.2 kJ/mol to match endothermicity of reaction.
+For reaction O2(3) + CH2O(8) <=> [O]CO[O](43), Ea raised from 172.4 to 176.3 kJ/mol to match endothermicity of reaction.
+For reaction O2(3) + CH2O(8) <=> HCO(12) + HO2(33), Ea raised from 158.7 to 162.5 kJ/mol to match endothermicity of reaction.
+For reaction O2(3) + CH3OH(11) <=> HO2(33) + CH2OH(17), Ea raised from 178.9 to 195.8 kJ/mol to match endothermicity of reaction.
+For reaction O2(3) + OH(13) <=> [O]OO(46), Ea raised from 14.6 to 20.8 kJ/mol to match endothermicity of reaction.
+For reaction CO2(4) + CH3(9) <=> CH3OCO(55), Ea raised from 88.5 to 94.8 kJ/mol to match endothermicity of reaction.
+For reaction CO2(4) + CH3(9) <=> acetyloxy(56), Ea raised from 58.1 to 65.1 kJ/mol to match endothermicity of reaction.
+For reaction CO2(4) + H(10) <=> formyloxy(35), Ea raised from 47.9 to 52.0 kJ/mol to match endothermicity of reaction.
+For reaction CO2(4) + HCO(12) <=> [O]C(=O)C=O(60), Ea raised from 146.3 to 150.3 kJ/mol to match endothermicity of reaction.
+For reaction CO2(4) + OH(13) <=> O=[C]OO(61), Ea raised from 264.1 to 266.3 kJ/mol to match endothermicity of reaction.
+For reaction CH2O(8) + OH(13) <=> [CH2]OO(75), Ea raised from 140.4 to 146.2 kJ/mol to match endothermicity of reaction.
+For reaction HCO(12) + OH(13) <=> formic_acid(50) Ea raised from -1.8 to -1.8 kJ/mol.
 
 Summary of Secondary Model Edge Enlargement
 ---------------------------------
 Added 0 new core species
-Created 62 new edge species
-    CH2(S)(23)
-    CH2(T)(24)
-    CH3O(25)
-    CH2OH(26)
-    [C]=O(27)
-    O(T)(28)
-    C.[Ni](29)
-    CO2X(30)
-    O.[Ni](31)
-    [H][H].[Ni](32)
-    COX(33)
-    C=O.[Ni](34)
-    CO[Ni](35)
-    OC[Ni](36)
-    CO.[Ni](37)
-    HO2(38)
-    HOCO(39)
-    formyloxy(40)
-    methyl_formate(41)
-    acetic_acid(42)
-    CH3CHO(43)
-    HCOH(T)(44)
-    [O]OO[C]=O(45)
-    [O]OC([O])=O(46)
-    [CH2]OO[O](47)
-    [O]CO[O](48)
-    CH3OO(49)
-    formylperoxy(50)
-    [O]OO(51)
-    [O]C(=O)C([O])=O(52)
-    [O]C(=O)O[C]=O(53)
-    O=[C]OO[C]=O(54)
-    formic_acid(55)
-    [O]CC([O])=O(56)
-    [CH2]OC([O])=O(57)
-    [O]CO[C]=O(58)
-    [CH2]OO[C]=O(59)
-    CH3OCO(60)
-    acetyloxy(61)
-    O=COCO(62)
-    O=C(O)CO(63)
-    O=[C]OC=O(64)
-    [O]C(=O)C=O(65)
-    O=[C]OO(66)
-    [O]C(=O)O(67)
-    acetyl(68)
-    HOCH2CHO(69)
-    OCHCO(70)
-    [O]CC[O](71)
-    [CH2]OC[O](72)
-    [CH2]OO[CH2](73)
-    C1COO1(74)
-    C1OCO1(75)
-    CH3OCH2(76)
-    CH3CH2O(77)
-    CH2OCHO(78)
-    OCH2CHO(79)
-    [CH2]OO(80)
-    HOCH2O(81)
-    CC(82)
-    O=CC=O(83)
-    OO(84)
+Created 66 new edge species
+    CH2(S)(14)
+    CH2(T)(15)
+    CH3O(16)
+    CH2OH(17)
+    [C]=O(18)
+    O(T)(19)
+    [Ni](21)
+    C[Ni](20)
+    C.[Ni](22)
+    CO2X(23)
+    O[Ni](24)
+    O.[Ni](25)
+    [H][H].[Ni](26)
+    COX(27)
+    O=C[Ni](28)
+    C=O.[Ni](29)
+    CO[Ni](30)
+    OC[Ni](31)
+    CO.[Ni](32)
+    HO2(33)
+    HOCO(34)
+    formyloxy(35)
+    methyl_formate(36)
+    acetic_acid(37)
+    CH3CHO(38)
+    HCOH(T)(39)
+    [O]OO[C]=O(40)
+    [O]OC([O])=O(41)
+    [CH2]OO[O](42)
+    [O]CO[O](43)
+    CH3OO(44)
+    formylperoxy(45)
+    [O]OO(46)
+    [O]C(=O)C([O])=O(47)
+    [O]C(=O)O[C]=O(48)
+    O=[C]OO[C]=O(49)
+    formic_acid(50)
+    [O]CC([O])=O(51)
+    [CH2]OC([O])=O(52)
+    [O]CO[C]=O(53)
+    [CH2]OO[C]=O(54)
+    CH3OCO(55)
+    acetyloxy(56)
+    O=COCO(57)
+    O=C(O)CO(58)
+    O=[C]OC=O(59)
+    [O]C(=O)C=O(60)
+    O=[C]OO(61)
+    [O]C(=O)O(62)
+    acetyl(63)
+    HOCH2CHO(64)
+    OCHCO(65)
+    [O]CC[O](66)
+    [CH2]OC[O](67)
+    [CH2]OO[CH2](68)
+    C1COO1(69)
+    C1OCO1(70)
+    CH3OCH2(71)
+    CH3CH2O(72)
+    CH2OCHO(73)
+    OCH2CHO(74)
+    [CH2]OO(75)
+    HOCH2O(76)
+    CC(77)
+    O=CC=O(78)
+    OO(79)
 Added 17 new core reactions
     CH3(9) + H(10) <=> CH4(2)
     H(10) + OH(13) <=> H2O(5)
     H(10) + H(10) <=> H2(6)
     H(10) + HCO(12) <=> CH2O(8)
-    CO(7) + H2(6) <=> CH2O(8)
+    H2(6) + CO(7) <=> CH2O(8)
     CH3(9) + OH(13) <=> CH3OH(11)
     CO(7) + H(10) <=> HCO(12)
     CH3(9) + HCO(12) <=> CH4(2) + CO(7)
     CH4(2) + H(10) <=> H2(6) + CH3(9)
     CH4(2) + HCO(12) <=> CH2O(8) + CH3(9)
     CH4(2) + OH(13) <=> H2O(5) + CH3(9)
-    HCO(12) + OH(13) <=> CO(7) + H2O(5)
+    HCO(12) + OH(13) <=> H2O(5) + CO(7)
     H2(6) + OH(13) <=> H2O(5) + H(10)
     CH2O(8) + OH(13) <=> H2O(5) + HCO(12)
-    H(10) + HCO(12) <=> CO(7) + H2(6)
+    H(10) + HCO(12) <=> H2(6) + CO(7)
     H2(6) + HCO(12) <=> CH2O(8) + H(10)
     HCO(12) + HCO(12) <=> CO(7) + CH2O(8)
-Created 155 new edge reactions
-    H2(6) + CH2(S)(23) <=> CH4(2)
-    H(10) + CH2(T)(24) <=> CH3(9)
-    H(10) + CH3O(25) <=> CH3OH(11)
-    H(10) + CH2OH(26) <=> CH3OH(11)
-    H2O(5) + CH2(S)(23) <=> CH3OH(11)
-    H(10) + [C]=O(27) <=> HCO(12)
-    H(10) + O(T)(28) <=> OH(13)
-    CH4(2) + X(1) <=> C.[Ni](29)
-    X(1) + CO2(4) <=> CO2X(30)
-    X(1) + H2O(5) <=> O.[Ni](31)
-    X(1) + H2(6) <=> [H][H].[Ni](32)
-    X(1) + CO(7) <=> COX(33)
-    X(1) + X(1) + CH2O(8) <=> HX(14) + CXHO(22)
-    X(1) + CH2O(8) <=> C=O.[Ni](34)
-    X(1) + CH3(9) <=> CH3X(17)
-    X(1) + H(10) <=> HX(14)
-    X(1) + X(1) + CH3OH(11) <=> CH3X(17) + HOX(18)
-    X(1) + X(1) + CH3OH(11) <=> HX(14) + CO[Ni](35)
-    X(1) + X(1) + CH3OH(11) <=> HX(14) + OC[Ni](36)
-    X(1) + CH3OH(11) <=> CO.[Ni](37)
-    X(1) + HCO(12) <=> CXHO(22)
-    X(1) + OH(13) <=> HOX(18)
-    CH4(2) + O2(3) <=> CH3(9) + HO2(38)
-    CH3(9) + HOCO(39) <=> CH4(2) + CO2(4)
-    CH3(9) + formyloxy(40) <=> CH4(2) + CO2(4)
-    CH4(2) + CO2(4) <=> methyl_formate(41)
-    CH4(2) + CO2(4) <=> acetic_acid(42)
-    CH4(2) + CO(7) <=> CH3CHO(43)
-    CH3(9) + CH2OH(26) <=> CH4(2) + CH2O(8)
-    CH3(9) + CH3O(25) <=> CH4(2) + CH2O(8)
-    CH3(9) + HCOH(T)(44) <=> CH4(2) + HCO(12)
-    O2(3) + CO2(4) <=> [O]OO[C]=O(45)
-    O2(3) + CO2(4) <=> [O]OC([O])=O(46)
-    O2(3) + H2O(5) <=> OH(13) + HO2(38)
-    O2(3) + H2(6) <=> H(10) + HO2(38)
-    O2(3) + CH2O(8) <=> [CH2]OO[O](47)
-    O2(3) + CH2O(8) <=> [O]CO[O](48)
-    O2(3) + CH2O(8) <=> HCO(12) + HO2(38)
-    CH2(T)(24) + HO2(38) <=> O2(3) + CH3(9)
-    CH3OO(49) <=> O2(3) + CH3(9)
-    O2(3) + H(10) <=> HO2(38)
-    CH3O(25) + HO2(38) <=> O2(3) + CH3OH(11)
-    O2(3) + CH3OH(11) <=> CH2OH(26) + HO2(38)
-    O2(3) + HCO(12) <=> CO(7) + HO2(38)
-    HO2(38) + [C]=O(27) <=> O2(3) + HCO(12)
-    O2(3) + HCO(12) <=> formylperoxy(50)
-    HO2(38) + O(T)(28) <=> O2(3) + OH(13)
-    O2(3) + OH(13) <=> [O]OO(51)
-    [O]C(=O)C([O])=O(52) <=> CO2(4) + CO2(4)
-    [O]C(=O)O[C]=O(53) <=> CO2(4) + CO2(4)
-    O=[C]OO[C]=O(54) <=> CO2(4) + CO2(4)
-    OH(13) + HOCO(39) <=> CO2(4) + H2O(5)
-    OH(13) + formyloxy(40) <=> CO2(4) + H2O(5)
-    H(10) + HOCO(39) <=> H2(6) + CO2(4)
-    H(10) + formyloxy(40) <=> H2(6) + CO2(4)
-    H2(6) + CO2(4) <=> formic_acid(55)
-    HCO(12) + HOCO(39) <=> CO2(4) + CH2O(8)
-    HCO(12) + formyloxy(40) <=> CO2(4) + CH2O(8)
-    [O]CC([O])=O(56) <=> CO2(4) + CH2O(8)
-    [CH2]OC([O])=O(57) <=> CO2(4) + CH2O(8)
-    [O]CO[C]=O(58) <=> CO2(4) + CH2O(8)
-    [CH2]OO[C]=O(59) <=> CO2(4) + CH2O(8)
-    CH2(T)(24) + HOCO(39) <=> CO2(4) + CH3(9)
-    CH2(T)(24) + formyloxy(40) <=> CO2(4) + CH3(9)
-    CO2(4) + CH3(9) <=> CH3OCO(60)
-    CO2(4) + CH3(9) <=> acetyloxy(61)
-    CO2(4) + H(10) <=> HOCO(39)
-    CO2(4) + H(10) <=> formyloxy(40)
-    CH2OH(26) + HOCO(39) <=> CO2(4) + CH3OH(11)
-    CH3O(25) + HOCO(39) <=> CO2(4) + CH3OH(11)
-    CH2OH(26) + formyloxy(40) <=> CO2(4) + CH3OH(11)
-    CH3O(25) + formyloxy(40) <=> CO2(4) + CH3OH(11)
-    CO2(4) + CH3OH(11) <=> O=COCO(62)
-    CO2(4) + CH3OH(11) <=> O=C(O)CO(63)
-    [C]=O(27) + HOCO(39) <=> CO2(4) + HCO(12)
-    [C]=O(27) + formyloxy(40) <=> CO2(4) + HCO(12)
-    CO2(4) + HCO(12) <=> O=[C]OC=O(64)
-    CO2(4) + HCO(12) <=> [O]C(=O)C=O(65)
-    O(T)(28) + HOCO(39) <=> CO2(4) + OH(13)
-    O(T)(28) + formyloxy(40) <=> CO2(4) + OH(13)
-    CO2(4) + OH(13) <=> O=[C]OO(66)
-    CO2(4) + OH(13) <=> [O]C(=O)O(67)
-    CO(7) + H2O(5) <=> formic_acid(55)
-    OH(13) + CH2OH(26) <=> H2O(5) + CH2O(8)
-    OH(13) + CH3O(25) <=> H2O(5) + CH2O(8)
-    OH(13) + HCOH(T)(44) <=> H2O(5) + HCO(12)
-    H(10) + CH2OH(26) <=> H2(6) + CH2O(8)
-    H(10) + CH3O(25) <=> H2(6) + CH2O(8)
-    H(10) + HCOH(T)(44) <=> H2(6) + HCO(12)
-    HCO(12) + CH2(T)(24) <=> CO(7) + CH3(9)
-    CO(7) + CH3(9) <=> acetyl(68)
-    HCO(12) + CH3O(25) <=> CO(7) + CH3OH(11)
-    HCO(12) + CH2OH(26) <=> CO(7) + CH3OH(11)
-    CO(7) + CH3OH(11) <=> methyl_formate(41)
-    CO(7) + CH3OH(11) <=> HOCH2CHO(69)
-    HCO(12) + [C]=O(27) <=> CO(7) + HCO(12)
-    CO(7) + HCO(12) <=> OCHCO(70)
-    HCO(12) + O(T)(28) <=> CO(7) + OH(13)
-    CO(7) + OH(13) <=> HOCO(39)
-    HCO(12) + CH2OH(26) <=> CH2O(8) + CH2O(8)
-    HCO(12) + CH3O(25) <=> CH2O(8) + CH2O(8)
-    [O]CC[O](71) <=> CH2O(8) + CH2O(8)
-    [CH2]OC[O](72) <=> CH2O(8) + CH2O(8)
-    [CH2]OO[CH2](73) <=> CH2O(8) + CH2O(8)
-    CH2O(8) + CH2O(8) <=> C1COO1(74)
-    CH2O(8) + CH2O(8) <=> C1OCO1(75)
-    CH2OH(26) + CH2(T)(24) <=> CH2O(8) + CH3(9)
-    CH2(T)(24) + CH3O(25) <=> CH2O(8) + CH3(9)
-    CH2O(8) + CH3(9) <=> CH3OCH2(76)
-    CH2O(8) + CH3(9) <=> CH3CH2O(77)
-    CH2O(8) + H(10) <=> CH2OH(26)
-    CH2O(8) + H(10) <=> CH3O(25)
-    CH2OH(26) + CH2OH(26) <=> CH2O(8) + CH3OH(11)
-    CH2OH(26) + CH3O(25) <=> CH2O(8) + CH3OH(11)
-    CH2OH(26) + CH3O(25) <=> CH2O(8) + CH3OH(11)
-    CH3O(25) + CH3O(25) <=> CH2O(8) + CH3OH(11)
-    HCO(12) + HCOH(T)(44) <=> CH2O(8) + HCO(12)
-    CH2OH(26) + [C]=O(27) <=> CH2O(8) + HCO(12)
-    CH3O(25) + [C]=O(27) <=> CH2O(8) + HCO(12)
-    CH2O(8) + HCO(12) <=> CH2OCHO(78)
-    CH2O(8) + HCO(12) <=> OCH2CHO(79)
-    CH2OH(26) + O(T)(28) <=> CH2O(8) + OH(13)
-    CH3O(25) + O(T)(28) <=> CH2O(8) + OH(13)
-    CH2O(8) + OH(13) <=> [CH2]OO(80)
-    CH2O(8) + OH(13) <=> HOCH2O(81)
-    CH4(2) + CH2(T)(24) <=> CH3(9) + CH3(9)
-    CH3(9) + CH3(9) <=> CC(82)
-    H2(6) + CH2(T)(24) <=> CH3(9) + H(10)
-    CH4(2) + CH3O(25) <=> CH3(9) + CH3OH(11)
-    CH3(9) + CH3OH(11) <=> CH4(2) + CH2OH(26)
-    CH2(T)(24) + HCOH(T)(44) <=> CH3(9) + HCO(12)
-    CH2O(8) + CH2(T)(24) <=> CH3(9) + HCO(12)
-    CH4(2) + [C]=O(27) <=> CH3(9) + HCO(12)
-    CH3(9) + HCO(12) <=> CH3CHO(43)
-    CH3(9) + OH(13) <=> H2O(5) + CH2(T)(24)
-    CH4(2) + O(T)(28) <=> CH3(9) + OH(13)
-    H(10) + CH3OH(11) <=> H2(6) + CH3O(25)
-    H(10) + CH3OH(11) <=> H2(6) + CH2OH(26)
-    H2(6) + [C]=O(27) <=> H(10) + HCO(12)
-    H2(6) + O(T)(28) <=> H(10) + OH(13)
-    CH2OH(26) + HCOH(T)(44) <=> CH3OH(11) + HCO(12)
-    CH3O(25) + HCOH(T)(44) <=> CH3OH(11) + HCO(12)
-    CH2O(8) + CH3O(25) <=> CH3OH(11) + HCO(12)
-    CH2O(8) + CH2OH(26) <=> CH3OH(11) + HCO(12)
-    CH3OH(11) + OH(13) <=> H2O(5) + CH3O(25)
-    CH3OH(11) + OH(13) <=> H2O(5) + CH2OH(26)
-    [C]=O(27) + HCOH(T)(44) <=> HCO(12) + HCO(12)
-    CH2O(8) + [C]=O(27) <=> HCO(12) + HCO(12)
-    HCO(12) + HCO(12) <=> O=CC=O(83)
-    O(T)(28) + HCOH(T)(44) <=> HCO(12) + OH(13)
-    H2O(5) + [C]=O(27) <=> HCO(12) + OH(13)
-    CH2O(8) + O(T)(28) <=> HCO(12) + OH(13)
-    HCO(12) + OH(13) <=> formic_acid(55)
-    H2O(5) + O(T)(28) <=> OH(13) + OH(13)
-    OH(13) + OH(13) <=> OO(84)
+Created 158 new edge reactions
+    H2(6) + CH2(S)(14) <=> CH4(2)
+    H(10) + CH2(T)(15) <=> CH3(9)
+    H(10) + CH3O(16) <=> CH3OH(11)
+    H(10) + CH2OH(17) <=> CH3OH(11)
+    H2O(5) + CH2(S)(14) <=> CH3OH(11)
+    H(10) + [C]=O(18) <=> HCO(12)
+    H(10) + O(T)(19) <=> OH(13)
+    CH4(2) + X(1) + X(1) <=> [Ni](21) + C[Ni](20)
+    CH4(2) + X(1) <=> C.[Ni](22)
+    X(1) + CO2(4) <=> CO2X(23)
+    X(1) + X(1) + H2O(5) <=> O[Ni](24) + [Ni](21)
+    X(1) + H2O(5) <=> O.[Ni](25)
+    X(1) + X(1) + H2(6) <=> [Ni](21) + [Ni](21)
+    X(1) + H2(6) <=> [H][H].[Ni](26)
+    X(1) + CO(7) <=> COX(27)
+    X(1) + X(1) + CH2O(8) <=> [Ni](21) + O=C[Ni](28)
+    X(1) + CH2O(8) <=> C=O.[Ni](29)
+    X(1) + CH3(9) <=> C[Ni](20)
+    X(1) + H(10) <=> [Ni](21)
+    X(1) + X(1) + CH3OH(11) <=> O[Ni](24) + C[Ni](20)
+    X(1) + X(1) + CH3OH(11) <=> CO[Ni](30) + [Ni](21)
+    X(1) + X(1) + CH3OH(11) <=> OC[Ni](31) + [Ni](21)
+    X(1) + CH3OH(11) <=> CO.[Ni](32)
+    X(1) + HCO(12) <=> O=C[Ni](28)
+    X(1) + OH(13) <=> O[Ni](24)
+    CH4(2) + O2(3) <=> CH3(9) + HO2(33)
+    CH3(9) + HOCO(34) <=> CH4(2) + CO2(4)
+    CH3(9) + formyloxy(35) <=> CH4(2) + CO2(4)
+    CH4(2) + CO2(4) <=> methyl_formate(36)
+    CH4(2) + CO2(4) <=> acetic_acid(37)
+    CH4(2) + CO(7) <=> CH3CHO(38)
+    CH3(9) + CH2OH(17) <=> CH4(2) + CH2O(8)
+    CH3(9) + CH3O(16) <=> CH4(2) + CH2O(8)
+    CH3(9) + HCOH(T)(39) <=> CH4(2) + HCO(12)
+    O2(3) + CO2(4) <=> [O]OO[C]=O(40)
+    O2(3) + CO2(4) <=> [O]OC([O])=O(41)
+    O2(3) + H2O(5) <=> OH(13) + HO2(33)
+    H2(6) + O2(3) <=> H(10) + HO2(33)
+    O2(3) + CH2O(8) <=> [CH2]OO[O](42)
+    O2(3) + CH2O(8) <=> [O]CO[O](43)
+    O2(3) + CH2O(8) <=> HCO(12) + HO2(33)
+    HO2(33) + CH2(T)(15) <=> O2(3) + CH3(9)
+    CH3OO(44) <=> O2(3) + CH3(9)
+    O2(3) + H(10) <=> HO2(33)
+    HO2(33) + CH3O(16) <=> O2(3) + CH3OH(11)
+    O2(3) + CH3OH(11) <=> HO2(33) + CH2OH(17)
+    O2(3) + HCO(12) <=> CO(7) + HO2(33)
+    [C]=O(18) + HO2(33) <=> O2(3) + HCO(12)
+    O2(3) + HCO(12) <=> formylperoxy(45)
+    O(T)(19) + HO2(33) <=> O2(3) + OH(13)
+    O2(3) + OH(13) <=> [O]OO(46)
+    [O]C(=O)C([O])=O(47) <=> CO2(4) + CO2(4)
+    [O]C(=O)O[C]=O(48) <=> CO2(4) + CO2(4)
+    O=[C]OO[C]=O(49) <=> CO2(4) + CO2(4)
+    OH(13) + HOCO(34) <=> H2O(5) + CO2(4)
+    OH(13) + formyloxy(35) <=> H2O(5) + CO2(4)
+    H(10) + HOCO(34) <=> H2(6) + CO2(4)
+    H(10) + formyloxy(35) <=> H2(6) + CO2(4)
+    H2(6) + CO2(4) <=> formic_acid(50)
+    HCO(12) + HOCO(34) <=> CO2(4) + CH2O(8)
+    HCO(12) + formyloxy(35) <=> CO2(4) + CH2O(8)
+    [O]CC([O])=O(51) <=> CO2(4) + CH2O(8)
+    [CH2]OC([O])=O(52) <=> CO2(4) + CH2O(8)
+    [O]CO[C]=O(53) <=> CO2(4) + CH2O(8)
+    [CH2]OO[C]=O(54) <=> CO2(4) + CH2O(8)
+    HOCO(34) + CH2(T)(15) <=> CO2(4) + CH3(9)
+    formyloxy(35) + CH2(T)(15) <=> CO2(4) + CH3(9)
+    CO2(4) + CH3(9) <=> CH3OCO(55)
+    CO2(4) + CH3(9) <=> acetyloxy(56)
+    CO2(4) + H(10) <=> HOCO(34)
+    CO2(4) + H(10) <=> formyloxy(35)
+    HOCO(34) + CH2OH(17) <=> CO2(4) + CH3OH(11)
+    HOCO(34) + CH3O(16) <=> CO2(4) + CH3OH(11)
+    formyloxy(35) + CH2OH(17) <=> CO2(4) + CH3OH(11)
+    formyloxy(35) + CH3O(16) <=> CO2(4) + CH3OH(11)
+    CO2(4) + CH3OH(11) <=> O=COCO(57)
+    CO2(4) + CH3OH(11) <=> O=C(O)CO(58)
+    [C]=O(18) + HOCO(34) <=> CO2(4) + HCO(12)
+    [C]=O(18) + formyloxy(35) <=> CO2(4) + HCO(12)
+    CO2(4) + HCO(12) <=> O=[C]OC=O(59)
+    CO2(4) + HCO(12) <=> [O]C(=O)C=O(60)
+    O(T)(19) + HOCO(34) <=> CO2(4) + OH(13)
+    O(T)(19) + formyloxy(35) <=> CO2(4) + OH(13)
+    CO2(4) + OH(13) <=> O=[C]OO(61)
+    CO2(4) + OH(13) <=> [O]C(=O)O(62)
+    H2O(5) + CO(7) <=> formic_acid(50)
+    OH(13) + CH2OH(17) <=> H2O(5) + CH2O(8)
+    OH(13) + CH3O(16) <=> H2O(5) + CH2O(8)
+    OH(13) + HCOH(T)(39) <=> H2O(5) + HCO(12)
+    H(10) + CH2OH(17) <=> H2(6) + CH2O(8)
+    H(10) + CH3O(16) <=> H2(6) + CH2O(8)
+    H(10) + HCOH(T)(39) <=> H2(6) + HCO(12)
+    HCO(12) + CH2(T)(15) <=> CO(7) + CH3(9)
+    CO(7) + CH3(9) <=> acetyl(63)
+    HCO(12) + CH3O(16) <=> CO(7) + CH3OH(11)
+    HCO(12) + CH2OH(17) <=> CO(7) + CH3OH(11)
+    CO(7) + CH3OH(11) <=> methyl_formate(36)
+    CO(7) + CH3OH(11) <=> HOCH2CHO(64)
+    HCO(12) + [C]=O(18) <=> CO(7) + HCO(12)
+    CO(7) + HCO(12) <=> OCHCO(65)
+    HCO(12) + O(T)(19) <=> CO(7) + OH(13)
+    CO(7) + OH(13) <=> HOCO(34)
+    HCO(12) + CH2OH(17) <=> CH2O(8) + CH2O(8)
+    HCO(12) + CH3O(16) <=> CH2O(8) + CH2O(8)
+    [O]CC[O](66) <=> CH2O(8) + CH2O(8)
+    [CH2]OC[O](67) <=> CH2O(8) + CH2O(8)
+    [CH2]OO[CH2](68) <=> CH2O(8) + CH2O(8)
+    CH2O(8) + CH2O(8) <=> C1COO1(69)
+    CH2O(8) + CH2O(8) <=> C1OCO1(70)
+    CH2OH(17) + CH2(T)(15) <=> CH2O(8) + CH3(9)
+    CH2(T)(15) + CH3O(16) <=> CH2O(8) + CH3(9)
+    CH2O(8) + CH3(9) <=> CH3OCH2(71)
+    CH2O(8) + CH3(9) <=> CH3CH2O(72)
+    CH2O(8) + H(10) <=> CH2OH(17)
+    CH2O(8) + H(10) <=> CH3O(16)
+    CH2OH(17) + CH2OH(17) <=> CH2O(8) + CH3OH(11)
+    CH2OH(17) + CH3O(16) <=> CH2O(8) + CH3OH(11)
+    CH2OH(17) + CH3O(16) <=> CH2O(8) + CH3OH(11)
+    CH3O(16) + CH3O(16) <=> CH2O(8) + CH3OH(11)
+    HCO(12) + HCOH(T)(39) <=> CH2O(8) + HCO(12)
+    [C]=O(18) + CH2OH(17) <=> CH2O(8) + HCO(12)
+    [C]=O(18) + CH3O(16) <=> CH2O(8) + HCO(12)
+    CH2O(8) + HCO(12) <=> CH2OCHO(73)
+    CH2O(8) + HCO(12) <=> OCH2CHO(74)
+    O(T)(19) + CH2OH(17) <=> CH2O(8) + OH(13)
+    O(T)(19) + CH3O(16) <=> CH2O(8) + OH(13)
+    CH2O(8) + OH(13) <=> [CH2]OO(75)
+    CH2O(8) + OH(13) <=> HOCH2O(76)
+    CH4(2) + CH2(T)(15) <=> CH3(9) + CH3(9)
+    CH3(9) + CH3(9) <=> CC(77)
+    H2(6) + CH2(T)(15) <=> CH3(9) + H(10)
+    CH4(2) + CH3O(16) <=> CH3(9) + CH3OH(11)
+    CH3(9) + CH3OH(11) <=> CH4(2) + CH2OH(17)
+    HCOH(T)(39) + CH2(T)(15) <=> CH3(9) + HCO(12)
+    CH2O(8) + CH2(T)(15) <=> CH3(9) + HCO(12)
+    CH4(2) + [C]=O(18) <=> CH3(9) + HCO(12)
+    CH3(9) + HCO(12) <=> CH3CHO(38)
+    CH3(9) + OH(13) <=> H2O(5) + CH2(T)(15)
+    CH4(2) + O(T)(19) <=> CH3(9) + OH(13)
+    H(10) + CH3OH(11) <=> H2(6) + CH3O(16)
+    H(10) + CH3OH(11) <=> H2(6) + CH2OH(17)
+    H2(6) + [C]=O(18) <=> H(10) + HCO(12)
+    H2(6) + O(T)(19) <=> H(10) + OH(13)
+    HCOH(T)(39) + CH2OH(17) <=> CH3OH(11) + HCO(12)
+    HCOH(T)(39) + CH3O(16) <=> CH3OH(11) + HCO(12)
+    CH2O(8) + CH3O(16) <=> CH3OH(11) + HCO(12)
+    CH2O(8) + CH2OH(17) <=> CH3OH(11) + HCO(12)
+    CH3OH(11) + OH(13) <=> H2O(5) + CH3O(16)
+    CH3OH(11) + OH(13) <=> H2O(5) + CH2OH(17)
+    [C]=O(18) + HCOH(T)(39) <=> HCO(12) + HCO(12)
+    CH2O(8) + [C]=O(18) <=> HCO(12) + HCO(12)
+    HCO(12) + HCO(12) <=> O=CC=O(78)
+    O(T)(19) + HCOH(T)(39) <=> HCO(12) + OH(13)
+    H2O(5) + [C]=O(18) <=> HCO(12) + OH(13)
+    CH2O(8) + O(T)(19) <=> HCO(12) + OH(13)
+    HCO(12) + OH(13) <=> formic_acid(50)
+    H2O(5) + O(T)(19) <=> OH(13) + OH(13)
+    OH(13) + OH(13) <=> OO(79)
 
 After model enlargement:
     The model core has 17 species and 17 reactions
-    The model edge has 71 species and 169 reactions
+    The model edge has 66 species and 158 reactions
 
 
 Completed initial enlarge edge step.
@@ -802,45 +772,44 @@ Chemkin file contains 17 reactions.
 Chemkin file contains 0 reactions.
 Saving current model core and edge to Chemkin file...
 Chemkin file contains 157 reactions.
-Chemkin file contains 29 reactions.
+Chemkin file contains 18 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 157 reactions.
-Chemkin file contains 29 reactions.
+Chemkin file contains 18 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:04:24
-    Memory used: 545.40 MB
+    Execution time (DD:HH:MM:SS): 00:00:02:10
+    Memory used: 558.13 MB
 
 Beginning model generation stage 1...
 
 Conducting simulation of reaction system 1...
-At time 0.0000e+00 s, species HX(14) at 6929574967.25 exceeded the minimum rate for simulation interruption of 0.1
-At time 0.0000e+00 s, species OX(15) at 1.00098088037e+12 exceeded the minimum rate for simulation interruption of 0.1
-At time 0.0000e+00 s, species CH3X(17) at 6929574967.25 exceeded the minimum rate for simulation interruption of 0.1
-At time 0.0000e+00 s, species C.[Ni](29) at 8.05732696408e+12 exceeded the minimum rate for simulation interruption of 0.1
-At time 0.0000e+00 s, species HO2(38) at 94.7578315176 exceeded the minimum rate for simulation interruption of 0.1
+At time 0.0000e+00 s, species [Ni](21) at 21028039253.2 exceeded the minimum rate for simulation interruption of 0.1
+At time 0.0000e+00 s, species C[Ni](20) at 21028039253.2 exceeded the minimum rate for simulation interruption of 0.1
+At time 0.0000e+00 s, species C.[Ni](22) at 8.05732696408e+12 exceeded the minimum rate for simulation interruption of 0.1
+At time 0.0000e+00 s, species HO2(33) at 94.7578315176 exceeded the minimum rate for simulation interruption of 0.1
 Exceeded max number of objects...removing excess objects
 Reached max number of objects...preparing to terminate
-At time 0.0000e+00 s, species C.[Ni](29) at rate ratio 8.05732696408e+12 exceeded the minimum rate for moving to model core of 0.0001
+At time 0.0000e+00 s, species C.[Ni](22) at rate ratio 8.05732696408e+12 exceeded the minimum rate for moving to model core of 0.0001
 terminating simulation due to interrupt...
 
 
-Adding species C.[Ni](29) to model core
+Adding species C.[Ni](22) to model core
 
 Summary of Model Enlargement
 ---------------------------------
 Added 1 new core species
-    C.[Ni](29)
+    C.[Ni](22)
 Created 0 new edge species
 Moved 1 reactions from edge to core
-    CH4(2) + X(1) <=> C.[Ni](29)
+    CH4(2) + X(1) <=> C.[Ni](22)
 Added 0 new core reactions
 Created 0 new edge reactions
 
 After model enlargement:
     The model core has 18 species and 18 reactions
-    The model edge has 70 species and 168 reactions
+    The model edge has 65 species and 157 reactions
 
 
 
@@ -853,7 +822,7 @@ Created 0 new edge reactions
 
 After model enlargement:
     The model core has 18 species and 18 reactions
-    The model edge has 70 species and 168 reactions
+    The model edge has 65 species and 157 reactions
 
 
 Saving current model core to Chemkin file...
@@ -864,51 +833,55 @@ Chemkin file contains 17 reactions.
 Chemkin file contains 1 reactions.
 Saving current model core and edge to Chemkin file...
 Chemkin file contains 157 reactions.
-Chemkin file contains 29 reactions.
+Chemkin file contains 18 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 157 reactions.
-Chemkin file contains 29 reactions.
+Chemkin file contains 18 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:04:28
-    Memory used: 547.48 MB
+    Execution time (DD:HH:MM:SS): 00:00:02:12
+    Memory used: 562.81 MB
 
 Conducting simulation of reaction system 1...
 Exceeded max number of objects...removing excess objects
 Reached max number of objects...preparing to terminate
-At time 0.0000e+00 s, species OX(15) at rate ratio 0.071725596257 exceeded the minimum rate for moving to model core of 0.0001
+At time 0.0000e+00 s, species C[Ni](20) at rate ratio 0.00150677069175 exceeded the minimum rate for moving to model core of 0.0001
 terminating simulation due to interrupt...
 
 
-Adding species OX(15) to model core
+Adding species C[Ni](20) to model core
 
 Summary of Model Enlargement
 ---------------------------------
 Added 1 new core species
-    OX(15)
+    C[Ni](20)
 Created 0 new edge species
 Moved 1 reactions from edge to core
-    X(1) + X(1) + O2(3) <=> OX(15) + OX(15)
+    X(1) + CH3(9) <=> C[Ni](20)
 Added 0 new core reactions
 Created 0 new edge reactions
 
 After model enlargement:
     The model core has 19 species and 19 reactions
-    The model edge has 69 species and 167 reactions
+    The model edge has 64 species and 156 reactions
 
 
+Generating kinetics for new reactions...
 
 Summary of Secondary Model Edge Enlargement
 ---------------------------------
 Added 0 new core species
-Created 0 new edge species
+Created 1 new edge species
+    C=[Ni](80)
 Added 0 new core reactions
-Created 0 new edge reactions
+Created 2 new edge reactions
+    C=[Ni](80) + [Ni](21) <=> X(1) + C[Ni](20)
+    X(1) + X(1) + CC(77) <=> C[Ni](20) + C[Ni](20)
 
 After model enlargement:
     The model core has 19 species and 19 reactions
-    The model edge has 69 species and 167 reactions
+    The model edge has 65 species and 158 reactions
 
 
 Saving current model core to Chemkin file...
@@ -919,286 +892,93 @@ Chemkin file contains 17 reactions.
 Chemkin file contains 2 reactions.
 Saving current model core and edge to Chemkin file...
 Chemkin file contains 157 reactions.
-Chemkin file contains 29 reactions.
+Chemkin file contains 20 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 157 reactions.
-Chemkin file contains 29 reactions.
+Chemkin file contains 20 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:04:31
-    Memory used: 550.82 MB
+    Execution time (DD:HH:MM:SS): 00:00:02:14
+    Memory used: 566.16 MB
 
 Conducting simulation of reaction system 1...
-Exceeded max number of objects...removing excess objects
 Reached max number of objects...preparing to terminate
-At time 0.0000e+00 s, species CH3X(17) at rate ratio 0.000474643530796 exceeded the minimum rate for moving to model core of 0.0001
+At time 0.0000e+00 s, species [Ni](21) at rate ratio 0.00150677069175 exceeded the minimum rate for moving to model core of 0.0001
 terminating simulation due to interrupt...
 
 
-Adding species CH3X(17) to model core
+Adding species [Ni](21) to model core
 
 Summary of Model Enlargement
 ---------------------------------
 Added 1 new core species
-    CH3X(17)
-Created 0 new edge species
-Moved 1 reactions from edge to core
-    X(1) + CH3(9) <=> CH3X(17)
-Added 0 new core reactions
-Created 0 new edge reactions
-
-After model enlargement:
-    The model core has 20 species and 20 reactions
-    The model edge has 68 species and 166 reactions
-
-
-Generating kinetics for new reactions...
-
-Summary of Secondary Model Edge Enlargement
----------------------------------
-Added 0 new core species
-Created 1 new edge species
-    C=[Ni](85)
-Added 0 new core reactions
-Created 4 new edge reactions
-    C=[Ni](85) + HX(14) <=> X(1) + CH3X(17)
-    C=[Ni](85) + HOX(18) <=> OX(15) + CH3X(17)
-    X(1) + CO[Ni](35) <=> OX(15) + CH3X(17)
-    X(1) + X(1) + CC(82) <=> CH3X(17) + CH3X(17)
-
-After model enlargement:
-    The model core has 20 species and 20 reactions
-    The model edge has 69 species and 170 reactions
-
-
-Saving current model core to Chemkin file...
-Chemkin file contains 17 reactions.
-Chemkin file contains 3 reactions.
-Saving annotated version of Chemkin files...
-Chemkin file contains 17 reactions.
-Chemkin file contains 3 reactions.
-Saving current model core and edge to Chemkin file...
-Chemkin file contains 157 reactions.
-Chemkin file contains 33 reactions.
-Saving annotated version of Chemkin files...
-Chemkin file contains 157 reactions.
-Chemkin file contains 33 reactions.
-Saving current model core to HTML file...
-Saving current model edge to HTML file...
-Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:04:34
-    Memory used: 554.08 MB
-
-Conducting simulation of reaction system 1...
-Reached max number of objects...preparing to terminate
-At time 0.0000e+00 s, species HX(14) at rate ratio 0.000474643530796 exceeded the minimum rate for moving to model core of 0.0001
-terminating simulation due to interrupt...
-
-
-Adding species HX(14) to model core
-
-Summary of Model Enlargement
----------------------------------
-Added 1 new core species
-    HX(14)
+    [Ni](21)
 Created 0 new edge species
 Moved 3 reactions from edge to core
-    X(1) + X(1) + H2(6) <=> HX(14) + HX(14)
-    HX(14) + CH3X(17) <=> CH4(2) + X(1) + X(1)
-    X(1) + H(10) <=> HX(14)
+    CH4(2) + X(1) + X(1) <=> [Ni](21) + C[Ni](20)
+    X(1) + X(1) + H2(6) <=> [Ni](21) + [Ni](21)
+    X(1) + H(10) <=> [Ni](21)
 Added 0 new core reactions
 Created 0 new edge reactions
 
 After model enlargement:
-    The model core has 21 species and 23 reactions
-    The model edge has 68 species and 167 reactions
+    The model core has 20 species and 22 reactions
+    The model edge has 64 species and 155 reactions
 
 
-Generating kinetics for new reactions...
 
 Summary of Secondary Model Edge Enlargement
 ---------------------------------
 Added 0 new core species
 Created 0 new edge species
 Added 0 new core reactions
-Created 1 new edge reactions
-    X(1) + HOX(18) <=> HX(14) + OX(15)
+Created 0 new edge reactions
 
 After model enlargement:
-    The model core has 21 species and 23 reactions
-    The model edge has 68 species and 168 reactions
+    The model core has 20 species and 22 reactions
+    The model edge has 64 species and 155 reactions
 
 
 Saving current model core to Chemkin file...
 Chemkin file contains 17 reactions.
-Chemkin file contains 6 reactions.
+Chemkin file contains 5 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 17 reactions.
-Chemkin file contains 6 reactions.
+Chemkin file contains 5 reactions.
 Saving current model core and edge to Chemkin file...
 Chemkin file contains 157 reactions.
-Chemkin file contains 34 reactions.
+Chemkin file contains 20 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 157 reactions.
-Chemkin file contains 34 reactions.
+Chemkin file contains 20 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:04:37
-    Memory used: 556.03 MB
+    Execution time (DD:HH:MM:SS): 00:00:02:15
+    Memory used: 569.52 MB
 
 Conducting simulation of reaction system 1...
 Reached max number of objects...preparing to terminate
-At time 1.7213e-10 s, species C=[Ni](85) at rate ratio 0.000102228929471 exceeded the minimum rate for moving to model core of 0.0001
+At time 6.2917e-11 s, species C=[Ni](80) at rate ratio 0.000117544819249 exceeded the minimum rate for moving to model core of 0.0001
 terminating simulation due to interrupt...
 
 
-Adding species C=[Ni](85) to model core
+Adding species C=[Ni](80) to model core
 
 Summary of Model Enlargement
 ---------------------------------
 Added 1 new core species
-    C=[Ni](85)
+    C=[Ni](80)
 Created 0 new edge species
 Moved 1 reactions from edge to core
-    C=[Ni](85) + HX(14) <=> X(1) + CH3X(17)
+    C=[Ni](80) + [Ni](21) <=> X(1) + C[Ni](20)
 Added 0 new core reactions
 Created 0 new edge reactions
 
 After model enlargement:
-    The model core has 22 species and 24 reactions
-    The model edge has 67 species and 167 reactions
-
-
-Generating kinetics for new reactions...
-For reaction HOX(18) + CHX(21) <=> C=[Ni](85) + OX(15), Ea raised from 42.4 to 43.7 kJ/mol to match endothermicity of reaction.
-
-Summary of Secondary Model Edge Enlargement
----------------------------------
-Added 0 new core species
-Created 1 new edge species
-    CC[Ni](86)
-Added 0 new core reactions
-Created 4 new edge reactions
-    HX(14) + CHX(21) <=> X(1) + C=[Ni](85)
-    HOX(18) + CHX(21) <=> C=[Ni](85) + OX(15)
-    X(1) + CC[Ni](86) <=> C=[Ni](85) + CH3X(17)
-    C=[Ni](85) + C=[Ni](85) <=> CH3X(17) + CHX(21)
-
-After model enlargement:
-    The model core has 22 species and 24 reactions
-    The model edge has 68 species and 171 reactions
-
-
-Saving current model core to Chemkin file...
-Chemkin file contains 17 reactions.
-Chemkin file contains 7 reactions.
-Saving annotated version of Chemkin files...
-Chemkin file contains 17 reactions.
-Chemkin file contains 7 reactions.
-Saving current model core and edge to Chemkin file...
-Chemkin file contains 157 reactions.
-Chemkin file contains 38 reactions.
-Saving annotated version of Chemkin files...
-Chemkin file contains 157 reactions.
-Chemkin file contains 38 reactions.
-Saving current model core to HTML file...
-Saving current model edge to HTML file...
-Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:04:42
-    Memory used: 558.00 MB
-
-Conducting simulation of reaction system 1...
-Reached max number of objects...preparing to terminate
-At time 1.0000e-12 s, species CHX(21) at rate ratio 0.000148469192894 exceeded the minimum rate for moving to model core of 0.0001
-terminating simulation due to interrupt...
-
-
-Adding species CHX(21) to model core
-
-Summary of Model Enlargement
----------------------------------
-Added 1 new core species
-    CHX(21)
-Created 0 new edge species
-Moved 2 reactions from edge to core
-    HX(14) + CHX(21) <=> X(1) + C=[Ni](85)
-    C=[Ni](85) + C=[Ni](85) <=> CH3X(17) + CHX(21)
-Added 0 new core reactions
-Created 0 new edge reactions
-
-After model enlargement:
-    The model core has 23 species and 26 reactions
-    The model edge has 67 species and 169 reactions
-
-
-Generating kinetics for new reactions...
-
-Summary of Secondary Model Edge Enlargement
----------------------------------
-Added 0 new core species
-Created 1 new edge species
-    CC=[Ni](87)
-Added 0 new core reactions
-Created 5 new edge reactions
-    HX(14) + CX(19) <=> X(1) + CHX(21)
-    HOX(18) + CX(19) <=> OX(15) + CHX(21)
-    X(1) + CC=[Ni](87) <=> CH3X(17) + CHX(21)
-    CH3X(17) + CX(19) <=> C=[Ni](85) + CHX(21)
-    C=[Ni](85) + CX(19) <=> CHX(21) + CHX(21)
-
-After model enlargement:
-    The model core has 23 species and 26 reactions
-    The model edge has 68 species and 174 reactions
-
-
-Saving current model core to Chemkin file...
-Chemkin file contains 17 reactions.
-Chemkin file contains 9 reactions.
-Saving annotated version of Chemkin files...
-Chemkin file contains 17 reactions.
-Chemkin file contains 9 reactions.
-Saving current model core and edge to Chemkin file...
-Chemkin file contains 157 reactions.
-Chemkin file contains 43 reactions.
-Saving annotated version of Chemkin files...
-Chemkin file contains 157 reactions.
-Chemkin file contains 43 reactions.
-Saving current model core to HTML file...
-Saving current model edge to HTML file...
-Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:04:46
-    Memory used: 559.91 MB
-
-Conducting simulation of reaction system 1...
-Reached max number of objects...preparing to terminate
-At time 7.0953e-10 s, species HOX(18) at rate ratio 0.000102127888291 exceeded the minimum rate for moving to model core of 0.0001
-terminating simulation due to interrupt...
-
-
-Adding species HOX(18) to model core
-
-Summary of Model Enlargement
----------------------------------
-Added 1 new core species
-    HOX(18)
-Created 0 new edge species
-Moved 8 reactions from edge to core
-    CH3X(17) + HOX(18) <=> CH4(2) + X(1) + OX(15)
-    HX(14) + HOX(18) <=> X(1) + X(1) + H2O(5)
-    HOX(18) + HOX(18) <=> X(1) + H2O(5) + OX(15)
-    X(1) + X(1) + CH3OH(11) <=> CH3X(17) + HOX(18)
-    X(1) + OH(13) <=> HOX(18)
-    C=[Ni](85) + HOX(18) <=> OX(15) + CH3X(17)
-    X(1) + HOX(18) <=> HX(14) + OX(15)
-    HOX(18) + CHX(21) <=> C=[Ni](85) + OX(15)
-Added 0 new core reactions
-Created 0 new edge reactions
-
-After model enlargement:
-    The model core has 24 species and 34 reactions
-    The model edge has 67 species and 166 reactions
+    The model core has 21 species and 23 reactions
+    The model edge has 63 species and 154 reactions
 
 
 Generating kinetics for new reactions...
@@ -1207,601 +987,1286 @@ Summary of Secondary Model Edge Enlargement
 ---------------------------------
 Added 0 new core species
 Created 2 new edge species
-    OO[Ni](88)
-    OC=[Ni](89)
-Added 0 new core reactions
-Created 4 new edge reactions
-    X(1) + OO[Ni](88) <=> OX(15) + HOX(18)
-    X(1) + OC[Ni](36) <=> C=[Ni](85) + HOX(18)
-    X(1) + OC=[Ni](89) <=> HOX(18) + CHX(21)
-    X(1) + X(1) + OO(84) <=> HOX(18) + HOX(18)
-
-After model enlargement:
-    The model core has 24 species and 34 reactions
-    The model edge has 69 species and 170 reactions
-
-
-Saving current model core to Chemkin file...
-Chemkin file contains 17 reactions.
-Chemkin file contains 17 reactions.
-Saving annotated version of Chemkin files...
-Chemkin file contains 17 reactions.
-Chemkin file contains 17 reactions.
-Saving current model core and edge to Chemkin file...
-Chemkin file contains 157 reactions.
-Chemkin file contains 47 reactions.
-Saving annotated version of Chemkin files...
-Chemkin file contains 157 reactions.
-Chemkin file contains 47 reactions.
-Saving current model core to HTML file...
-Saving current model edge to HTML file...
-Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:04:50
-    Memory used: 562.06 MB
-
-Conducting simulation of reaction system 1...
-Reached max number of objects...preparing to terminate
-At time 2.1155e-08 s, species [H][H].[Ni](32) at rate ratio 0.000102119919073 exceeded the minimum rate for moving to model core of 0.0001
-terminating simulation due to interrupt...
-
-
-Adding species [H][H].[Ni](32) to model core
-
-Summary of Model Enlargement
----------------------------------
-Added 1 new core species
-    [H][H].[Ni](32)
-Created 0 new edge species
-Moved 1 reactions from edge to core
-    X(1) + H2(6) <=> [H][H].[Ni](32)
-Added 0 new core reactions
-Created 0 new edge reactions
-
-After model enlargement:
-    The model core has 25 species and 35 reactions
-    The model edge has 68 species and 169 reactions
-
-
-
-Summary of Secondary Model Edge Enlargement
----------------------------------
-Added 0 new core species
-Created 0 new edge species
-Added 0 new core reactions
-Created 0 new edge reactions
-
-After model enlargement:
-    The model core has 25 species and 35 reactions
-    The model edge has 68 species and 169 reactions
-
-
-Saving current model core to Chemkin file...
-Chemkin file contains 17 reactions.
-Chemkin file contains 18 reactions.
-Saving annotated version of Chemkin files...
-Chemkin file contains 17 reactions.
-Chemkin file contains 18 reactions.
-Saving current model core and edge to Chemkin file...
-Chemkin file contains 157 reactions.
-Chemkin file contains 47 reactions.
-Saving annotated version of Chemkin files...
-Chemkin file contains 157 reactions.
-Chemkin file contains 47 reactions.
-Saving current model core to HTML file...
-Saving current model edge to HTML file...
-Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:04:53
-    Memory used: 564.46 MB
-
-Conducting simulation of reaction system 1...
-Reached max number of objects...preparing to terminate
-At time 8.2089e-08 s, species CXHO(22) at rate ratio 0.000100211234465 exceeded the minimum rate for moving to model core of 0.0001
-terminating simulation due to interrupt...
-
-
-Adding species CXHO(22) to model core
-
-Summary of Model Enlargement
----------------------------------
-Added 1 new core species
-    CXHO(22)
-Created 0 new edge species
-Moved 3 reactions from edge to core
-    OX(15) + CHX(21) <=> X(1) + CXHO(22)
-    X(1) + X(1) + CH2O(8) <=> HX(14) + CXHO(22)
-    X(1) + HCO(12) <=> CXHO(22)
-Added 0 new core reactions
-Created 0 new edge reactions
-
-After model enlargement:
-    The model core has 26 species and 38 reactions
-    The model edge has 67 species and 166 reactions
-
-
-Species with SMILES of O=CO[Ni] named formyloxyX based on thermo library name
-Species with SMILES of O=CC[Ni] named vinoxyX based on thermo library name
-Species with SMILES of O=CC=[Ni] named ketene(T)X based on thermo library name
-Generating kinetics for new reactions...
-
-Summary of Secondary Model Edge Enlargement
----------------------------------
-Added 0 new core species
-Created 3 new edge species
-    formyloxyX(90)
-    vinoxyX(91)
-    ketene(T)X(92)
-Added 0 new core reactions
-Created 10 new edge reactions
-    X(1) + CXHO(22) <=> HX(14) + OCX(16)
-    OX(15) + CXHO(22) <=> OCX(16) + HOX(18)
-    X(1) + formyloxyX(90) <=> OX(15) + CXHO(22)
-    X(1) + X(1) + CH3CHO(43) <=> CH3X(17) + CXHO(22)
-    C=[Ni](85) + CXHO(22) <=> OCX(16) + CH3X(17)
-    X(1) + vinoxyX(91) <=> C=[Ni](85) + CXHO(22)
-    CHX(21) + CXHO(22) <=> C=[Ni](85) + OCX(16)
-    X(1) + ketene(T)X(92) <=> CHX(21) + CXHO(22)
-    X(1) + X(1) + formic_acid(55) <=> HOX(18) + CXHO(22)
-    X(1) + X(1) + O=CC=O(83) <=> CXHO(22) + CXHO(22)
-
-After model enlargement:
-    The model core has 26 species and 38 reactions
-    The model edge has 70 species and 176 reactions
-
-
-Saving current model core to Chemkin file...
-Chemkin file contains 17 reactions.
-Chemkin file contains 21 reactions.
-Saving annotated version of Chemkin files...
-Chemkin file contains 17 reactions.
-Chemkin file contains 21 reactions.
-Saving current model core and edge to Chemkin file...
-Chemkin file contains 157 reactions.
-Chemkin file contains 57 reactions.
-Saving annotated version of Chemkin files...
-Chemkin file contains 157 reactions.
-Chemkin file contains 57 reactions.
-Saving current model core to HTML file...
-Saving current model edge to HTML file...
-Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:04:59
-    Memory used: 567.32 MB
-
-Conducting simulation of reaction system 1...
-Reached max number of objects...preparing to terminate
-At time 4.8340e-09 s, species OCX(16) at rate ratio 0.000101866968468 exceeded the minimum rate for moving to model core of 0.0001
-terminating simulation due to interrupt...
-
-
-Adding species OCX(16) to model core
-
-Summary of Model Enlargement
----------------------------------
-Added 1 new core species
-    OCX(16)
-Created 0 new edge species
-Moved 6 reactions from edge to core
-    X(1) + CO(7) <=> OCX(16)
-    OX(15) + OCX(16) <=> X(1) + X(1) + CO2(4)
-    X(1) + CXHO(22) <=> HX(14) + OCX(16)
-    OX(15) + CXHO(22) <=> OCX(16) + HOX(18)
-    C=[Ni](85) + CXHO(22) <=> OCX(16) + CH3X(17)
-    CHX(21) + CXHO(22) <=> C=[Ni](85) + OCX(16)
-Added 0 new core reactions
-Created 0 new edge reactions
-
-After model enlargement:
-    The model core has 27 species and 44 reactions
-    The model edge has 69 species and 170 reactions
-
-
-Species with SMILES of CC(=O)[Ni] named acetylX based on thermo library name
-Species with SMILES of O=CC(=O)[Ni] named OCHCOX based on thermo library name
-Generating kinetics for new reactions...
-
-Summary of Secondary Model Edge Enlargement
----------------------------------
-Added 0 new core species
-Created 2 new edge species
-    acetylX(93)
-    OCHCOX(94)
-Added 0 new core reactions
-Created 4 new edge reactions
-    X(1) + acetylX(93) <=> OCX(16) + CH3X(17)
-    CX(19) + CXHO(22) <=> OCX(16) + CHX(21)
-    X(1) + HOCXO(20) <=> OCX(16) + HOX(18)
-    X(1) + OCHCOX(94) <=> OCX(16) + CXHO(22)
-
-After model enlargement:
-    The model core has 27 species and 44 reactions
-    The model edge has 71 species and 174 reactions
-
-
-Saving current model core to Chemkin file...
-Chemkin file contains 17 reactions.
-Chemkin file contains 27 reactions.
-Saving annotated version of Chemkin files...
-Chemkin file contains 17 reactions.
-Chemkin file contains 27 reactions.
-Saving current model core and edge to Chemkin file...
-Chemkin file contains 157 reactions.
-Chemkin file contains 61 reactions.
-Saving annotated version of Chemkin files...
-Chemkin file contains 157 reactions.
-Chemkin file contains 61 reactions.
-Saving current model core to HTML file...
-Saving current model edge to HTML file...
-Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:05:04
-    Memory used: 569.53 MB
-
-Conducting simulation of reaction system 1...
-Reached max number of objects...preparing to terminate
-At time 1.0755e-07 s, species O.[Ni](31) at rate ratio 0.000101489439772 exceeded the minimum rate for moving to model core of 0.0001
-terminating simulation due to interrupt...
-
-
-Adding species O.[Ni](31) to model core
-
-Summary of Model Enlargement
----------------------------------
-Added 1 new core species
-    O.[Ni](31)
-Created 0 new edge species
-Moved 1 reactions from edge to core
-    X(1) + H2O(5) <=> O.[Ni](31)
-Added 0 new core reactions
-Created 0 new edge reactions
-
-After model enlargement:
-    The model core has 28 species and 45 reactions
-    The model edge has 70 species and 173 reactions
-
-
-
-Summary of Secondary Model Edge Enlargement
----------------------------------
-Added 0 new core species
-Created 0 new edge species
-Added 0 new core reactions
-Created 0 new edge reactions
-
-After model enlargement:
-    The model core has 28 species and 45 reactions
-    The model edge has 70 species and 173 reactions
-
-
-Saving current model core to Chemkin file...
-Chemkin file contains 17 reactions.
-Chemkin file contains 28 reactions.
-Saving annotated version of Chemkin files...
-Chemkin file contains 17 reactions.
-Chemkin file contains 28 reactions.
-Saving current model core and edge to Chemkin file...
-Chemkin file contains 157 reactions.
-Chemkin file contains 61 reactions.
-Saving annotated version of Chemkin files...
-Chemkin file contains 157 reactions.
-Chemkin file contains 61 reactions.
-Saving current model core to HTML file...
-Saving current model edge to HTML file...
-Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:05:09
-    Memory used: 572.87 MB
-
-Conducting simulation of reaction system 1...
-Reached max number of objects...preparing to terminate
-At time 1.5639e-07 s, species CX(19) at rate ratio 0.000101062908203 exceeded the minimum rate for moving to model core of 0.0001
-terminating simulation due to interrupt...
-
-
-Adding species CX(19) to model core
-
-Summary of Model Enlargement
----------------------------------
-Added 1 new core species
-    CX(19)
-Created 0 new edge species
-Moved 8 reactions from edge to core
-    X(1) + OCX(16) <=> OX(15) + CX(19)
-    HOX(18) + CX(19) <=> HX(14) + OCX(16)
-    OCX(16) + OCX(16) <=> X(1) + CO2(4) + CX(19)
-    HX(14) + CX(19) <=> X(1) + CHX(21)
-    HOX(18) + CX(19) <=> OX(15) + CHX(21)
-    CH3X(17) + CX(19) <=> C=[Ni](85) + CHX(21)
-    C=[Ni](85) + CX(19) <=> CHX(21) + CHX(21)
-    CX(19) + CXHO(22) <=> OCX(16) + CHX(21)
-Added 0 new core reactions
-Created 0 new edge reactions
-
-After model enlargement:
-    The model core has 29 species and 53 reactions
-    The model edge has 69 species and 165 reactions
-
-
-Generating kinetics for new reactions...
-
-Summary of Secondary Model Edge Enlargement
----------------------------------
-Added 0 new core species
-Created 3 new edge species
-    CC#[Ni](95)
-    OC#[Ni](96)
-    O=CC#[Ni](97)
+    C#[Ni](81)
+    CC[Ni](82)
 Added 0 new core reactions
 Created 3 new edge reactions
-    X(1) + CC#[Ni](95) <=> CH3X(17) + CX(19)
-    X(1) + OC#[Ni](96) <=> HOX(18) + CX(19)
-    X(1) + O=CC#[Ni](97) <=> CX(19) + CXHO(22)
+    C#[Ni](81) + [Ni](21) <=> X(1) + C=[Ni](80)
+    X(1) + CC[Ni](82) <=> C=[Ni](80) + C[Ni](20)
+    C=[Ni](80) + C=[Ni](80) <=> C#[Ni](81) + C[Ni](20)
 
 After model enlargement:
-    The model core has 29 species and 53 reactions
-    The model edge has 72 species and 168 reactions
+    The model core has 21 species and 23 reactions
+    The model edge has 65 species and 157 reactions
 
 
 Saving current model core to Chemkin file...
 Chemkin file contains 17 reactions.
-Chemkin file contains 36 reactions.
+Chemkin file contains 6 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 17 reactions.
-Chemkin file contains 36 reactions.
+Chemkin file contains 6 reactions.
 Saving current model core and edge to Chemkin file...
 Chemkin file contains 157 reactions.
-Chemkin file contains 64 reactions.
+Chemkin file contains 23 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 157 reactions.
-Chemkin file contains 64 reactions.
+Chemkin file contains 23 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:05:13
-    Memory used: 575.86 MB
+    Execution time (DD:HH:MM:SS): 00:00:02:18
+    Memory used: 572.20 MB
 
 Conducting simulation of reaction system 1...
 Reached max number of objects...preparing to terminate
-At time 1.0966e-06 s, species HOCXO(20) at rate ratio 0.000100658380677 exceeded the minimum rate for moving to model core of 0.0001
+At time 6.1869e-13 s, species C#[Ni](81) at rate ratio 0.000141166088656 exceeded the minimum rate for moving to model core of 0.0001
 terminating simulation due to interrupt...
 
 
-Adding species HOCXO(20) to model core
+Adding species C#[Ni](81) to model core
 
 Summary of Model Enlargement
 ---------------------------------
 Added 1 new core species
-    HOCXO(20)
+    C#[Ni](81)
 Created 0 new edge species
-Moved 3 reactions from edge to core
-    X(1) + HOCXO(20) <=> X(1) + CO2(4) + HX(14)
-    HOX(18) + CXHO(22) <=> HX(14) + HOCXO(20)
-    X(1) + HOCXO(20) <=> OCX(16) + HOX(18)
+Moved 2 reactions from edge to core
+    C#[Ni](81) + [Ni](21) <=> X(1) + C=[Ni](80)
+    C=[Ni](80) + C=[Ni](80) <=> C#[Ni](81) + C[Ni](20)
 Added 0 new core reactions
 Created 0 new edge reactions
 
 After model enlargement:
-    The model core has 30 species and 56 reactions
-    The model edge has 71 species and 165 reactions
+    The model core has 22 species and 25 reactions
+    The model edge has 64 species and 155 reactions
 
 
-Species with SMILES of O=C(O)C[Ni] named CH2COOHX based on thermo library name
+Generating kinetics for new reactions...
+
+Summary of Secondary Model Edge Enlargement
+---------------------------------
+Added 0 new core species
+Created 2 new edge species
+    C~[Ni](83)
+    CC=[Ni](84)
+Added 0 new core reactions
+Created 4 new edge reactions
+    [Ni](21) + C~[Ni](83) <=> X(1) + C#[Ni](81)
+    X(1) + CC=[Ni](84) <=> C#[Ni](81) + C[Ni](20)
+    C[Ni](20) + C~[Ni](83) <=> C#[Ni](81) + C=[Ni](80)
+    C=[Ni](80) + C~[Ni](83) <=> C#[Ni](81) + C#[Ni](81)
+
+After model enlargement:
+    The model core has 22 species and 25 reactions
+    The model edge has 66 species and 159 reactions
+
+
+Saving current model core to Chemkin file...
+Chemkin file contains 17 reactions.
+Chemkin file contains 8 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 17 reactions.
+Chemkin file contains 8 reactions.
+Saving current model core and edge to Chemkin file...
+Chemkin file contains 157 reactions.
+Chemkin file contains 27 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 157 reactions.
+Chemkin file contains 27 reactions.
+Saving current model core to HTML file...
+Saving current model edge to HTML file...
+Updating RMG execution statistics...
+    Execution time (DD:HH:MM:SS): 00:00:02:20
+    Memory used: 574.88 MB
+
+Conducting simulation of reaction system 1...
+Reached max number of objects...preparing to terminate
+At time 6.1043e-08 s, species [H][H].[Ni](26) at rate ratio 0.000101739536839 exceeded the minimum rate for moving to model core of 0.0001
+terminating simulation due to interrupt...
+
+
+Adding species [H][H].[Ni](26) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    [H][H].[Ni](26)
+Created 0 new edge species
+Moved 1 reactions from edge to core
+    X(1) + H2(6) <=> [H][H].[Ni](26)
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 23 species and 26 reactions
+    The model edge has 65 species and 158 reactions
+
+
+
+Summary of Secondary Model Edge Enlargement
+---------------------------------
+Added 0 new core species
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 23 species and 26 reactions
+    The model edge has 65 species and 158 reactions
+
+
+Saving current model core to Chemkin file...
+Chemkin file contains 17 reactions.
+Chemkin file contains 9 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 17 reactions.
+Chemkin file contains 9 reactions.
+Saving current model core and edge to Chemkin file...
+Chemkin file contains 157 reactions.
+Chemkin file contains 27 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 157 reactions.
+Chemkin file contains 27 reactions.
+Saving current model core to HTML file...
+Saving current model edge to HTML file...
+Updating RMG execution statistics...
+    Execution time (DD:HH:MM:SS): 00:00:02:22
+    Memory used: 577.71 MB
+
+Conducting simulation of reaction system 1...
+Reached max number of objects...preparing to terminate
+At time 1.3773e-07 s, species C~[Ni](83) at rate ratio 0.000100361270385 exceeded the minimum rate for moving to model core of 0.0001
+terminating simulation due to interrupt...
+
+
+Adding species C~[Ni](83) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    C~[Ni](83)
+Created 0 new edge species
+Moved 3 reactions from edge to core
+    [Ni](21) + C~[Ni](83) <=> X(1) + C#[Ni](81)
+    C[Ni](20) + C~[Ni](83) <=> C#[Ni](81) + C=[Ni](80)
+    C=[Ni](80) + C~[Ni](83) <=> C#[Ni](81) + C#[Ni](81)
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 24 species and 29 reactions
+    The model edge has 64 species and 155 reactions
+
+
+Generating kinetics for new reactions...
+
+Summary of Secondary Model Edge Enlargement
+---------------------------------
+Added 0 new core species
+Created 1 new edge species
+    CC#[Ni](85)
+Added 0 new core reactions
+Created 1 new edge reactions
+    X(1) + CC#[Ni](85) <=> C[Ni](20) + C~[Ni](83)
+
+After model enlargement:
+    The model core has 24 species and 29 reactions
+    The model edge has 65 species and 156 reactions
+
+
+Saving current model core to Chemkin file...
+Chemkin file contains 17 reactions.
+Chemkin file contains 12 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 17 reactions.
+Chemkin file contains 12 reactions.
+Saving current model core and edge to Chemkin file...
+Chemkin file contains 157 reactions.
+Chemkin file contains 28 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 157 reactions.
+Chemkin file contains 28 reactions.
+Saving current model core to HTML file...
+Saving current model edge to HTML file...
+Updating RMG execution statistics...
+    Execution time (DD:HH:MM:SS): 00:00:02:24
+    Memory used: 580.49 MB
+
+Conducting simulation of reaction system 1...
+Reached max number of objects...preparing to terminate
+At time 4.0559e-05 s, species HO2(33) at rate ratio 0.000100045205422 exceeded the minimum rate for moving to model core of 0.0001
+terminating simulation due to interrupt...
+
+
+Adding species HO2(33) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    HO2(33)
+Created 0 new edge species
+Moved 6 reactions from edge to core
+    CH4(2) + O2(3) <=> CH3(9) + HO2(33)
+    O2(3) + H2O(5) <=> OH(13) + HO2(33)
+    H2(6) + O2(3) <=> H(10) + HO2(33)
+    O2(3) + CH2O(8) <=> HCO(12) + HO2(33)
+    O2(3) + H(10) <=> HO2(33)
+    O2(3) + HCO(12) <=> CO(7) + HO2(33)
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 25 species and 35 reactions
+    The model edge has 64 species and 150 reactions
+
+
+Species with SMILES of [O]COO named HOOCH2O based on thermo library name
+Species with SMILES of [O]OCO named HOCH2OO based on thermo library name
+Species with SMILES of COO named CH3OOH based on thermo library name
+Species with SMILES of O=COO named OCHOOH based on thermo library name
+Generating kinetics for new reactions...
+For reaction O2(3) + HO2(33) <=> [O]OOO(87), Ea raised from -0.3 to 83.2 kJ/mol to match endothermicity of reaction.
+For reaction CO2(4) + HO2(33) <=> O=[C]OOO(88), Ea raised from 238.1 to 243.1 kJ/mol to match endothermicity of reaction.
+For reaction CH2O(8) + HO2(33) <=> [CH2]OOO(91), Ea raised from 195.6 to 200.6 kJ/mol to match endothermicity of reaction.
+For reaction CH3OH(11) + HO2(33) <=> OO(79) + CH3O(16), Ea raised from 66.2 to 73.7 kJ/mol to match endothermicity of reaction.
+
+Summary of Secondary Model Edge Enlargement
+---------------------------------
+Added 0 new core species
+Created 12 new edge species
+    OO[Ni](86)
+    [O]OOO(87)
+    O=[C]OOO(88)
+    [O]C(=O)OO(89)
+    [O]OC(=O)O(90)
+    [CH2]OOO(91)
+    HOOCH2O(92)
+    HOCH2OO(93)
+    CH3OOH(94)
+    OCHOOH(95)
+    OOO(96)
+    OOOO(97)
+Added 0 new core reactions
+Created 32 new edge reactions
+    OH(13) + O(T)(19) <=> HO2(33)
+    X(1) + HO2(33) <=> OO[Ni](86)
+    CH4(2) + HO2(33) <=> CH3(9) + OO(79)
+    O2(3) + HO2(33) <=> [O]OOO(87)
+    O2(3) + HOCO(34) <=> CO2(4) + HO2(33)
+    O2(3) + formyloxy(35) <=> CO2(4) + HO2(33)
+    CO2(4) + HO2(33) <=> O=[C]OOO(88)
+    CO2(4) + HO2(33) <=> [O]C(=O)OO(89)
+    [O]OC(=O)O(90) <=> CO2(4) + HO2(33)
+    OH(13) + OO(79) <=> H2O(5) + HO2(33)
+    H(10) + OO(79) <=> H2(6) + HO2(33)
+    CO(7) + HO2(33) <=> formylperoxy(45)
+    CO(7) + HO2(33) <=> O=[C]OO(61)
+    O2(3) + CH2OH(17) <=> CH2O(8) + HO2(33)
+    O2(3) + CH3O(16) <=> CH2O(8) + HO2(33)
+    CH2O(8) + HO2(33) <=> [CH2]OOO(91)
+    CH2O(8) + HO2(33) <=> HOOCH2O(92)
+    CH2O(8) + HO2(33) <=> HCO(12) + OO(79)
+    HOCH2OO(93) <=> CH2O(8) + HO2(33)
+    OO(79) + CH2(T)(15) <=> CH3(9) + HO2(33)
+    CH3(9) + HO2(33) <=> CH3OOH(94)
+    H(10) + HO2(33) <=> OO(79)
+    CH3OH(11) + HO2(33) <=> OO(79) + CH3O(16)
+    CH3OH(11) + HO2(33) <=> OO(79) + CH2OH(17)
+    O2(3) + HCOH(T)(39) <=> HCO(12) + HO2(33)
+    HCO(12) + HO2(33) <=> CO(7) + OO(79)
+    [C]=O(18) + OO(79) <=> HCO(12) + HO2(33)
+    HCO(12) + HO2(33) <=> OCHOOH(95)
+    O(T)(19) + OO(79) <=> OH(13) + HO2(33)
+    OH(13) + HO2(33) <=> OOO(96)
+    HO2(33) + HO2(33) <=> O2(3) + OO(79)
+    HO2(33) + HO2(33) <=> OOOO(97)
+
+After model enlargement:
+    The model core has 25 species and 35 reactions
+    The model edge has 76 species and 182 reactions
+
+
+Saving current model core to Chemkin file...
+Chemkin file contains 23 reactions.
+Chemkin file contains 12 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 23 reactions.
+Chemkin file contains 12 reactions.
+Saving current model core and edge to Chemkin file...
+Chemkin file contains 188 reactions.
+Chemkin file contains 29 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 188 reactions.
+Chemkin file contains 29 reactions.
+Saving current model core to HTML file...
+Saving current model edge to HTML file...
+Updating RMG execution statistics...
+    Execution time (DD:HH:MM:SS): 00:00:02:28
+    Memory used: 584.46 MB
+
+Conducting simulation of reaction system 1...
+Reached max number of objects...preparing to terminate
+At time 6.9825e-06 s, species OO[Ni](86) at rate ratio 0.000100653947338 exceeded the minimum rate for moving to model core of 0.0001
+terminating simulation due to interrupt...
+
+
+Adding species OO[Ni](86) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    OO[Ni](86)
+Created 0 new edge species
+Moved 1 reactions from edge to core
+    X(1) + HO2(33) <=> OO[Ni](86)
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 26 species and 36 reactions
+    The model edge has 75 species and 181 reactions
+
+
+Generating kinetics for new reactions...
+
+Summary of Secondary Model Edge Enlargement
+---------------------------------
+Added 0 new core species
+Created 6 new edge species
+    O=[Ni](98)
+    OOC[Ni](99)
+    OC=[Ni](100)
+    OOC=[Ni](101)
+    OC#[Ni](102)
+    OOC#[Ni](103)
+Added 0 new core reactions
+Created 10 new edge reactions
+    X(1) + OO[Ni](86) <=> O=[Ni](98) + O[Ni](24)
+    X(1) + X(1) + CH3OOH(94) <=> OO[Ni](86) + C[Ni](20)
+    X(1) + X(1) + OO(79) <=> OO[Ni](86) + [Ni](21)
+    C=[Ni](80) + OO[Ni](86) <=> O=[Ni](98) + OC[Ni](31)
+    X(1) + OOC[Ni](99) <=> C=[Ni](80) + OO[Ni](86)
+    C#[Ni](81) + OO[Ni](86) <=> OC=[Ni](100) + O=[Ni](98)
+    X(1) + OOC=[Ni](101) <=> C#[Ni](81) + OO[Ni](86)
+    OO[Ni](86) + C~[Ni](83) <=> OC#[Ni](102) + O=[Ni](98)
+    X(1) + OOC#[Ni](103) <=> OO[Ni](86) + C~[Ni](83)
+    X(1) + X(1) + OOOO(97) <=> OO[Ni](86) + OO[Ni](86)
+
+After model enlargement:
+    The model core has 26 species and 36 reactions
+    The model edge has 81 species and 191 reactions
+
+
+Saving current model core to Chemkin file...
+Chemkin file contains 23 reactions.
+Chemkin file contains 13 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 23 reactions.
+Chemkin file contains 13 reactions.
+Saving current model core and edge to Chemkin file...
+Chemkin file contains 188 reactions.
+Chemkin file contains 39 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 188 reactions.
+Chemkin file contains 39 reactions.
+Saving current model core to HTML file...
+Saving current model edge to HTML file...
+Updating RMG execution statistics...
+    Execution time (DD:HH:MM:SS): 00:00:02:31
+    Memory used: 587.65 MB
+
+Conducting simulation of reaction system 1...
+Exceeded max number of objects...removing excess objects
+Reached max number of objects...preparing to terminate
+At time 1.9777e-07 s, species O=[Ni](98) at rate ratio 0.000100052522349 exceeded the minimum rate for moving to model core of 0.0001
+terminating simulation due to interrupt...
+
+
+Adding species O=[Ni](98) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    O=[Ni](98)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 27 species and 36 reactions
+    The model edge has 80 species and 191 reactions
+
+
+Generating kinetics for new reactions...
+For reaction C#[Ni](81) + O[Ni](24) <=> O=[Ni](98) + C=[Ni](80), Ea raised from 42.4 to 43.7 kJ/mol to match endothermicity of reaction.
+
+Summary of Secondary Model Edge Enlargement
+---------------------------------
+Added 0 new core species
+Created 1 new edge species
+    OOO[Ni](104)
+Added 0 new core reactions
+Created 6 new edge reactions
+    C=[Ni](80) + O[Ni](24) <=> O=[Ni](98) + C[Ni](20)
+    X(1) + CO[Ni](30) <=> O=[Ni](98) + C[Ni](20)
+    X(1) + O[Ni](24) <=> O=[Ni](98) + [Ni](21)
+    C#[Ni](81) + O[Ni](24) <=> O=[Ni](98) + C=[Ni](80)
+    O[Ni](24) + C~[Ni](83) <=> O=[Ni](98) + C#[Ni](81)
+    X(1) + OOO[Ni](104) <=> O=[Ni](98) + OO[Ni](86)
+
+After model enlargement:
+    The model core has 27 species and 36 reactions
+    The model edge has 81 species and 197 reactions
+
+
+Saving current model core to Chemkin file...
+Chemkin file contains 23 reactions.
+Chemkin file contains 13 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 23 reactions.
+Chemkin file contains 13 reactions.
+Saving current model core and edge to Chemkin file...
+Chemkin file contains 188 reactions.
+Chemkin file contains 45 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 188 reactions.
+Chemkin file contains 45 reactions.
+Saving current model core to HTML file...
+Saving current model edge to HTML file...
+Updating RMG execution statistics...
+    Execution time (DD:HH:MM:SS): 00:00:02:34
+    Memory used: 590.18 MB
+
+Conducting simulation of reaction system 1...
+Reached max number of objects...preparing to terminate
+At time 1.9882e-07 s, species O[Ni](24) at rate ratio 0.000101717691028 exceeded the minimum rate for moving to model core of 0.0001
+terminating simulation due to interrupt...
+
+
+Adding species O[Ni](24) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    O[Ni](24)
+Created 0 new edge species
+Moved 8 reactions from edge to core
+    X(1) + X(1) + H2O(5) <=> O[Ni](24) + [Ni](21)
+    X(1) + X(1) + CH3OH(11) <=> O[Ni](24) + C[Ni](20)
+    X(1) + OH(13) <=> O[Ni](24)
+    X(1) + OO[Ni](86) <=> O=[Ni](98) + O[Ni](24)
+    C=[Ni](80) + O[Ni](24) <=> O=[Ni](98) + C[Ni](20)
+    X(1) + O[Ni](24) <=> O=[Ni](98) + [Ni](21)
+    C#[Ni](81) + O[Ni](24) <=> O=[Ni](98) + C=[Ni](80)
+    O[Ni](24) + C~[Ni](83) <=> O=[Ni](98) + C#[Ni](81)
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 28 species and 44 reactions
+    The model edge has 80 species and 189 reactions
+
+
+Generating kinetics for new reactions...
+
+Summary of Secondary Model Edge Enlargement
+---------------------------------
+Added 0 new core species
+Created 0 new edge species
+Added 0 new core reactions
+Created 5 new edge reactions
+    X(1) + OC[Ni](31) <=> C=[Ni](80) + O[Ni](24)
+    X(1) + OC=[Ni](100) <=> C#[Ni](81) + O[Ni](24)
+    X(1) + OC#[Ni](102) <=> O[Ni](24) + C~[Ni](83)
+    X(1) + X(1) + OOO(96) <=> OO[Ni](86) + O[Ni](24)
+    X(1) + X(1) + OO(79) <=> O[Ni](24) + O[Ni](24)
+
+After model enlargement:
+    The model core has 28 species and 44 reactions
+    The model edge has 80 species and 194 reactions
+
+
+Saving current model core to Chemkin file...
+Chemkin file contains 23 reactions.
+Chemkin file contains 21 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 23 reactions.
+Chemkin file contains 21 reactions.
+Saving current model core and edge to Chemkin file...
+Chemkin file contains 188 reactions.
+Chemkin file contains 50 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 188 reactions.
+Chemkin file contains 50 reactions.
+Saving current model core to HTML file...
+Saving current model edge to HTML file...
+Updating RMG execution statistics...
+    Execution time (DD:HH:MM:SS): 00:00:02:37
+    Memory used: 593.26 MB
+
+Conducting simulation of reaction system 1...
+Reached max number of objects...preparing to terminate
+At time 3.6004e-06 s, species O.[Ni](25) at rate ratio 0.000100660037054 exceeded the minimum rate for moving to model core of 0.0001
+terminating simulation due to interrupt...
+
+
+Adding species O.[Ni](25) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    O.[Ni](25)
+Created 0 new edge species
+Moved 1 reactions from edge to core
+    X(1) + H2O(5) <=> O.[Ni](25)
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 29 species and 45 reactions
+    The model edge has 79 species and 193 reactions
+
+
+
+Summary of Secondary Model Edge Enlargement
+---------------------------------
+Added 0 new core species
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 29 species and 45 reactions
+    The model edge has 79 species and 193 reactions
+
+
+Saving current model core to Chemkin file...
+Chemkin file contains 23 reactions.
+Chemkin file contains 22 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 23 reactions.
+Chemkin file contains 22 reactions.
+Saving current model core and edge to Chemkin file...
+Chemkin file contains 188 reactions.
+Chemkin file contains 50 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 188 reactions.
+Chemkin file contains 50 reactions.
+Saving current model core to HTML file...
+Saving current model edge to HTML file...
+Updating RMG execution statistics...
+    Execution time (DD:HH:MM:SS): 00:00:02:41
+    Memory used: 595.86 MB
+
+Conducting simulation of reaction system 1...
+Reached max number of objects...preparing to terminate
+At time 2.5709e-04 s, species CH3OO(44) at rate ratio 0.000100513510684 exceeded the minimum rate for moving to model core of 0.0001
+terminating simulation due to interrupt...
+
+
+Adding species CH3OO(44) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    CH3OO(44)
+Created 0 new edge species
+Moved 1 reactions from edge to core
+    CH3OO(44) <=> O2(3) + CH3(9)
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 30 species and 46 reactions
+    The model edge has 78 species and 192 reactions
+
+
+Species with SMILES of COO[Ni] named CH3OOX based on thermo library name
+Species with SMILES of [O]OCC=O named vinoxyperoxy based on thermo library name
+Species with SMILES of COOC[O] named CH3OOCH2O based on thermo library name
+Species with SMILES of COOC named CH3OOCH3 based on thermo library name
+Generating kinetics for new reactions...
+For reaction O2(3) + CH3OO(44) <=> COOO[O](108), Ea raised from -0.3 to 83.1 kJ/mol to match endothermicity of reaction.
+For reaction CO2(4) + CH3OO(44) <=> COOO[C]=O(109), Ea raised from 238.8 to 243.1 kJ/mol to match endothermicity of reaction.
+For reaction CH2O(8) + CH3OO(44) <=> [CH2]OOOC(115), Ea raised from 196.3 to 200.6 kJ/mol to match endothermicity of reaction.
+For reaction CH3OO(44) + HO2(33) <=> O2(3) + CH3OOH(94) Ea raised from -8.2 to -8.2 kJ/mol.
+
+Summary of Secondary Model Edge Enlargement
+---------------------------------
+Added 0 new core species
+Created 17 new edge species
+    [CH2]O[O](105)
+    [O]OC[Ni](106)
+    CH3OOX(107)
+    COOO[O](108)
+    COOO[C]=O(109)
+    COOC([O])=O(110)
+    [O]OCOC=O(111)
+    [O]OCC(=O)O(112)
+    vinoxyperoxy(113)
+    COO[C]=O(114)
+    [CH2]OOOC(115)
+    CH3OOCH2O(116)
+    CH3OOCH3(117)
+    COOC=O(118)
+    COOO(119)
+    COOOO(120)
+    COOOOC(121)
+Added 0 new core reactions
+Created 45 new edge reactions
+    CH3OO(44) <=> [CH2]OO(75)
+    H(10) + [CH2]O[O](105) <=> CH3OO(44)
+    HO2(33) + CH2(S)(14) <=> CH3OO(44)
+    O(T)(19) + CH3O(16) <=> CH3OO(44)
+    X(1) + X(1) + CH3OO(44) <=> [O]OC[Ni](106) + [Ni](21)
+    X(1) + CH3OO(44) <=> CH3OOX(107)
+    CH4(2) + CH3OO(44) <=> CH3(9) + CH3OOH(94)
+    O2(3) + CH3OO(44) <=> HO2(33) + [CH2]O[O](105)
+    O2(3) + CH3OO(44) <=> COOO[O](108)
+    HOCO(34) + [CH2]O[O](105) <=> CO2(4) + CH3OO(44)
+    formyloxy(35) + [CH2]O[O](105) <=> CO2(4) + CH3OO(44)
+    CO2(4) + CH3OO(44) <=> COOO[C]=O(109)
+    CO2(4) + CH3OO(44) <=> COOC([O])=O(110)
+    CO2(4) + CH3OO(44) <=> [O]OCOC=O(111)
+    CO2(4) + CH3OO(44) <=> [O]OCC(=O)O(112)
+    OH(13) + CH3OOH(94) <=> H2O(5) + CH3OO(44)
+    H(10) + CH3OOH(94) <=> H2(6) + CH3OO(44)
+    HCO(12) + [CH2]O[O](105) <=> CO(7) + CH3OO(44)
+    CO(7) + CH3OO(44) <=> vinoxyperoxy(113)
+    CO(7) + CH3OO(44) <=> COO[C]=O(114)
+    CH2OH(17) + [CH2]O[O](105) <=> CH2O(8) + CH3OO(44)
+    CH3O(16) + [CH2]O[O](105) <=> CH2O(8) + CH3OO(44)
+    CH2O(8) + CH3OO(44) <=> [CH2]OOOC(115)
+    CH2O(8) + CH3OO(44) <=> CH3OOCH2O(116)
+    HCO(12) + CH3OOH(94) <=> CH2O(8) + CH3OO(44)
+    CH3OOH(94) + CH2(T)(15) <=> CH3(9) + CH3OO(44)
+    CH3(9) + CH3OO(44) <=> CH4(2) + [CH2]O[O](105)
+    CH3(9) + CH3OO(44) <=> CH3OOCH3(117)
+    H(10) + CH3OO(44) <=> H2(6) + [CH2]O[O](105)
+    H(10) + CH3OO(44) <=> CH3OOH(94)
+    CH3OOH(94) + CH3O(16) <=> CH3OH(11) + CH3OO(44)
+    CH3OOH(94) + CH2OH(17) <=> CH3OH(11) + CH3OO(44)
+    HCOH(T)(39) + [CH2]O[O](105) <=> HCO(12) + CH3OO(44)
+    HCO(12) + CH3OO(44) <=> CO(7) + CH3OOH(94)
+    [C]=O(18) + CH3OOH(94) <=> HCO(12) + CH3OO(44)
+    CH2O(8) + [CH2]O[O](105) <=> HCO(12) + CH3OO(44)
+    HCO(12) + CH3OO(44) <=> COOC=O(118)
+    O(T)(19) + CH3OOH(94) <=> OH(13) + CH3OO(44)
+    OH(13) + CH3OO(44) <=> H2O(5) + [CH2]O[O](105)
+    OH(13) + CH3OO(44) <=> COOO(119)
+    CH3OO(44) + HO2(33) <=> O2(3) + CH3OOH(94)
+    CH3OO(44) + HO2(33) <=> OO(79) + [CH2]O[O](105)
+    CH3OO(44) + HO2(33) <=> COOOO(120)
+    CH3OOH(94) + [CH2]O[O](105) <=> CH3OO(44) + CH3OO(44)
+    CH3OO(44) + CH3OO(44) <=> COOOOC(121)
+
+After model enlargement:
+    The model core has 30 species and 46 reactions
+    The model edge has 95 species and 237 reactions
+
+
+Saving current model core to Chemkin file...
+Chemkin file contains 24 reactions.
+Chemkin file contains 22 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 24 reactions.
+Chemkin file contains 22 reactions.
+Saving current model core and edge to Chemkin file...
+Chemkin file contains 231 reactions.
+Chemkin file contains 52 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 231 reactions.
+Chemkin file contains 52 reactions.
+Saving current model core to HTML file...
+Saving current model edge to HTML file...
+Updating RMG execution statistics...
+    Execution time (DD:HH:MM:SS): 00:00:02:46
+    Memory used: 600.32 MB
+
+Conducting simulation of reaction system 1...
+Reached max number of objects...preparing to terminate
+At time 5.7019e-04 s, species CC(77) at rate ratio 0.000100522148538 exceeded the minimum rate for moving to model core of 0.0001
+terminating simulation due to interrupt...
+
+
+Adding species CC(77) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    CC(77)
+Created 0 new edge species
+Moved 2 reactions from edge to core
+    CH3(9) + CH3(9) <=> CC(77)
+    X(1) + X(1) + CC(77) <=> C[Ni](20) + C[Ni](20)
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 31 species and 48 reactions
+    The model edge has 94 species and 235 reactions
+
+
+Species with SMILES of C[CH2] named C2H5 based on thermo library name
+Species with SMILES of CCC=O named propanal based on thermo library name
+Species with SMILES of CC(C)=O named acetone based on thermo library name
+Generating kinetics for new reactions...
+For reaction O2(3) + CC(77) <=> HO2(33) + C2H5(122), Ea raised from 207.3 to 215.7 kJ/mol to match endothermicity of reaction.
+
+Summary of Secondary Model Edge Enlargement
+---------------------------------
+Added 0 new core species
+Created 7 new edge species
+    C2H5(122)
+    CC.[Ni](123)
+    CCOC=O(124)
+    COC(C)=O(125)
+    CCC(=O)O(126)
+    propanal(127)
+    acetone(128)
+Added 0 new core reactions
+Created 22 new edge reactions
+    H(10) + C2H5(122) <=> CC(77)
+    CH4(2) + CH2(S)(14) <=> CC(77)
+    X(1) + X(1) + CC(77) <=> CC[Ni](82) + [Ni](21)
+    X(1) + CC(77) <=> CC.[Ni](123)
+    O2(3) + CC(77) <=> HO2(33) + C2H5(122)
+    HOCO(34) + C2H5(122) <=> CO2(4) + CC(77)
+    formyloxy(35) + C2H5(122) <=> CO2(4) + CC(77)
+    CO2(4) + CC(77) <=> CCOC=O(124)
+    CO2(4) + CC(77) <=> COC(C)=O(125)
+    CO2(4) + CC(77) <=> CCC(=O)O(126)
+    HCO(12) + C2H5(122) <=> CO(7) + CC(77)
+    CO(7) + CC(77) <=> propanal(127)
+    CO(7) + CC(77) <=> acetone(128)
+    C2H5(122) + CH2OH(17) <=> CH2O(8) + CC(77)
+    C2H5(122) + CH3O(16) <=> CH2O(8) + CC(77)
+    CH3(9) + CC(77) <=> CH4(2) + C2H5(122)
+    H(10) + CC(77) <=> H2(6) + C2H5(122)
+    HCOH(T)(39) + C2H5(122) <=> HCO(12) + CC(77)
+    HCO(12) + CC(77) <=> CH2O(8) + C2H5(122)
+    OH(13) + CC(77) <=> H2O(5) + C2H5(122)
+    HO2(33) + CC(77) <=> C2H5(122) + OO(79)
+    CH3OO(44) + CC(77) <=> C2H5(122) + CH3OOH(94)
+
+After model enlargement:
+    The model core has 31 species and 48 reactions
+    The model edge has 101 species and 257 reactions
+
+
+Saving current model core to Chemkin file...
+Chemkin file contains 25 reactions.
+Chemkin file contains 23 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 25 reactions.
+Chemkin file contains 23 reactions.
+Saving current model core and edge to Chemkin file...
+Chemkin file contains 251 reactions.
+Chemkin file contains 54 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 251 reactions.
+Chemkin file contains 54 reactions.
+Saving current model core to HTML file...
+Saving current model edge to HTML file...
+Updating RMG execution statistics...
+    Execution time (DD:HH:MM:SS): 00:00:02:52
+    Memory used: 604.13 MB
+
+Conducting simulation of reaction system 1...
+Reached max number of objects...preparing to terminate
+At time 4.2226e-05 s, species CC.[Ni](123) at rate ratio 0.000100288537798 exceeded the minimum rate for moving to model core of 0.0001
+terminating simulation due to interrupt...
+
+
+Adding species CC.[Ni](123) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    CC.[Ni](123)
+Created 0 new edge species
+Moved 1 reactions from edge to core
+    X(1) + CC(77) <=> CC.[Ni](123)
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 32 species and 49 reactions
+    The model edge has 100 species and 256 reactions
+
+
+
+Summary of Secondary Model Edge Enlargement
+---------------------------------
+Added 0 new core species
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 32 species and 49 reactions
+    The model edge has 100 species and 256 reactions
+
+
+Saving current model core to Chemkin file...
+Chemkin file contains 25 reactions.
+Chemkin file contains 24 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 25 reactions.
+Chemkin file contains 24 reactions.
+Saving current model core and edge to Chemkin file...
+Chemkin file contains 251 reactions.
+Chemkin file contains 54 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 251 reactions.
+Chemkin file contains 54 reactions.
+Saving current model core to HTML file...
+Saving current model edge to HTML file...
+Updating RMG execution statistics...
+    Execution time (DD:HH:MM:SS): 00:00:02:57
+    Memory used: 607.25 MB
+
+Conducting simulation of reaction system 1...
+Reached max number of objects...preparing to terminate
+At time 4.8210e-04 s, species CC[Ni](82) at rate ratio 0.000101152184271 exceeded the minimum rate for moving to model core of 0.0001
+terminating simulation due to interrupt...
+
+
+Adding species CC[Ni](82) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    CC[Ni](82)
+Created 0 new edge species
+Moved 2 reactions from edge to core
+    X(1) + CC[Ni](82) <=> C=[Ni](80) + C[Ni](20)
+    X(1) + X(1) + CC(77) <=> CC[Ni](82) + [Ni](21)
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 33 species and 51 reactions
+    The model edge has 99 species and 254 reactions
+
+
+Species with SMILES of CCC named C3H8 based on thermo library name
+Species with SMILES of CCC[Ni] named npropylX based on thermo library name
+Species with SMILES of CCOO named CH3CH2OOH based on thermo library name
+Species with SMILES of CCO[Ni] named CH3CH2OX based on thermo library name
+Species with SMILES of CCO named ethanol based on thermo library name
+Species with SMILES of CCCC named nbutane based on thermo library name
 Generating kinetics for new reactions...
 
 Summary of Secondary Model Edge Enlargement
 ---------------------------------
 Added 0 new core species
 Created 8 new edge species
-    O=C(O)O[Ni](98)
-    CH2COOHX(99)
-    O=C(O)C=[Ni](100)
-    O=C(O)O(101)
-    O=CC(=O)O(102)
-    O=C(O)C(=O)[Ni](103)
-    O=C(O)C#[Ni](104)
-    O=C(O)C(=O)O(105)
+    C3H8(129)
+    npropylX(130)
+    CCC=[Ni](131)
+    CCC#[Ni](132)
+    CH3CH2OOH(133)
+    CH3CH2OX(134)
+    ethanol(135)
+    nbutane(136)
 Added 0 new core reactions
+Created 17 new edge reactions
+    X(1) + C2H5(122) <=> CC[Ni](82)
+    X(1) + CC[Ni](82) <=> [Ni](21) + CC=[Ni](84)
+    X(1) + X(1) + C3H8(129) <=> CC[Ni](82) + C[Ni](20)
+    C=[Ni](80) + CC[Ni](82) <=> C[Ni](20) + CC=[Ni](84)
+    X(1) + npropylX(130) <=> C=[Ni](80) + CC[Ni](82)
+    C=[Ni](80) + CC=[Ni](84) <=> C#[Ni](81) + CC[Ni](82)
+    C#[Ni](81) + CC[Ni](82) <=> C=[Ni](80) + CC=[Ni](84)
+    X(1) + CCC=[Ni](131) <=> C#[Ni](81) + CC[Ni](82)
+    CC[Ni](82) + C~[Ni](83) <=> CC#[Ni](85) + C=[Ni](80)
+    CC[Ni](82) + C~[Ni](83) <=> C#[Ni](81) + CC=[Ni](84)
+    X(1) + CCC#[Ni](132) <=> CC[Ni](82) + C~[Ni](83)
+    X(1) + X(1) + CH3CH2OOH(133) <=> CC[Ni](82) + OO[Ni](86)
+    CO[Ni](30) + C=[Ni](80) <=> O=[Ni](98) + CC[Ni](82)
+    O[Ni](24) + CC=[Ni](84) <=> O=[Ni](98) + CC[Ni](82)
+    X(1) + CH3CH2OX(134) <=> O=[Ni](98) + CC[Ni](82)
+    X(1) + X(1) + ethanol(135) <=> CC[Ni](82) + O[Ni](24)
+    X(1) + X(1) + nbutane(136) <=> CC[Ni](82) + CC[Ni](82)
+
+After model enlargement:
+    The model core has 33 species and 51 reactions
+    The model edge has 107 species and 271 reactions
+
+
+Saving current model core to Chemkin file...
+Chemkin file contains 25 reactions.
+Chemkin file contains 26 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 25 reactions.
+Chemkin file contains 26 reactions.
+Saving current model core and edge to Chemkin file...
+Chemkin file contains 251 reactions.
+Chemkin file contains 71 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 251 reactions.
+Chemkin file contains 71 reactions.
+Saving current model core to HTML file...
+Saving current model edge to HTML file...
+Updating RMG execution statistics...
+    Execution time (DD:HH:MM:SS): 00:00:03:02
+    Memory used: 611.79 MB
+
+Conducting simulation of reaction system 1...
+Reached max number of objects...preparing to terminate
+At time 5.3807e-05 s, species CC=[Ni](84) at rate ratio 0.000100168371762 exceeded the minimum rate for moving to model core of 0.0001
+terminating simulation due to interrupt...
+
+
+Adding species CC=[Ni](84) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    CC=[Ni](84)
+Created 0 new edge species
+Moved 7 reactions from edge to core
+    X(1) + CC=[Ni](84) <=> C#[Ni](81) + C[Ni](20)
+    X(1) + CC[Ni](82) <=> [Ni](21) + CC=[Ni](84)
+    C=[Ni](80) + CC[Ni](82) <=> C[Ni](20) + CC=[Ni](84)
+    C=[Ni](80) + CC=[Ni](84) <=> C#[Ni](81) + CC[Ni](82)
+    C#[Ni](81) + CC[Ni](82) <=> C=[Ni](80) + CC=[Ni](84)
+    CC[Ni](82) + C~[Ni](83) <=> C#[Ni](81) + CC=[Ni](84)
+    O[Ni](24) + CC=[Ni](84) <=> O=[Ni](98) + CC[Ni](82)
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 34 species and 58 reactions
+    The model edge has 106 species and 264 reactions
+
+
+Species with SMILES of CC(C)[Ni] named ipropylX based on thermo library name
+Species with SMILES of CC(O)[Ni] named CH3CHOHX based on thermo library name
+Species with SMILES of CCC(C)[Ni] named butyl_2X based on thermo library name
+Generating kinetics for new reactions...
+For reaction CC#[Ni](85) + C#[Ni](81) <=> CC=[Ni](84) + C~[Ni](83), Ea raised from 126.3 to 126.6 kJ/mol to match endothermicity of reaction.
+
+Summary of Secondary Model Edge Enlargement
+---------------------------------
+Added 0 new core species
+Created 4 new edge species
+    ipropylX(137)
+    CH3CHOHX(138)
+    CC([Ni])OO(139)
+    butyl_2X(140)
+Added 2 new core reactions
+    C=[Ni](80) + CC=[Ni](84) <=> C#[Ni](81) + CC[Ni](82)
+    C=[Ni](80) + CC=[Ni](84) <=> C#[Ni](81) + CC[Ni](82)
 Created 15 new edge reactions
-    X(1) + HOCO(39) <=> HOCXO(20)
-    OX(15) + HOCXO(20) <=> OO[Ni](88) + OCX(16)
-    X(1) + O=C(O)O[Ni](98) <=> OX(15) + HOCXO(20)
-    X(1) + X(1) + acetic_acid(42) <=> CH3X(17) + HOCXO(20)
-    X(1) + X(1) + formic_acid(55) <=> HX(14) + HOCXO(20)
-    C=[Ni](85) + HOCXO(20) <=> OCX(16) + OC[Ni](36)
-    X(1) + CH2COOHX(99) <=> C=[Ni](85) + HOCXO(20)
-    HOCXO(20) + CHX(21) <=> OC=[Ni](89) + OCX(16)
-    X(1) + O=C(O)C=[Ni](100) <=> HOCXO(20) + CHX(21)
-    X(1) + X(1) + O=C(O)O(101) <=> HOX(18) + HOCXO(20)
-    X(1) + X(1) + O=CC(=O)O(102) <=> HOCXO(20) + CXHO(22)
-    X(1) + O=C(O)C(=O)[Ni](103) <=> OCX(16) + HOCXO(20)
-    CX(19) + HOCXO(20) <=> OC#[Ni](96) + OCX(16)
-    X(1) + O=C(O)C#[Ni](104) <=> CX(19) + HOCXO(20)
-    X(1) + X(1) + O=C(O)C(=O)O(105) <=> HOCXO(20) + HOCXO(20)
+    X(1) + CC=[Ni](84) <=> CC#[Ni](85) + [Ni](21)
+    X(1) + ipropylX(137) <=> C[Ni](20) + CC=[Ni](84)
+    C=[Ni](80) + CC=[Ni](84) <=> CC#[Ni](85) + C[Ni](20)
+    C#[Ni](81) + CC=[Ni](84) <=> CC#[Ni](85) + C=[Ni](80)
+    CC#[Ni](85) + C#[Ni](81) <=> CC=[Ni](84) + C~[Ni](83)
+    CC=[Ni](84) + C~[Ni](83) <=> CC#[Ni](85) + C#[Ni](81)
+    OO[Ni](86) + CC=[Ni](84) <=> O=[Ni](98) + CH3CHOHX(138)
+    X(1) + CC([Ni])OO(139) <=> OO[Ni](86) + CC=[Ni](84)
+    O=[Ni](98) + CC=[Ni](84) <=> C#[Ni](81) + CO[Ni](30)
+    O=[Ni](98) + CC=[Ni](84) <=> CC#[Ni](85) + O[Ni](24)
+    X(1) + CH3CHOHX(138) <=> O[Ni](24) + CC=[Ni](84)
+    C=[Ni](80) + ipropylX(137) <=> CC[Ni](82) + CC=[Ni](84)
+    X(1) + butyl_2X(140) <=> CC[Ni](82) + CC=[Ni](84)
+    CC=[Ni](84) + CC=[Ni](84) <=> C#[Ni](81) + ipropylX(137)
+    CC=[Ni](84) + CC=[Ni](84) <=> CC#[Ni](85) + CC[Ni](82)
 
 After model enlargement:
-    The model core has 30 species and 56 reactions
-    The model edge has 79 species and 180 reactions
+    The model core has 34 species and 60 reactions
+    The model edge has 110 species and 279 reactions
 
 
 Saving current model core to Chemkin file...
-Chemkin file contains 17 reactions.
-Chemkin file contains 39 reactions.
+Chemkin file contains 25 reactions.
+Chemkin file contains 35 reactions.
 Saving annotated version of Chemkin files...
-Chemkin file contains 17 reactions.
-Chemkin file contains 39 reactions.
+Chemkin file contains 25 reactions.
+Chemkin file contains 35 reactions.
 Saving current model core and edge to Chemkin file...
-Chemkin file contains 157 reactions.
-Chemkin file contains 79 reactions.
+Chemkin file contains 251 reactions.
+Chemkin file contains 88 reactions.
 Saving annotated version of Chemkin files...
-Chemkin file contains 157 reactions.
-Chemkin file contains 79 reactions.
+Chemkin file contains 251 reactions.
+Chemkin file contains 88 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:05:21
-    Memory used: 579.88 MB
+    Execution time (DD:HH:MM:SS): 00:00:03:07
+    Memory used: 618.07 MB
 
 Conducting simulation of reaction system 1...
 Reached max number of objects...preparing to terminate
-At time 1.1298e-06 s, species COX(33) at rate ratio 0.000100137296503 exceeded the minimum rate for moving to model core of 0.0001
+At time 2.0791e-05 s, species CC#[Ni](85) at rate ratio 0.000101069693058 exceeded the minimum rate for moving to model core of 0.0001
 terminating simulation due to interrupt...
 
 
-Adding species COX(33) to model core
+Adding species CC#[Ni](85) to model core
 
 Summary of Model Enlargement
 ---------------------------------
 Added 1 new core species
-    COX(33)
+    CC#[Ni](85)
 Created 0 new edge species
-Moved 1 reactions from edge to core
-    X(1) + CO(7) <=> COX(33)
+Moved 9 reactions from edge to core
+    X(1) + CC#[Ni](85) <=> C[Ni](20) + C~[Ni](83)
+    CC[Ni](82) + C~[Ni](83) <=> CC#[Ni](85) + C=[Ni](80)
+    X(1) + CC=[Ni](84) <=> CC#[Ni](85) + [Ni](21)
+    C=[Ni](80) + CC=[Ni](84) <=> CC#[Ni](85) + C[Ni](20)
+    C#[Ni](81) + CC=[Ni](84) <=> CC#[Ni](85) + C=[Ni](80)
+    CC#[Ni](85) + C#[Ni](81) <=> CC=[Ni](84) + C~[Ni](83)
+    CC=[Ni](84) + C~[Ni](83) <=> CC#[Ni](85) + C#[Ni](81)
+    O=[Ni](98) + CC=[Ni](84) <=> CC#[Ni](85) + O[Ni](24)
+    CC=[Ni](84) + CC=[Ni](84) <=> CC#[Ni](85) + CC[Ni](82)
 Added 0 new core reactions
 Created 0 new edge reactions
 
 After model enlargement:
-    The model core has 31 species and 57 reactions
-    The model edge has 78 species and 179 reactions
+    The model core has 35 species and 69 reactions
+    The model edge has 109 species and 270 reactions
 
 
+Generating kinetics for new reactions...
+For reaction CC#[Ni](85) + C#[Ni](81) <=> CC=[Ni](84) + C~[Ni](83), Ea raised from 126.3 to 126.6 kJ/mol to match endothermicity of reaction.
 
 Summary of Secondary Model Edge Enlargement
 ---------------------------------
 Added 0 new core species
-Created 0 new edge species
-Added 0 new core reactions
-Created 0 new edge reactions
+Created 4 new edge species
+    CC(C)=[Ni](141)
+    CC(O)=[Ni](142)
+    CC(=[Ni])OO(143)
+    CCC(C)=[Ni](144)
+Added 2 new core reactions
+    CC=[Ni](84) + C~[Ni](83) <=> CC#[Ni](85) + C#[Ni](81)
+    CC#[Ni](85) + C#[Ni](81) <=> CC=[Ni](84) + C~[Ni](83)
+Created 10 new edge reactions
+    X(1) + CC(C)=[Ni](141) <=> CC#[Ni](85) + C[Ni](20)
+    O=[Ni](98) + CC(O)=[Ni](142) <=> CC#[Ni](85) + OO[Ni](86)
+    X(1) + CC(=[Ni])OO(143) <=> CC#[Ni](85) + OO[Ni](86)
+    CO[Ni](30) + C~[Ni](83) <=> O=[Ni](98) + CC#[Ni](85)
+    X(1) + CC(O)=[Ni](142) <=> CC#[Ni](85) + O[Ni](24)
+    C=[Ni](80) + CC(C)=[Ni](141) <=> CC#[Ni](85) + CC[Ni](82)
+    X(1) + CCC(C)=[Ni](144) <=> CC#[Ni](85) + CC[Ni](82)
+    C~[Ni](83) + ipropylX(137) <=> CC#[Ni](85) + CC=[Ni](84)
+    C#[Ni](81) + CC(C)=[Ni](141) <=> CC#[Ni](85) + CC=[Ni](84)
+    CC(C)=[Ni](141) + C~[Ni](83) <=> CC#[Ni](85) + CC#[Ni](85)
 
 After model enlargement:
-    The model core has 31 species and 57 reactions
-    The model edge has 78 species and 179 reactions
+    The model core has 35 species and 71 reactions
+    The model edge has 113 species and 280 reactions
 
 
 Saving current model core to Chemkin file...
-Chemkin file contains 17 reactions.
-Chemkin file contains 40 reactions.
+Chemkin file contains 25 reactions.
+Chemkin file contains 46 reactions.
 Saving annotated version of Chemkin files...
-Chemkin file contains 17 reactions.
-Chemkin file contains 40 reactions.
+Chemkin file contains 25 reactions.
+Chemkin file contains 46 reactions.
 Saving current model core and edge to Chemkin file...
-Chemkin file contains 157 reactions.
-Chemkin file contains 79 reactions.
+Chemkin file contains 251 reactions.
+Chemkin file contains 100 reactions.
 Saving annotated version of Chemkin files...
-Chemkin file contains 157 reactions.
-Chemkin file contains 79 reactions.
+Chemkin file contains 251 reactions.
+Chemkin file contains 100 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:05:28
-    Memory used: 584.20 MB
+    Execution time (DD:HH:MM:SS): 00:00:03:12
+    Memory used: 619.36 MB
 
 Conducting simulation of reaction system 1...
 Reached max number of objects...preparing to terminate
-At time 1.4237e-06 s, species CO2X(30) at rate ratio 0.000101218660358 exceeded the minimum rate for moving to model core of 0.0001
+At time 8.8242e-04 s, species CH3OOX(107) at rate ratio 0.000101315225176 exceeded the minimum rate for moving to model core of 0.0001
 terminating simulation due to interrupt...
 
 
-Adding species CO2X(30) to model core
+Adding species CH3OOX(107) to model core
 
 Summary of Model Enlargement
 ---------------------------------
 Added 1 new core species
-    CO2X(30)
+    CH3OOX(107)
 Created 0 new edge species
 Moved 1 reactions from edge to core
-    X(1) + CO2(4) <=> CO2X(30)
+    X(1) + CH3OO(44) <=> CH3OOX(107)
 Added 0 new core reactions
 Created 0 new edge reactions
 
 After model enlargement:
-    The model core has 32 species and 58 reactions
-    The model edge has 77 species and 178 reactions
+    The model core has 36 species and 72 reactions
+    The model edge has 112 species and 279 reactions
 
 
+Species with SMILES of COC[Ni] named CH3OCH2X based on thermo library name
+Species with SMILES of COC(C)[Ni] named CH3CHOCH3X based on thermo library name
+Generating kinetics for new reactions...
 
 Summary of Secondary Model Edge Enlargement
 ---------------------------------
 Added 0 new core species
-Created 0 new edge species
+Created 12 new edge species
+    CH3OCH2X(145)
+    COOC[Ni](146)
+    COC=[Ni](147)
+    COOC=[Ni](148)
+    COC#[Ni](149)
+    COOC#[Ni](150)
+    COOO[Ni](151)
+    CCOOC(152)
+    CH3CHOCH3X(153)
+    COOC(C)[Ni](154)
+    COC(C)=[Ni](155)
+    COOC(C)=[Ni](156)
 Added 0 new core reactions
-Created 0 new edge reactions
+Created 18 new edge reactions
+    X(1) + CH3OOX(107) <=> O=[Ni](98) + CO[Ni](30)
+    X(1) + X(1) + CH3OOCH3(117) <=> CH3OOX(107) + C[Ni](20)
+    X(1) + X(1) + CH3OOH(94) <=> CH3OOX(107) + [Ni](21)
+    C=[Ni](80) + CH3OOX(107) <=> O=[Ni](98) + CH3OCH2X(145)
+    X(1) + COOC[Ni](146) <=> C=[Ni](80) + CH3OOX(107)
+    O=[Ni](98) + COC=[Ni](147) <=> C#[Ni](81) + CH3OOX(107)
+    X(1) + COOC=[Ni](148) <=> C#[Ni](81) + CH3OOX(107)
+    O=[Ni](98) + COC#[Ni](149) <=> CH3OOX(107) + C~[Ni](83)
+    X(1) + COOC#[Ni](150) <=> CH3OOX(107) + C~[Ni](83)
+    X(1) + X(1) + COOOO(120) <=> OO[Ni](86) + CH3OOX(107)
+    X(1) + COOO[Ni](151) <=> O=[Ni](98) + CH3OOX(107)
+    X(1) + X(1) + COOO(119) <=> CH3OOX(107) + O[Ni](24)
+    X(1) + X(1) + CCOOC(152) <=> CC[Ni](82) + CH3OOX(107)
+    CH3OOX(107) + CC=[Ni](84) <=> O=[Ni](98) + CH3CHOCH3X(153)
+    X(1) + COOC(C)[Ni](154) <=> CH3OOX(107) + CC=[Ni](84)
+    O=[Ni](98) + COC(C)=[Ni](155) <=> CC#[Ni](85) + CH3OOX(107)
+    X(1) + COOC(C)=[Ni](156) <=> CC#[Ni](85) + CH3OOX(107)
+    X(1) + X(1) + COOOOC(121) <=> CH3OOX(107) + CH3OOX(107)
 
 After model enlargement:
-    The model core has 32 species and 58 reactions
-    The model edge has 77 species and 178 reactions
+    The model core has 36 species and 72 reactions
+    The model edge has 124 species and 297 reactions
 
 
 Saving current model core to Chemkin file...
-Chemkin file contains 17 reactions.
-Chemkin file contains 41 reactions.
+Chemkin file contains 25 reactions.
+Chemkin file contains 47 reactions.
 Saving annotated version of Chemkin files...
-Chemkin file contains 17 reactions.
-Chemkin file contains 41 reactions.
+Chemkin file contains 25 reactions.
+Chemkin file contains 47 reactions.
 Saving current model core and edge to Chemkin file...
-Chemkin file contains 157 reactions.
-Chemkin file contains 79 reactions.
+Chemkin file contains 251 reactions.
+Chemkin file contains 118 reactions.
 Saving annotated version of Chemkin files...
-Chemkin file contains 157 reactions.
-Chemkin file contains 79 reactions.
+Chemkin file contains 251 reactions.
+Chemkin file contains 118 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:05:49
-    Memory used: 587.41 MB
+    Execution time (DD:HH:MM:SS): 00:00:03:18
+    Memory used: 601.70 MB
 
 Conducting simulation of reaction system 1...
 Reached max number of objects...preparing to terminate
-At time 2.4946e-06 s, species CO.[Ni](37) at rate ratio 0.000100124773131 exceeded the minimum rate for moving to model core of 0.0001
+At time 5.6967e-08 s, species CO[Ni](30) at rate ratio 0.000101576749627 exceeded the minimum rate for moving to model core of 0.0001
 terminating simulation due to interrupt...
 
 
-Adding species CO.[Ni](37) to model core
+Adding species CO[Ni](30) to model core
 
 Summary of Model Enlargement
 ---------------------------------
 Added 1 new core species
-    CO.[Ni](37)
+    CO[Ni](30)
 Created 0 new edge species
-Moved 1 reactions from edge to core
-    X(1) + CH3OH(11) <=> CO.[Ni](37)
+Moved 6 reactions from edge to core
+    X(1) + X(1) + CH3OH(11) <=> CO[Ni](30) + [Ni](21)
+    X(1) + CO[Ni](30) <=> O=[Ni](98) + C[Ni](20)
+    CO[Ni](30) + C=[Ni](80) <=> O=[Ni](98) + CC[Ni](82)
+    O=[Ni](98) + CC=[Ni](84) <=> C#[Ni](81) + CO[Ni](30)
+    CO[Ni](30) + C~[Ni](83) <=> O=[Ni](98) + CC#[Ni](85)
+    X(1) + CH3OOX(107) <=> O=[Ni](98) + CO[Ni](30)
 Added 0 new core reactions
 Created 0 new edge reactions
 
 After model enlargement:
-    The model core has 33 species and 59 reactions
-    The model edge has 76 species and 177 reactions
+    The model core has 37 species and 78 reactions
+    The model edge has 123 species and 291 reactions
 
 
+Species with SMILES of COC named DME based on thermo library name
+Species with SMILES of CCOC named EME based on thermo library name
+Generating kinetics for new reactions...
 
 Summary of Secondary Model Edge Enlargement
 ---------------------------------
 Added 0 new core species
-Created 0 new edge species
+Created 3 new edge species
+    DME(157)
+    EME(158)
+    COOOC(159)
 Added 0 new core reactions
-Created 0 new edge reactions
+Created 14 new edge reactions
+    X(1) + CH3O(16) <=> CO[Ni](30)
+    X(1) + X(1) + DME(157) <=> CO[Ni](30) + C[Ni](20)
+    X(1) + CH3OCH2X(145) <=> CO[Ni](30) + C=[Ni](80)
+    X(1) + COC=[Ni](147) <=> C#[Ni](81) + CO[Ni](30)
+    X(1) + COC#[Ni](149) <=> CO[Ni](30) + C~[Ni](83)
+    X(1) + X(1) + COOO(119) <=> CO[Ni](30) + OO[Ni](86)
+    X(1) + X(1) + CH3OOH(94) <=> CO[Ni](30) + O[Ni](24)
+    X(1) + X(1) + EME(158) <=> CO[Ni](30) + CC[Ni](82)
+    CO[Ni](30) + CC=[Ni](84) <=> O=[Ni](98) + ipropylX(137)
+    X(1) + CH3CHOCH3X(153) <=> CO[Ni](30) + CC=[Ni](84)
+    O=[Ni](98) + CC(C)=[Ni](141) <=> CC#[Ni](85) + CO[Ni](30)
+    X(1) + COC(C)=[Ni](155) <=> CC#[Ni](85) + CO[Ni](30)
+    X(1) + X(1) + COOOC(159) <=> CO[Ni](30) + CH3OOX(107)
+    X(1) + X(1) + CH3OOCH3(117) <=> CO[Ni](30) + CO[Ni](30)
 
 After model enlargement:
-    The model core has 33 species and 59 reactions
-    The model edge has 76 species and 177 reactions
+    The model core has 37 species and 78 reactions
+    The model edge has 126 species and 305 reactions
 
 
 Saving current model core to Chemkin file...
-Chemkin file contains 17 reactions.
-Chemkin file contains 42 reactions.
+Chemkin file contains 25 reactions.
+Chemkin file contains 53 reactions.
 Saving annotated version of Chemkin files...
-Chemkin file contains 17 reactions.
-Chemkin file contains 42 reactions.
+Chemkin file contains 25 reactions.
+Chemkin file contains 53 reactions.
 Saving current model core and edge to Chemkin file...
-Chemkin file contains 157 reactions.
-Chemkin file contains 79 reactions.
+Chemkin file contains 251 reactions.
+Chemkin file contains 132 reactions.
 Saving annotated version of Chemkin files...
-Chemkin file contains 157 reactions.
-Chemkin file contains 79 reactions.
+Chemkin file contains 251 reactions.
+Chemkin file contains 132 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:05:54
-    Memory used: 591.40 MB
+    Execution time (DD:HH:MM:SS): 00:00:03:23
+    Memory used: 604.40 MB
 
 Conducting simulation of reaction system 1...
-At time 3.6384e-05 s, reached target termination conversion: 0.950000 of O2(3)
-    O2(3) conversion: 0.9502    
+Reached max number of objects...preparing to terminate
+At time 8.2371e-05 s, species CO.[Ni](32) at rate ratio 0.000100596881347 exceeded the minimum rate for moving to model core of 0.0001
+terminating simulation due to interrupt...
+
+
+Adding species CO.[Ni](32) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    CO.[Ni](32)
+Created 0 new edge species
+Moved 1 reactions from edge to core
+    X(1) + CH3OH(11) <=> CO.[Ni](32)
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 38 species and 79 reactions
+    The model edge has 125 species and 304 reactions
 
 
 
@@ -1813,27 +2278,1173 @@ Added 0 new core reactions
 Created 0 new edge reactions
 
 After model enlargement:
-    The model core has 33 species and 59 reactions
-    The model edge has 76 species and 177 reactions
+    The model core has 38 species and 79 reactions
+    The model edge has 125 species and 304 reactions
 
 
 Saving current model core to Chemkin file...
-Chemkin file contains 17 reactions.
-Chemkin file contains 42 reactions.
+Chemkin file contains 25 reactions.
+Chemkin file contains 54 reactions.
 Saving annotated version of Chemkin files...
-Chemkin file contains 17 reactions.
-Chemkin file contains 42 reactions.
+Chemkin file contains 25 reactions.
+Chemkin file contains 54 reactions.
 Saving current model core and edge to Chemkin file...
-Chemkin file contains 157 reactions.
-Chemkin file contains 79 reactions.
+Chemkin file contains 251 reactions.
+Chemkin file contains 132 reactions.
 Saving annotated version of Chemkin files...
-Chemkin file contains 157 reactions.
-Chemkin file contains 79 reactions.
+Chemkin file contains 251 reactions.
+Chemkin file contains 132 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:05:56
-    Memory used: 596.58 MB
+    Execution time (DD:HH:MM:SS): 00:00:03:30
+    Memory used: 610.42 MB
 
-Making seed mechanism...
-Performing final model checks...
+Conducting simulation of reaction system 1...
+Reached max number of objects...preparing to terminate
+At time 8.5080e-04 s, species OC[Ni](31) at rate ratio 0.000100950060768 exceeded the minimum rate for moving to model core of 0.0001
+terminating simulation due to interrupt...
+
+
+Adding species OC[Ni](31) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    OC[Ni](31)
+Created 0 new edge species
+Moved 3 reactions from edge to core
+    X(1) + X(1) + CH3OH(11) <=> OC[Ni](31) + [Ni](21)
+    C=[Ni](80) + OO[Ni](86) <=> O=[Ni](98) + OC[Ni](31)
+    X(1) + OC[Ni](31) <=> C=[Ni](80) + O[Ni](24)
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 39 species and 82 reactions
+    The model edge has 124 species and 301 reactions
+
+
+Species with SMILES of OCC[Ni] named CH2CH2OHX based on thermo library name
+Species with SMILES of OCOO named HOOCH2OH based on thermo library name
+Species with SMILES of OCO[Ni] named HOCH2OX based on thermo library name
+Species with SMILES of CCCO named npropanol based on thermo library name
+Species with SMILES of CC([Ni])CO named CH3CHCH2OHX based on thermo library name
+Generating kinetics for new reactions...
+For reaction OC[Ni](31) + C#[Ni](81) <=> OC=[Ni](100) + C=[Ni](80), Ea raised from 50.4 to 50.4 kJ/mol to match endothermicity of reaction.
+
+Summary of Secondary Model Edge Enlargement
+---------------------------------
+Added 0 new core species
+Created 12 new edge species
+    CH2CH2OHX(160)
+    OCC=[Ni](161)
+    OCC#[Ni](162)
+    HOOCH2OH(163)
+    HOCH2OX(164)
+    OCO(165)
+    npropanol(166)
+    CH3CHCH2OHX(167)
+    CC(=[Ni])CO(168)
+    COOCO(169)
+    COCO(170)
+    OCCO(171)
+Added 0 new core reactions
+Created 25 new edge reactions
+    X(1) + CH2OH(17) <=> OC[Ni](31)
+    X(1) + OC[Ni](31) <=> OC=[Ni](100) + [Ni](21)
+    X(1) + X(1) + ethanol(135) <=> OC[Ni](31) + C[Ni](20)
+    OC[Ni](31) + C=[Ni](80) <=> OC=[Ni](100) + C[Ni](20)
+    X(1) + CH2CH2OHX(160) <=> OC[Ni](31) + C=[Ni](80)
+    OC=[Ni](100) + C=[Ni](80) <=> OC[Ni](31) + C#[Ni](81)
+    OC[Ni](31) + C#[Ni](81) <=> OC=[Ni](100) + C=[Ni](80)
+    X(1) + OCC=[Ni](161) <=> OC[Ni](31) + C#[Ni](81)
+    OC[Ni](31) + C~[Ni](83) <=> OC#[Ni](102) + C=[Ni](80)
+    OC[Ni](31) + C~[Ni](83) <=> OC=[Ni](100) + C#[Ni](81)
+    X(1) + OCC#[Ni](162) <=> OC[Ni](31) + C~[Ni](83)
+    X(1) + X(1) + HOOCH2OH(163) <=> OC[Ni](31) + OO[Ni](86)
+    OC=[Ni](100) + O[Ni](24) <=> O=[Ni](98) + OC[Ni](31)
+    X(1) + HOCH2OX(164) <=> O=[Ni](98) + OC[Ni](31)
+    X(1) + X(1) + OCO(165) <=> OC[Ni](31) + O[Ni](24)
+    X(1) + X(1) + npropanol(166) <=> OC[Ni](31) + CC[Ni](82)
+    C=[Ni](80) + CH3CHOHX(138) <=> OC[Ni](31) + CC=[Ni](84)
+    OC[Ni](31) + CC=[Ni](84) <=> OC=[Ni](100) + CC[Ni](82)
+    X(1) + CH3CHCH2OHX(167) <=> OC[Ni](31) + CC=[Ni](84)
+    C=[Ni](80) + CC(O)=[Ni](142) <=> CC#[Ni](85) + OC[Ni](31)
+    OC=[Ni](100) + CC=[Ni](84) <=> CC#[Ni](85) + OC[Ni](31)
+    X(1) + CC(=[Ni])CO(168) <=> CC#[Ni](85) + OC[Ni](31)
+    X(1) + X(1) + COOCO(169) <=> OC[Ni](31) + CH3OOX(107)
+    X(1) + X(1) + COCO(170) <=> OC[Ni](31) + CO[Ni](30)
+    X(1) + X(1) + OCCO(171) <=> OC[Ni](31) + OC[Ni](31)
+
+After model enlargement:
+    The model core has 39 species and 82 reactions
+    The model edge has 136 species and 326 reactions
+
+
+Saving current model core to Chemkin file...
+Chemkin file contains 25 reactions.
+Chemkin file contains 57 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 25 reactions.
+Chemkin file contains 57 reactions.
+Saving current model core and edge to Chemkin file...
+Chemkin file contains 251 reactions.
+Chemkin file contains 157 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 251 reactions.
+Chemkin file contains 157 reactions.
+Saving current model core to HTML file...
+Saving current model edge to HTML file...
+Updating RMG execution statistics...
+    Execution time (DD:HH:MM:SS): 00:00:03:36
+    Memory used: 617.68 MB
+
+Conducting simulation of reaction system 1...
+Reached max number of objects...preparing to terminate
+At time 1.0915e-05 s, species OC=[Ni](100) at rate ratio 0.000100250058763 exceeded the minimum rate for moving to model core of 0.0001
+terminating simulation due to interrupt...
+
+
+Adding species OC=[Ni](100) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    OC=[Ni](100)
+Created 0 new edge species
+Moved 10 reactions from edge to core
+    C#[Ni](81) + OO[Ni](86) <=> OC=[Ni](100) + O=[Ni](98)
+    X(1) + OC=[Ni](100) <=> C#[Ni](81) + O[Ni](24)
+    X(1) + OC[Ni](31) <=> OC=[Ni](100) + [Ni](21)
+    OC[Ni](31) + C=[Ni](80) <=> OC=[Ni](100) + C[Ni](20)
+    OC=[Ni](100) + C=[Ni](80) <=> OC[Ni](31) + C#[Ni](81)
+    OC[Ni](31) + C#[Ni](81) <=> OC=[Ni](100) + C=[Ni](80)
+    OC[Ni](31) + C~[Ni](83) <=> OC=[Ni](100) + C#[Ni](81)
+    OC=[Ni](100) + O[Ni](24) <=> O=[Ni](98) + OC[Ni](31)
+    OC[Ni](31) + CC=[Ni](84) <=> OC=[Ni](100) + CC[Ni](82)
+    OC=[Ni](100) + CC=[Ni](84) <=> CC#[Ni](85) + OC[Ni](31)
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 40 species and 92 reactions
+    The model edge has 135 species and 316 reactions
+
+
+Species with SMILES of CCC(O)[Ni] named CH3CH2CHOHX based on thermo library name
+Species with SMILES of COC(O)[Ni] named CH3OCHOHX based on thermo library name
+Species with SMILES of OCC(O)[Ni] named HOCH2CHOHX based on thermo library name
+Generating kinetics for new reactions...
+For reaction OC#[Ni](102) + C#[Ni](81) <=> OC=[Ni](100) + C~[Ni](83), Ea raised from 115.7 to 118.2 kJ/mol to match endothermicity of reaction.
+
+Summary of Secondary Model Edge Enlargement
+---------------------------------
+Added 0 new core species
+Created 6 new edge species
+    OC(O)[Ni](172)
+    OOC(O)[Ni](173)
+    CH3CH2CHOHX(174)
+    CH3OCHOHX(175)
+    COOC(O)[Ni](176)
+    HOCH2CHOHX(177)
+Added 2 new core reactions
+    OC=[Ni](100) + C=[Ni](80) <=> OC[Ni](31) + C#[Ni](81)
+    OC=[Ni](100) + C=[Ni](80) <=> OC[Ni](31) + C#[Ni](81)
+Created 26 new edge reactions
+    X(1) + OC=[Ni](100) <=> OC#[Ni](102) + [Ni](21)
+    X(1) + CH3CHOHX(138) <=> OC=[Ni](100) + C[Ni](20)
+    OC=[Ni](100) + C=[Ni](80) <=> OC#[Ni](102) + C[Ni](20)
+    OC=[Ni](100) + C#[Ni](81) <=> OC#[Ni](102) + C=[Ni](80)
+    OC#[Ni](102) + C#[Ni](81) <=> OC=[Ni](100) + C~[Ni](83)
+    OC=[Ni](100) + C~[Ni](83) <=> OC#[Ni](102) + C#[Ni](81)
+    OC=[Ni](100) + OO[Ni](86) <=> O=[Ni](98) + OC(O)[Ni](172)
+    X(1) + OOC(O)[Ni](173) <=> OC=[Ni](100) + OO[Ni](86)
+    OC=[Ni](100) + O=[Ni](98) <=> OC#[Ni](102) + O[Ni](24)
+    X(1) + OC(O)[Ni](172) <=> OC=[Ni](100) + O[Ni](24)
+    C=[Ni](80) + CH3CHOHX(138) <=> OC=[Ni](100) + CC[Ni](82)
+    X(1) + CH3CH2CHOHX(174) <=> OC=[Ni](100) + CC[Ni](82)
+    C#[Ni](81) + CH3CHOHX(138) <=> OC=[Ni](100) + CC=[Ni](84)
+    OC=[Ni](100) + CC=[Ni](84) <=> OC#[Ni](102) + CC[Ni](82)
+    C#[Ni](81) + CH3CHOHX(138) <=> OC=[Ni](100) + CC=[Ni](84)
+    C#[Ni](81) + CC(O)=[Ni](142) <=> OC=[Ni](100) + CC#[Ni](85)
+    OC#[Ni](102) + CC=[Ni](84) <=> OC=[Ni](100) + CC#[Ni](85)
+    C~[Ni](83) + CH3CHOHX(138) <=> OC=[Ni](100) + CC#[Ni](85)
+    OC=[Ni](100) + CH3OOX(107) <=> O=[Ni](98) + CH3OCHOHX(175)
+    X(1) + COOC(O)[Ni](176) <=> OC=[Ni](100) + CH3OOX(107)
+    O=[Ni](98) + CH3CHOHX(138) <=> OC=[Ni](100) + CO[Ni](30)
+    X(1) + CH3OCHOHX(175) <=> OC=[Ni](100) + CO[Ni](30)
+    C=[Ni](80) + OC(O)[Ni](172) <=> OC=[Ni](100) + OC[Ni](31)
+    X(1) + HOCH2CHOHX(177) <=> OC=[Ni](100) + OC[Ni](31)
+    C#[Ni](81) + OC(O)[Ni](172) <=> OC=[Ni](100) + OC=[Ni](100)
+    OC=[Ni](100) + OC=[Ni](100) <=> OC#[Ni](102) + OC[Ni](31)
+
+After model enlargement:
+    The model core has 40 species and 94 reactions
+    The model edge has 141 species and 342 reactions
+
+
+Saving current model core to Chemkin file...
+Chemkin file contains 25 reactions.
+Chemkin file contains 69 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 25 reactions.
+Chemkin file contains 69 reactions.
+Saving current model core and edge to Chemkin file...
+Chemkin file contains 251 reactions.
+Chemkin file contains 185 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 251 reactions.
+Chemkin file contains 185 reactions.
+Saving current model core to HTML file...
+Saving current model edge to HTML file...
+Updating RMG execution statistics...
+    Execution time (DD:HH:MM:SS): 00:00:03:43
+    Memory used: 623.03 MB
+
+Conducting simulation of reaction system 1...
+Reached max number of objects...preparing to terminate
+At time 9.3642e-06 s, species OC#[Ni](102) at rate ratio 0.000100858696021 exceeded the minimum rate for moving to model core of 0.0001
+terminating simulation due to interrupt...
+
+
+Adding species OC#[Ni](102) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    OC#[Ni](102)
+Created 0 new edge species
+Moved 12 reactions from edge to core
+    OO[Ni](86) + C~[Ni](83) <=> OC#[Ni](102) + O=[Ni](98)
+    X(1) + OC#[Ni](102) <=> O[Ni](24) + C~[Ni](83)
+    OC[Ni](31) + C~[Ni](83) <=> OC#[Ni](102) + C=[Ni](80)
+    X(1) + OC=[Ni](100) <=> OC#[Ni](102) + [Ni](21)
+    OC=[Ni](100) + C=[Ni](80) <=> OC#[Ni](102) + C[Ni](20)
+    OC=[Ni](100) + C#[Ni](81) <=> OC#[Ni](102) + C=[Ni](80)
+    OC#[Ni](102) + C#[Ni](81) <=> OC=[Ni](100) + C~[Ni](83)
+    OC=[Ni](100) + C~[Ni](83) <=> OC#[Ni](102) + C#[Ni](81)
+    OC=[Ni](100) + O=[Ni](98) <=> OC#[Ni](102) + O[Ni](24)
+    OC=[Ni](100) + CC=[Ni](84) <=> OC#[Ni](102) + CC[Ni](82)
+    OC#[Ni](102) + CC=[Ni](84) <=> OC=[Ni](100) + CC#[Ni](85)
+    OC=[Ni](100) + OC=[Ni](100) <=> OC#[Ni](102) + OC[Ni](31)
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 41 species and 106 reactions
+    The model edge has 140 species and 330 reactions
+
+
+Generating kinetics for new reactions...
+For reaction OC#[Ni](102) + C#[Ni](81) <=> OC=[Ni](100) + C~[Ni](83), Ea raised from 115.7 to 118.2 kJ/mol to match endothermicity of reaction.
+
+Summary of Secondary Model Edge Enlargement
+---------------------------------
+Added 0 new core species
+Created 6 new edge species
+    OC(O)=[Ni](178)
+    OOC(O)=[Ni](179)
+    CCC(O)=[Ni](180)
+    COC(O)=[Ni](181)
+    COOC(O)=[Ni](182)
+    OCC(O)=[Ni](183)
+Added 2 new core reactions
+    OC=[Ni](100) + C~[Ni](83) <=> OC#[Ni](102) + C#[Ni](81)
+    OC#[Ni](102) + C#[Ni](81) <=> OC=[Ni](100) + C~[Ni](83)
+Created 19 new edge reactions
+    X(1) + CC(O)=[Ni](142) <=> OC#[Ni](102) + C[Ni](20)
+    O=[Ni](98) + OC(O)=[Ni](178) <=> OC#[Ni](102) + OO[Ni](86)
+    X(1) + OOC(O)=[Ni](179) <=> OC#[Ni](102) + OO[Ni](86)
+    X(1) + OC(O)=[Ni](178) <=> OC#[Ni](102) + O[Ni](24)
+    C=[Ni](80) + CC(O)=[Ni](142) <=> OC#[Ni](102) + CC[Ni](82)
+    X(1) + CCC(O)=[Ni](180) <=> OC#[Ni](102) + CC[Ni](82)
+    C~[Ni](83) + CH3CHOHX(138) <=> OC#[Ni](102) + CC=[Ni](84)
+    C#[Ni](81) + CC(O)=[Ni](142) <=> OC#[Ni](102) + CC=[Ni](84)
+    CC(O)=[Ni](142) + C~[Ni](83) <=> OC#[Ni](102) + CC#[Ni](85)
+    CC(O)=[Ni](142) + C~[Ni](83) <=> OC#[Ni](102) + CC#[Ni](85)
+    O=[Ni](98) + COC(O)=[Ni](181) <=> OC#[Ni](102) + CH3OOX(107)
+    X(1) + COOC(O)=[Ni](182) <=> OC#[Ni](102) + CH3OOX(107)
+    O=[Ni](98) + CC(O)=[Ni](142) <=> OC#[Ni](102) + CO[Ni](30)
+    X(1) + COC(O)=[Ni](181) <=> OC#[Ni](102) + CO[Ni](30)
+    C=[Ni](80) + OC(O)=[Ni](178) <=> OC#[Ni](102) + OC[Ni](31)
+    X(1) + OCC(O)=[Ni](183) <=> OC#[Ni](102) + OC[Ni](31)
+    C~[Ni](83) + OC(O)[Ni](172) <=> OC=[Ni](100) + OC#[Ni](102)
+    C#[Ni](81) + OC(O)=[Ni](178) <=> OC=[Ni](100) + OC#[Ni](102)
+    C~[Ni](83) + OC(O)=[Ni](178) <=> OC#[Ni](102) + OC#[Ni](102)
+
+After model enlargement:
+    The model core has 41 species and 108 reactions
+    The model edge has 146 species and 349 reactions
+
+
+Saving current model core to Chemkin file...
+Chemkin file contains 25 reactions.
+Chemkin file contains 83 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 25 reactions.
+Chemkin file contains 83 reactions.
+Saving current model core and edge to Chemkin file...
+Chemkin file contains 251 reactions.
+Chemkin file contains 206 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 251 reactions.
+Chemkin file contains 206 reactions.
+Saving current model core to HTML file...
+Saving current model edge to HTML file...
+Updating RMG execution statistics...
+    Execution time (DD:HH:MM:SS): 00:00:03:51
+    Memory used: 626.38 MB
+
+Conducting simulation of reaction system 1...
+Reached max number of objects...preparing to terminate
+At time 1.8993e-03 s, species [O]OOO(87) at rate ratio 0.000100259822698 exceeded the minimum rate for moving to model core of 0.0001
+terminating simulation due to interrupt...
+
+
+Adding species [O]OOO(87) to model core
+Species [O]OOO(87) was Forbidden and not added to Core...Removing from Edge.
+Removing Forbidden Reaction from Edge: O2(3) + HO2(33) <=> [O]OOO(87)
+
+Summary of Model Enlargement
+---------------------------------
+Added 0 new core species
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 41 species and 108 reactions
+    The model edge has 145 species and 348 reactions
+
+
+
+Summary of Secondary Model Edge Enlargement
+---------------------------------
+Added 0 new core species
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 41 species and 108 reactions
+    The model edge has 145 species and 348 reactions
+
+
+Saving current model core to Chemkin file...
+Chemkin file contains 25 reactions.
+Chemkin file contains 83 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 25 reactions.
+Chemkin file contains 83 reactions.
+Saving current model core and edge to Chemkin file...
+Chemkin file contains 250 reactions.
+Chemkin file contains 206 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 250 reactions.
+Chemkin file contains 206 reactions.
+Saving current model core to HTML file...
+Saving current model edge to HTML file...
+Updating RMG execution statistics...
+    Execution time (DD:HH:MM:SS): 00:00:03:53
+    Memory used: 631.10 MB
+
+Conducting simulation of reaction system 1...
+Reached max number of objects...preparing to terminate
+At time 2.0735e-03 s, species [CH2]OO(75) at rate ratio 0.000101535760345 exceeded the minimum rate for moving to model core of 0.0001
+terminating simulation due to interrupt...
+
+
+Adding species [CH2]OO(75) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    [CH2]OO(75)
+Created 0 new edge species
+Moved 2 reactions from edge to core
+    CH2O(8) + OH(13) <=> [CH2]OO(75)
+    CH3OO(44) <=> [CH2]OO(75)
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 42 species and 110 reactions
+    The model edge has 144 species and 346 reactions
+
+
+Species with SMILES of O=[C]COO named hoo_acetyl based on thermo library name
+Generating kinetics for new reactions...
+For reaction CO2(4) + [CH2]OO(75) <=> O=[C]OCOO(188), Ea raised from 50.4 to 53.8 kJ/mol to match endothermicity of reaction.
+For reaction CO2(4) + [CH2]OO(75) <=> [O]C(=O)COO(189), Ea raised from 54.2 to 56.2 kJ/mol to match endothermicity of reaction.
+For reaction OH(13) + [CH2]OO(75) <=> H2O(5) + [CH2]O[O](105) Ea raised from -1.8 to -1.8 kJ/mol.
+
+Summary of Secondary Model Edge Enlargement
+---------------------------------
+Added 0 new core species
+Created 14 new edge species
+    [CH2][O](184)
+    [CH]OO(185)
+    [CH2]OO[Ni](186)
+    [O]OCOO(187)
+    O=[C]OCOO(188)
+    [O]C(=O)COO(189)
+    [CH2]OOC=O(190)
+    hoo_acetyl(191)
+    [CH2]OCOO(192)
+    [O]CCOO(193)
+    O=CCOO(194)
+    OOCOO(195)
+    COOCOO(196)
+    OOCCOO(197)
+Added 0 new core reactions
+Created 62 new edge reactions
+    OH(13) + [CH2][O](184) <=> [CH2]OO(75)
+    H(10) + [CH2]O[O](105) <=> [CH2]OO(75)
+    [CH2]OO(75) <=> HOCH2O(76)
+    HO2(33) + CH2(T)(15) <=> [CH2]OO(75)
+    H(10) + [CH]OO(185) <=> [CH2]OO(75)
+    X(1) + X(1) + [CH2]OO(75) <=> [Ni](21) + [CH2]OO[Ni](186)
+    X(1) + [CH2]OO(75) <=> OOC[Ni](99)
+    CH3(9) + CH3OOH(94) <=> CH4(2) + [CH2]OO(75)
+    [CH]OO(185) + HO2(33) <=> O2(3) + [CH2]OO(75)
+    HO2(33) + [CH2]O[O](105) <=> O2(3) + [CH2]OO(75)
+    O2(3) + [CH2]OO(75) <=> [O]OCOO(187)
+    [CH]OO(185) + HOCO(34) <=> CO2(4) + [CH2]OO(75)
+    HOCO(34) + [CH2]O[O](105) <=> CO2(4) + [CH2]OO(75)
+    [CH]OO(185) + formyloxy(35) <=> CO2(4) + [CH2]OO(75)
+    formyloxy(35) + [CH2]O[O](105) <=> CO2(4) + [CH2]OO(75)
+    CO2(4) + [CH2]OO(75) <=> O=[C]OCOO(188)
+    CO2(4) + [CH2]OO(75) <=> [O]C(=O)COO(189)
+    OH(13) + CH3OOH(94) <=> H2O(5) + [CH2]OO(75)
+    H(10) + CH3OOH(94) <=> H2(6) + [CH2]OO(75)
+    HCO(12) + [CH]OO(185) <=> CO(7) + [CH2]OO(75)
+    HCO(12) + [CH2]O[O](105) <=> CO(7) + [CH2]OO(75)
+    CO(7) + [CH2]OO(75) <=> [CH2]OOC=O(190)
+    CO(7) + [CH2]OO(75) <=> hoo_acetyl(191)
+    [CH]OO(185) + CH2OH(17) <=> CH2O(8) + [CH2]OO(75)
+    CH2OH(17) + [CH2]O[O](105) <=> CH2O(8) + [CH2]OO(75)
+    [CH]OO(185) + CH3O(16) <=> CH2O(8) + [CH2]OO(75)
+    CH3O(16) + [CH2]O[O](105) <=> CH2O(8) + [CH2]OO(75)
+    CH2O(8) + [CH2]OO(75) <=> [CH2]OCOO(192)
+    CH2O(8) + [CH2]OO(75) <=> [O]CCOO(193)
+    CH2O(8) + [CH2]OO(75) <=> HCO(12) + CH3OOH(94)
+    CH3OOH(94) + CH2(T)(15) <=> CH3(9) + [CH2]OO(75)
+    CH4(2) + [CH]OO(185) <=> CH3(9) + [CH2]OO(75)
+    CH4(2) + [CH2]O[O](105) <=> CH3(9) + [CH2]OO(75)
+    CH3(9) + [CH2]OO(75) <=> CH3CH2OOH(133)
+    H2(6) + [CH]OO(185) <=> H(10) + [CH2]OO(75)
+    H(10) + [CH2]OO(75) <=> H2(6) + [CH2]O[O](105)
+    H(10) + [CH2]OO(75) <=> CH3OOH(94)
+    CH3OOH(94) + CH3O(16) <=> CH3OH(11) + [CH2]OO(75)
+    CH3OH(11) + [CH2]OO(75) <=> CH3OOH(94) + CH2OH(17)
+    [CH]OO(185) + HCOH(T)(39) <=> HCO(12) + [CH2]OO(75)
+    HCOH(T)(39) + [CH2]O[O](105) <=> HCO(12) + [CH2]OO(75)
+    HCO(12) + [CH2]OO(75) <=> CO(7) + CH3OOH(94)
+    [C]=O(18) + CH3OOH(94) <=> HCO(12) + [CH2]OO(75)
+    CH2O(8) + [CH]OO(185) <=> HCO(12) + [CH2]OO(75)
+    CH2O(8) + [CH2]O[O](105) <=> HCO(12) + [CH2]OO(75)
+    HCO(12) + [CH2]OO(75) <=> O=CCOO(194)
+    O(T)(19) + CH3OOH(94) <=> OH(13) + [CH2]OO(75)
+    OH(13) + [CH2]OO(75) <=> H2O(5) + [CH]OO(185)
+    OH(13) + [CH2]OO(75) <=> H2O(5) + [CH2]O[O](105)
+    OH(13) + [CH2]OO(75) <=> HOOCH2OH(163)
+    O2(3) + CH3OOH(94) <=> HO2(33) + [CH2]OO(75)
+    [CH]OO(185) + OO(79) <=> HO2(33) + [CH2]OO(75)
+    HO2(33) + [CH2]OO(75) <=> OO(79) + [CH2]O[O](105)
+    HO2(33) + [CH2]OO(75) <=> OOCOO(195)
+    CH3OOH(94) + [CH2]O[O](105) <=> CH3OO(44) + [CH2]OO(75)
+    [CH]OO(185) + CH3OOH(94) <=> CH3OO(44) + [CH2]OO(75)
+    CH3OOH(94) + [CH2]O[O](105) <=> CH3OO(44) + [CH2]OO(75)
+    CH3OO(44) + [CH2]OO(75) <=> COOCOO(196)
+    C2H5(122) + CH3OOH(94) <=> CC(77) + [CH2]OO(75)
+    [CH]OO(185) + CH3OOH(94) <=> [CH2]OO(75) + [CH2]OO(75)
+    CH3OOH(94) + [CH2]O[O](105) <=> [CH2]OO(75) + [CH2]OO(75)
+    [CH2]OO(75) + [CH2]OO(75) <=> OOCCOO(197)
+
+After model enlargement:
+    The model core has 42 species and 110 reactions
+    The model edge has 158 species and 408 reactions
+
+
+Saving current model core to Chemkin file...
+Chemkin file contains 27 reactions.
+Chemkin file contains 83 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 27 reactions.
+Chemkin file contains 83 reactions.
+Saving current model core and edge to Chemkin file...
+Chemkin file contains 310 reactions.
+Chemkin file contains 208 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 310 reactions.
+Chemkin file contains 208 reactions.
+Saving current model core to HTML file...
+Saving current model edge to HTML file...
+Updating RMG execution statistics...
+    Execution time (DD:HH:MM:SS): 00:00:04:04
+    Memory used: 635.50 MB
+
+Conducting simulation of reaction system 1...
+Reached max number of objects...preparing to terminate
+At time 6.0789e-04 s, species C=O.[Ni](29) at rate ratio 0.000101424071371 exceeded the minimum rate for moving to model core of 0.0001
+terminating simulation due to interrupt...
+
+
+Adding species C=O.[Ni](29) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    C=O.[Ni](29)
+Created 0 new edge species
+Moved 1 reactions from edge to core
+    X(1) + CH2O(8) <=> C=O.[Ni](29)
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 43 species and 111 reactions
+    The model edge has 157 species and 407 reactions
+
+
+
+Summary of Secondary Model Edge Enlargement
+---------------------------------
+Added 0 new core species
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 43 species and 111 reactions
+    The model edge has 157 species and 407 reactions
+
+
+Saving current model core to Chemkin file...
+Chemkin file contains 27 reactions.
+Chemkin file contains 84 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 27 reactions.
+Chemkin file contains 84 reactions.
+Saving current model core and edge to Chemkin file...
+Chemkin file contains 310 reactions.
+Chemkin file contains 208 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 310 reactions.
+Chemkin file contains 208 reactions.
+Saving current model core to HTML file...
+Saving current model edge to HTML file...
+Updating RMG execution statistics...
+    Execution time (DD:HH:MM:SS): 00:00:04:13
+    Memory used: 638.25 MB
+
+Conducting simulation of reaction system 1...
+Reached max number of objects...preparing to terminate
+At time 1.7971e-03 s, species [O]OO(46) at rate ratio 0.000103837273279 exceeded the minimum rate for moving to model core of 0.0001
+terminating simulation due to interrupt...
+
+
+Adding species [O]OO(46) to model core
+Species [O]OO(46) was Forbidden and not added to Core...Removing from Edge.
+Removing Forbidden Reaction from Edge: O2(3) + OH(13) <=> [O]OO(46)
+
+Summary of Model Enlargement
+---------------------------------
+Added 0 new core species
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 43 species and 111 reactions
+    The model edge has 156 species and 406 reactions
+
+
+
+Summary of Secondary Model Edge Enlargement
+---------------------------------
+Added 0 new core species
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 43 species and 111 reactions
+    The model edge has 156 species and 406 reactions
+
+
+Saving current model core to Chemkin file...
+Chemkin file contains 27 reactions.
+Chemkin file contains 84 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 27 reactions.
+Chemkin file contains 84 reactions.
+Saving current model core and edge to Chemkin file...
+Chemkin file contains 309 reactions.
+Chemkin file contains 208 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 309 reactions.
+Chemkin file contains 208 reactions.
+Saving current model core to HTML file...
+Saving current model edge to HTML file...
+Updating RMG execution statistics...
+    Execution time (DD:HH:MM:SS): 00:00:04:16
+    Memory used: 643.49 MB
+
+Conducting simulation of reaction system 1...
+Reached max number of objects...preparing to terminate
+At time 1.8374e-03 s, species O=C[Ni](28) at rate ratio 0.000100766031411 exceeded the minimum rate for moving to model core of 0.0001
+terminating simulation due to interrupt...
+
+
+Adding species O=C[Ni](28) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    O=C[Ni](28)
+Created 0 new edge species
+Moved 2 reactions from edge to core
+    X(1) + X(1) + CH2O(8) <=> [Ni](21) + O=C[Ni](28)
+    X(1) + HCO(12) <=> O=C[Ni](28)
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 44 species and 113 reactions
+    The model edge has 155 species and 404 reactions
+
+
+Species with SMILES of O=CC[Ni] named vinoxyX based on thermo library name
+Species with SMILES of O=CC=[Ni] named ketene(T)X based on thermo library name
+Species with SMILES of O=CO[Ni] named formyloxyX based on thermo library name
+Species with SMILES of CC([Ni])C=O named CH3CHCHOX based on thermo library name
+Generating kinetics for new reactions...
+
+Summary of Secondary Model Edge Enlargement
+---------------------------------
+Added 0 new core species
+Created 9 new edge species
+    O=C=[Ni](198)
+    vinoxyX(199)
+    ketene(T)X(200)
+    O=CC#[Ni](201)
+    formyloxyX(202)
+    CH3CHCHOX(203)
+    CC(=[Ni])C=O(204)
+    O=CC(O)[Ni](205)
+    O=CC(O)=[Ni](206)
+Added 0 new core reactions
+Created 25 new edge reactions
+    X(1) + O=C[Ni](28) <=> [Ni](21) + O=C=[Ni](198)
+    X(1) + X(1) + CH3CHO(38) <=> C[Ni](20) + O=C[Ni](28)
+    C=[Ni](80) + O=C[Ni](28) <=> C[Ni](20) + O=C=[Ni](198)
+    X(1) + vinoxyX(199) <=> C=[Ni](80) + O=C[Ni](28)
+    C#[Ni](81) + O=C[Ni](28) <=> C=[Ni](80) + O=C=[Ni](198)
+    X(1) + ketene(T)X(200) <=> C#[Ni](81) + O=C[Ni](28)
+    O=C[Ni](28) + C~[Ni](83) <=> C#[Ni](81) + O=C=[Ni](198)
+    X(1) + O=CC#[Ni](201) <=> O=C[Ni](28) + C~[Ni](83)
+    X(1) + X(1) + OCHOOH(95) <=> OO[Ni](86) + O=C[Ni](28)
+    O=[Ni](98) + O=C[Ni](28) <=> O[Ni](24) + O=C=[Ni](198)
+    X(1) + formyloxyX(202) <=> O=[Ni](98) + O=C[Ni](28)
+    X(1) + X(1) + formic_acid(50) <=> O[Ni](24) + O=C[Ni](28)
+    X(1) + X(1) + propanal(127) <=> CC[Ni](82) + O=C[Ni](28)
+    O=C[Ni](28) + CC=[Ni](84) <=> CC[Ni](82) + O=C=[Ni](198)
+    X(1) + CH3CHCHOX(203) <=> O=C[Ni](28) + CC=[Ni](84)
+    CC=[Ni](84) + O=C=[Ni](198) <=> CC#[Ni](85) + O=C[Ni](28)
+    X(1) + CC(=[Ni])C=O(204) <=> CC#[Ni](85) + O=C[Ni](28)
+    X(1) + X(1) + COOC=O(118) <=> CH3OOX(107) + O=C[Ni](28)
+    X(1) + X(1) + methyl_formate(36) <=> CO[Ni](30) + O=C[Ni](28)
+    X(1) + X(1) + HOCH2CHO(64) <=> OC[Ni](31) + O=C[Ni](28)
+    OC=[Ni](100) + O=C[Ni](28) <=> OC[Ni](31) + O=C=[Ni](198)
+    X(1) + O=CC(O)[Ni](205) <=> OC=[Ni](100) + O=C[Ni](28)
+    OC#[Ni](102) + O=C[Ni](28) <=> OC=[Ni](100) + O=C=[Ni](198)
+    X(1) + O=CC(O)=[Ni](206) <=> OC#[Ni](102) + O=C[Ni](28)
+    X(1) + X(1) + O=CC=O(78) <=> O=C[Ni](28) + O=C[Ni](28)
+
+After model enlargement:
+    The model core has 44 species and 113 reactions
+    The model edge has 164 species and 429 reactions
+
+
+Saving current model core to Chemkin file...
+Chemkin file contains 27 reactions.
+Chemkin file contains 86 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 27 reactions.
+Chemkin file contains 86 reactions.
+Saving current model core and edge to Chemkin file...
+Chemkin file contains 309 reactions.
+Chemkin file contains 233 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 309 reactions.
+Chemkin file contains 233 reactions.
+Saving current model core to HTML file...
+Saving current model edge to HTML file...
+Updating RMG execution statistics...
+    Execution time (DD:HH:MM:SS): 00:00:04:26
+    Memory used: 648.08 MB
+
+Conducting simulation of reaction system 1...
+Reached max number of objects...preparing to terminate
+At time 3.4917e-06 s, species O=C=[Ni](198) at rate ratio 0.000100239069734 exceeded the minimum rate for moving to model core of 0.0001
+terminating simulation due to interrupt...
+
+
+Adding species O=C=[Ni](198) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    O=C=[Ni](198)
+Created 0 new edge species
+Moved 9 reactions from edge to core
+    X(1) + O=C[Ni](28) <=> [Ni](21) + O=C=[Ni](198)
+    C=[Ni](80) + O=C[Ni](28) <=> C[Ni](20) + O=C=[Ni](198)
+    C#[Ni](81) + O=C[Ni](28) <=> C=[Ni](80) + O=C=[Ni](198)
+    O=C[Ni](28) + C~[Ni](83) <=> C#[Ni](81) + O=C=[Ni](198)
+    O=[Ni](98) + O=C[Ni](28) <=> O[Ni](24) + O=C=[Ni](198)
+    O=C[Ni](28) + CC=[Ni](84) <=> CC[Ni](82) + O=C=[Ni](198)
+    CC=[Ni](84) + O=C=[Ni](198) <=> CC#[Ni](85) + O=C[Ni](28)
+    OC=[Ni](100) + O=C[Ni](28) <=> OC[Ni](31) + O=C=[Ni](198)
+    OC#[Ni](102) + O=C[Ni](28) <=> OC=[Ni](100) + O=C=[Ni](198)
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 45 species and 122 reactions
+    The model edge has 163 species and 420 reactions
+
+
+Species with SMILES of CC(=O)[Ni] named acetylX based on thermo library name
+Species with SMILES of O=C(O)[Ni] named HOCOX based on thermo library name
+Species with SMILES of CCC(=O)[Ni] named CH3CH2COX based on thermo library name
+Species with SMILES of COC(=O)[Ni] named CH3OCOX based on thermo library name
+Species with SMILES of O=CC(=O)[Ni] named OCHCOX based on thermo library name
+Generating kinetics for new reactions...
+
+Summary of Secondary Model Edge Enlargement
+---------------------------------
+Added 0 new core species
+Created 8 new edge species
+    acetylX(207)
+    HOCOX(208)
+    O=C([Ni])OO(209)
+    CH3CH2COX(210)
+    CH3OCOX(211)
+    COOC(=O)[Ni](212)
+    O=C([Ni])CO(213)
+    OCHCOX(214)
+Added 0 new core reactions
+Created 17 new edge reactions
+    X(1) + acetylX(207) <=> C[Ni](20) + O=C=[Ni](198)
+    O=[Ni](98) + HOCOX(208) <=> OO[Ni](86) + O=C=[Ni](198)
+    X(1) + O=C([Ni])OO(209) <=> OO[Ni](86) + O=C=[Ni](198)
+    X(1) + HOCOX(208) <=> O[Ni](24) + O=C=[Ni](198)
+    C=[Ni](80) + acetylX(207) <=> CC[Ni](82) + O=C=[Ni](198)
+    X(1) + CH3CH2COX(210) <=> CC[Ni](82) + O=C=[Ni](198)
+    C#[Ni](81) + acetylX(207) <=> CC=[Ni](84) + O=C=[Ni](198)
+    C~[Ni](83) + acetylX(207) <=> CC#[Ni](85) + O=C=[Ni](198)
+    CH3OOX(107) + O=C=[Ni](198) <=> CH3OCOX(211) + O=[Ni](98)
+    X(1) + COOC(=O)[Ni](212) <=> CH3OOX(107) + O=C=[Ni](198)
+    O=[Ni](98) + acetylX(207) <=> CO[Ni](30) + O=C=[Ni](198)
+    X(1) + CH3OCOX(211) <=> CO[Ni](30) + O=C=[Ni](198)
+    C=[Ni](80) + HOCOX(208) <=> OC[Ni](31) + O=C=[Ni](198)
+    X(1) + O=C([Ni])CO(213) <=> OC[Ni](31) + O=C=[Ni](198)
+    C#[Ni](81) + HOCOX(208) <=> OC=[Ni](100) + O=C=[Ni](198)
+    C~[Ni](83) + HOCOX(208) <=> OC#[Ni](102) + O=C=[Ni](198)
+    X(1) + OCHCOX(214) <=> O=C[Ni](28) + O=C=[Ni](198)
+
+After model enlargement:
+    The model core has 45 species and 122 reactions
+    The model edge has 171 species and 437 reactions
+
+
+Saving current model core to Chemkin file...
+Chemkin file contains 27 reactions.
+Chemkin file contains 95 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 27 reactions.
+Chemkin file contains 95 reactions.
+Saving current model core and edge to Chemkin file...
+Chemkin file contains 309 reactions.
+Chemkin file contains 250 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 309 reactions.
+Chemkin file contains 250 reactions.
+Saving current model core to HTML file...
+Saving current model edge to HTML file...
+Updating RMG execution statistics...
+    Execution time (DD:HH:MM:SS): 00:00:04:40
+    Memory used: 651.23 MB
+
+Conducting simulation of reaction system 1...
+Reached max number of objects...preparing to terminate
+At time 2.1692e-03 s, species COX(27) at rate ratio 0.000101208137098 exceeded the minimum rate for moving to model core of 0.0001
+terminating simulation due to interrupt...
+
+
+Adding species COX(27) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    COX(27)
+Created 0 new edge species
+Moved 1 reactions from edge to core
+    X(1) + CO(7) <=> COX(27)
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 46 species and 123 reactions
+    The model edge has 170 species and 436 reactions
+
+
+
+Summary of Secondary Model Edge Enlargement
+---------------------------------
+Added 0 new core species
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 46 species and 123 reactions
+    The model edge has 170 species and 436 reactions
+
+
+Saving current model core to Chemkin file...
+Chemkin file contains 27 reactions.
+Chemkin file contains 96 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 27 reactions.
+Chemkin file contains 96 reactions.
+Saving current model core and edge to Chemkin file...
+Chemkin file contains 309 reactions.
+Chemkin file contains 250 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 309 reactions.
+Chemkin file contains 250 reactions.
+Saving current model core to HTML file...
+Saving current model edge to HTML file...
+Updating RMG execution statistics...
+    Execution time (DD:HH:MM:SS): 00:00:04:55
+    Memory used: 657.77 MB
+
+Conducting simulation of reaction system 1...
+Reached max number of objects...preparing to terminate
+At time 3.9771e-02 s, species C2H5(122) at rate ratio 0.000103541508925 exceeded the minimum rate for moving to model core of 0.0001
+terminating simulation due to interrupt...
+
+
+Adding species C2H5(122) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    C2H5(122)
+Created 0 new edge species
+Moved 8 reactions from edge to core
+    H(10) + C2H5(122) <=> CC(77)
+    O2(3) + CC(77) <=> HO2(33) + C2H5(122)
+    HCO(12) + C2H5(122) <=> CO(7) + CC(77)
+    CH3(9) + CC(77) <=> CH4(2) + C2H5(122)
+    H(10) + CC(77) <=> H2(6) + C2H5(122)
+    HCO(12) + CC(77) <=> CH2O(8) + C2H5(122)
+    OH(13) + CC(77) <=> H2O(5) + C2H5(122)
+    X(1) + C2H5(122) <=> CC[Ni](82)
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 47 species and 131 reactions
+    The model edge has 169 species and 428 reactions
+
+
+Species with SMILES of C=C named C2H4 based on thermo library name
+Species with SMILES of [CH2][CH2] named C2H4(T) based on thermo library name
+Species with SMILES of [CH]C named CHCH3(T) based on thermo library name
+Species with SMILES of CCO[O] named CH3CH2OO based on thermo library name
+Species with SMILES of [CH2]CC=O named CH2CH2CHO based on thermo library name
+Species with SMILES of CC[C]=O named CH3CH2CO based on thermo library name
+Species with SMILES of [CH2]OCC named CH3CH2OCH2 based on thermo library name
+Species with SMILES of CCC[O] named npropoxy based on thermo library name
+Species with SMILES of CCCOO named npropylooh based on thermo library name
+Generating kinetics for new reactions...
+For reaction CH3(9) + CH2(T)(15) <=> C2H5(122) Ea raised from -1.5 to -1.5 kJ/mol.
+For reaction CO2(4) + C2H5(122) <=> CCO[C]=O(219), Ea raised from 79.5 to 83.6 kJ/mol to match endothermicity of reaction.
+
+Summary of Secondary Model Edge Enlargement
+---------------------------------
+Added 0 new core species
+Created 13 new edge species
+    C2H4(215)
+    C2H4(T)(216)
+    CHCH3(T)(217)
+    CH3CH2OO(218)
+    CCO[C]=O(219)
+    CCC([O])=O(220)
+    [CH2]COC=O(221)
+    [CH2]CC(=O)O(222)
+    CH2CH2CHO(223)
+    CH3CH2CO(224)
+    CH3CH2OCH2(225)
+    npropoxy(226)
+    npropylooh(227)
+Added 0 new core reactions
+Created 58 new edge reactions
+    H(10) + C2H4(215) <=> C2H5(122)
+    H(10) + C2H4(T)(216) <=> C2H5(122)
+    CH3(9) + CH2(T)(15) <=> C2H5(122)
+    H(10) + CHCH3(T)(217) <=> C2H5(122)
+    O2(3) + C2H5(122) <=> HO2(33) + C2H4(215)
+    HO2(33) + CHCH3(T)(217) <=> O2(3) + C2H5(122)
+    CH3CH2OO(218) <=> O2(3) + C2H5(122)
+    HOCO(34) + CHCH3(T)(217) <=> CO2(4) + C2H5(122)
+    HOCO(34) + C2H4(T)(216) <=> CO2(4) + C2H5(122)
+    formyloxy(35) + CHCH3(T)(217) <=> CO2(4) + C2H5(122)
+    formyloxy(35) + C2H4(T)(216) <=> CO2(4) + C2H5(122)
+    CO2(4) + C2H5(122) <=> CCO[C]=O(219)
+    CO2(4) + C2H5(122) <=> CCC([O])=O(220)
+    CO2(4) + C2H5(122) <=> [CH2]COC=O(221)
+    CO2(4) + C2H5(122) <=> [CH2]CC(=O)O(222)
+    HCO(12) + CHCH3(T)(217) <=> CO(7) + C2H5(122)
+    HCO(12) + C2H4(T)(216) <=> CO(7) + C2H5(122)
+    CO(7) + C2H5(122) <=> CH2CH2CHO(223)
+    CH3CH2CO(224) <=> CO(7) + C2H5(122)
+    CH2OH(17) + CHCH3(T)(217) <=> CH2O(8) + C2H5(122)
+    C2H4(T)(216) + CH2OH(17) <=> CH2O(8) + C2H5(122)
+    CH3O(16) + CHCH3(T)(217) <=> CH2O(8) + C2H5(122)
+    C2H4(T)(216) + CH3O(16) <=> CH2O(8) + C2H5(122)
+    CH2O(8) + C2H5(122) <=> CH3CH2OCH2(225)
+    CH2O(8) + C2H5(122) <=> npropoxy(226)
+    CH3(9) + C2H5(122) <=> CH4(2) + C2H4(215)
+    CC(77) + CH2(T)(15) <=> CH3(9) + C2H5(122)
+    CH4(2) + CHCH3(T)(217) <=> CH3(9) + C2H5(122)
+    CH3(9) + C2H5(122) <=> C3H8(129)
+    H(10) + C2H5(122) <=> H2(6) + C2H4(215)
+    H2(6) + CHCH3(T)(217) <=> H(10) + C2H5(122)
+    CH3OH(11) + C2H5(122) <=> CC(77) + CH3O(16)
+    CH3OH(11) + C2H5(122) <=> CC(77) + CH2OH(17)
+    HCO(12) + C2H5(122) <=> CH2O(8) + C2H4(215)
+    HCOH(T)(39) + CHCH3(T)(217) <=> HCO(12) + C2H5(122)
+    HCOH(T)(39) + C2H4(T)(216) <=> HCO(12) + C2H5(122)
+    [C]=O(18) + CC(77) <=> HCO(12) + C2H5(122)
+    CH2O(8) + CHCH3(T)(217) <=> HCO(12) + C2H5(122)
+    HCO(12) + C2H5(122) <=> propanal(127)
+    OH(13) + C2H5(122) <=> H2O(5) + C2H4(215)
+    O(T)(19) + CC(77) <=> OH(13) + C2H5(122)
+    OH(13) + C2H5(122) <=> H2O(5) + CHCH3(T)(217)
+    OH(13) + C2H5(122) <=> ethanol(135)
+    HO2(33) + C2H5(122) <=> OO(79) + C2H4(215)
+    OO(79) + CHCH3(T)(217) <=> HO2(33) + C2H5(122)
+    HO2(33) + C2H5(122) <=> CH3CH2OOH(133)
+    CH3OO(44) + C2H5(122) <=> CH3OOH(94) + C2H4(215)
+    CC(77) + [CH2]O[O](105) <=> CH3OO(44) + C2H5(122)
+    CH3OOH(94) + CHCH3(T)(217) <=> CH3OO(44) + C2H5(122)
+    CH3OO(44) + C2H5(122) <=> CCOOC(152)
+    C2H5(122) + [CH2]OO(75) <=> CH3OOH(94) + C2H4(215)
+    [CH]OO(185) + CC(77) <=> C2H5(122) + [CH2]OO(75)
+    CC(77) + [CH2]O[O](105) <=> C2H5(122) + [CH2]OO(75)
+    CH3OOH(94) + CHCH3(T)(217) <=> C2H5(122) + [CH2]OO(75)
+    C2H5(122) + [CH2]OO(75) <=> npropylooh(227)
+    C2H5(122) + C2H5(122) <=> CC(77) + C2H4(215)
+    CC(77) + CHCH3(T)(217) <=> C2H5(122) + C2H5(122)
+    C2H5(122) + C2H5(122) <=> nbutane(136)
+
+After model enlargement:
+    The model core has 47 species and 131 reactions
+    The model edge has 182 species and 486 reactions
+
+
+Saving current model core to Chemkin file...
+Chemkin file contains 34 reactions.
+Chemkin file contains 97 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 34 reactions.
+Chemkin file contains 97 reactions.
+Saving current model core and edge to Chemkin file...
+Chemkin file contains 367 reactions.
+Chemkin file contains 250 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 367 reactions.
+Chemkin file contains 250 reactions.
+Saving current model core to HTML file...
+Saving current model edge to HTML file...
+Updating RMG execution statistics...
+    Execution time (DD:HH:MM:SS): 00:00:05:10
+    Memory used: 666.68 MB
+
+Conducting simulation of reaction system 1...
+Reached max number of objects...preparing to terminate
+At time 9.1732e-02 s, species CH3CH2OO(218) at rate ratio 0.000101807776208 exceeded the minimum rate for moving to model core of 0.0001
+terminating simulation due to interrupt...
+
+
+Adding species CH3CH2OO(218) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    CH3CH2OO(218)
+Created 0 new edge species
+Moved 1 reactions from edge to core
+    CH3CH2OO(218) <=> O2(3) + C2H5(122)
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 48 species and 132 reactions
+    The model edge has 181 species and 485 reactions
+
+
+Species with SMILES of [CH2]COO named CH2CH2OOH based on thermo library name
+Species with SMILES of CCOO[Ni] named CH3CH2OOX based on thermo library name
+Species with SMILES of CC(C=O)O[O] named CH3CHOOCHO based on thermo library name
+Species with SMILES of [O]OCCC=O named OCHCH2CH2OO based on thermo library name
+Species with SMILES of CC(=O)CO[O] named CH3COCH2OO based on thermo library name
+Generating kinetics for new reactions...
+For reaction O2(3) + CH3CH2OO(218) <=> CCOOO[O](235), Ea raised from -0.3 to 83.4 kJ/mol to match endothermicity of reaction.
+For reaction CO2(4) + CH3CH2OO(218) <=> CCOOO[C]=O(236), Ea raised from 239.7 to 243.3 kJ/mol to match endothermicity of reaction.
+For reaction OH(13) + CH3CH2OOH(133) <=> H2O(5) + CH3CH2OO(218) Ea raised from -1.8 to -1.8 kJ/mol.
+For reaction CH2O(8) + CH3CH2OO(218) <=> [CH2]OOOCC(248), Ea raised from 197.2 to 200.8 kJ/mol to match endothermicity of reaction.
+For reaction CH3CH2OOH(133) + CH2OH(17) <=> CH3OH(11) + CH3CH2OO(218) Ea raised from -22.5 to -22.5 kJ/mol.
+For reaction CH3CH2OOH(133) + [CH2]O[O](105) <=> CH3OO(44) + CH3CH2OO(218) Ea raised from -22.5 to -22.5 kJ/mol.
+For reaction [CH2]CO[O](231) + CH3OOH(94) <=> CH3OO(44) + CH3CH2OO(218) Ea raised from -7.3 to -7.3 kJ/mol.
+For reaction [CH2]CO[O](231) + CH3CH2OOH(133) <=> CH3CH2OO(218) + CH3CH2OO(218) Ea raised from -36.0 to -36.0 kJ/mol.
+
+Summary of Secondary Model Edge Enlargement
+---------------------------------
+Added 0 new core species
+Created 29 new edge species
+    C[CH]OO(228)
+    CH2CH2OOH(229)
+    C[CH]O[O](230)
+    [CH2]CO[O](231)
+    CC([Ni])O[O](232)
+    [O]OCC[Ni](233)
+    CH3CH2OOX(234)
+    CCOOO[O](235)
+    CCOOO[C]=O(236)
+    CCOOC([O])=O(237)
+    CC(O[O])OC=O(238)
+    [O]OCCOC=O(239)
+    COC(=O)CO[O](240)
+    CC(O[O])C(=O)O(241)
+    [O]OCCC(=O)O(242)
+    CC(=O)OCO[O](243)
+    CH3CHOOCHO(244)
+    OCHCH2CH2OO(245)
+    CH3COCH2OO(246)
+    CCOO[C]=O(247)
+    [CH2]OOOCC(248)
+    CCOOC[O](249)
+    CCOOC=O(250)
+    CCOOO(251)
+    CCOOOO(252)
+    CCOOOOC(253)
+    CCOOCOO(254)
+    CCOOCC(255)
+    CCOOOOCC(256)
+Added 0 new core reactions
+Created 85 new edge reactions
+    CH3CH2OO(218) <=> C[CH]OO(228)
+    CH3CH2OO(218) <=> CH2CH2OOH(229)
+    CH3(9) + [CH2]O[O](105) <=> CH3CH2OO(218)
+    H(10) + C[CH]O[O](230) <=> CH3CH2OO(218)
+    H(10) + [CH2]CO[O](231) <=> CH3CH2OO(218)
+    CH3OO(44) + CH2(S)(14) <=> CH3CH2OO(218)
+    CH3CH2OO(218) <=> HO2(33) + C2H4(215)
+    CH3CH2OO(218) <=> O(T)(19) + CH3CH2O(72)
+    X(1) + X(1) + CH3CH2OO(218) <=> [O]OC[Ni](106) + C[Ni](20)
+    X(1) + X(1) + CH3CH2OO(218) <=> [Ni](21) + CC([Ni])O[O](232)
+    X(1) + X(1) + CH3CH2OO(218) <=> [O]OCC[Ni](233) + [Ni](21)
+    X(1) + CH3CH2OO(218) <=> CH3CH2OOX(234)
+    CH4(2) + CH3CH2OO(218) <=> CH3(9) + CH3CH2OOH(133)
+    C[CH]O[O](230) + HO2(33) <=> O2(3) + CH3CH2OO(218)
+    [CH2]CO[O](231) + HO2(33) <=> O2(3) + CH3CH2OO(218)
+    O2(3) + CH3CH2OO(218) <=> CCOOO[O](235)
+    HOCO(34) + C[CH]O[O](230) <=> CO2(4) + CH3CH2OO(218)
+    [CH2]CO[O](231) + HOCO(34) <=> CO2(4) + CH3CH2OO(218)
+    formyloxy(35) + C[CH]O[O](230) <=> CO2(4) + CH3CH2OO(218)
+    [CH2]CO[O](231) + formyloxy(35) <=> CO2(4) + CH3CH2OO(218)
+    CO2(4) + CH3CH2OO(218) <=> CCOOO[C]=O(236)
+    CO2(4) + CH3CH2OO(218) <=> CCOOC([O])=O(237)
+    CO2(4) + CH3CH2OO(218) <=> CC(O[O])OC=O(238)
+    CO2(4) + CH3CH2OO(218) <=> [O]OCCOC=O(239)
+    CO2(4) + CH3CH2OO(218) <=> COC(=O)CO[O](240)
+    CO2(4) + CH3CH2OO(218) <=> CC(O[O])C(=O)O(241)
+    CO2(4) + CH3CH2OO(218) <=> [O]OCCC(=O)O(242)
+    CO2(4) + CH3CH2OO(218) <=> CC(=O)OCO[O](243)
+    OH(13) + CH3CH2OOH(133) <=> H2O(5) + CH3CH2OO(218)
+    H(10) + CH3CH2OOH(133) <=> H2(6) + CH3CH2OO(218)
+    HCO(12) + C[CH]O[O](230) <=> CO(7) + CH3CH2OO(218)
+    HCO(12) + [CH2]CO[O](231) <=> CO(7) + CH3CH2OO(218)
+    CO(7) + CH3CH2OO(218) <=> CH3CHOOCHO(244)
+    CO(7) + CH3CH2OO(218) <=> OCHCH2CH2OO(245)
+    CO(7) + CH3CH2OO(218) <=> CH3COCH2OO(246)
+    CO(7) + CH3CH2OO(218) <=> CCOO[C]=O(247)
+    C[CH]O[O](230) + CH2OH(17) <=> CH2O(8) + CH3CH2OO(218)
+    [CH2]CO[O](231) + CH2OH(17) <=> CH2O(8) + CH3CH2OO(218)
+    C[CH]O[O](230) + CH3O(16) <=> CH2O(8) + CH3CH2OO(218)
+    [CH2]CO[O](231) + CH3O(16) <=> CH2O(8) + CH3CH2OO(218)
+    CH2O(8) + CH3CH2OO(218) <=> [CH2]OOOCC(248)
+    CH2O(8) + CH3CH2OO(218) <=> CCOOC[O](249)
+    HCO(12) + CH3CH2OOH(133) <=> CH2O(8) + CH3CH2OO(218)
+    CH3CH2OOH(133) + CH2(T)(15) <=> CH3(9) + CH3CH2OO(218)
+    CH3(9) + CH3CH2OO(218) <=> CH4(2) + C[CH]O[O](230)
+    CH3(9) + CH3CH2OO(218) <=> CH4(2) + [CH2]CO[O](231)
+    CH3(9) + CH3CH2OO(218) <=> CCOOC(152)
+    H(10) + CH3CH2OO(218) <=> H2(6) + C[CH]O[O](230)
+    H(10) + CH3CH2OO(218) <=> H2(6) + [CH2]CO[O](231)
+    H(10) + CH3CH2OO(218) <=> CH3CH2OOH(133)
+    CH3CH2OOH(133) + CH3O(16) <=> CH3OH(11) + CH3CH2OO(218)
+    CH3CH2OOH(133) + CH2OH(17) <=> CH3OH(11) + CH3CH2OO(218)
+    HCOH(T)(39) + C[CH]O[O](230) <=> HCO(12) + CH3CH2OO(218)
+    [CH2]CO[O](231) + HCOH(T)(39) <=> HCO(12) + CH3CH2OO(218)
+    HCO(12) + CH3CH2OO(218) <=> CO(7) + CH3CH2OOH(133)
+    CH3CH2OOH(133) + [C]=O(18) <=> HCO(12) + CH3CH2OO(218)
+    CH2O(8) + C[CH]O[O](230) <=> HCO(12) + CH3CH2OO(218)
+    CH2O(8) + [CH2]CO[O](231) <=> HCO(12) + CH3CH2OO(218)
+    HCO(12) + CH3CH2OO(218) <=> CCOOC=O(250)
+    CH3CH2OOH(133) + O(T)(19) <=> OH(13) + CH3CH2OO(218)
+    OH(13) + CH3CH2OO(218) <=> H2O(5) + C[CH]O[O](230)
+    OH(13) + CH3CH2OO(218) <=> H2O(5) + [CH2]CO[O](231)
+    OH(13) + CH3CH2OO(218) <=> CCOOO(251)
+    HO2(33) + CH3CH2OO(218) <=> O2(3) + CH3CH2OOH(133)
+    HO2(33) + CH3CH2OO(218) <=> C[CH]O[O](230) + OO(79)
+    HO2(33) + CH3CH2OO(218) <=> [CH2]CO[O](231) + OO(79)
+    HO2(33) + CH3CH2OO(218) <=> CCOOOO(252)
+    CH3CH2OOH(133) + [CH2]O[O](105) <=> CH3OO(44) + CH3CH2OO(218)
+    C[CH]O[O](230) + CH3OOH(94) <=> CH3OO(44) + CH3CH2OO(218)
+    [CH2]CO[O](231) + CH3OOH(94) <=> CH3OO(44) + CH3CH2OO(218)
+    CH3OO(44) + CH3CH2OO(218) <=> CCOOOOC(253)
+    CH3CH2OOH(133) + C2H5(122) <=> CC(77) + CH3CH2OO(218)
+    [CH]OO(185) + CH3CH2OOH(133) <=> [CH2]OO(75) + CH3CH2OO(218)
+    CH3CH2OOH(133) + [CH2]O[O](105) <=> [CH2]OO(75) + CH3CH2OO(218)
+    C[CH]O[O](230) + CH3OOH(94) <=> [CH2]OO(75) + CH3CH2OO(218)
+    [CH2]CO[O](231) + CH3OOH(94) <=> [CH2]OO(75) + CH3CH2OO(218)
+    [CH2]OO(75) + CH3CH2OO(218) <=> CCOOCOO(254)
+    C2H5(122) + CH3CH2OO(218) <=> CH3CH2OOH(133) + C2H4(215)
+    CH3CH2OOH(133) + CHCH3(T)(217) <=> C2H5(122) + CH3CH2OO(218)
+    C2H5(122) + CH3CH2OO(218) <=> C[CH]O[O](230) + CC(77)
+    [CH2]CO[O](231) + CC(77) <=> C2H5(122) + CH3CH2OO(218)
+    C2H5(122) + CH3CH2OO(218) <=> CCOOCC(255)
+    CH3CH2OOH(133) + C[CH]O[O](230) <=> CH3CH2OO(218) + CH3CH2OO(218)
+    [CH2]CO[O](231) + CH3CH2OOH(133) <=> CH3CH2OO(218) + CH3CH2OO(218)
+    CH3CH2OO(218) + CH3CH2OO(218) <=> CCOOOOCC(256)
+
+After model enlargement:
+    The model core has 48 species and 132 reactions
+    The model edge has 210 species and 570 reactions
+
+
+Saving current model core to Chemkin file...
+Chemkin file contains 35 reactions.
+Chemkin file contains 97 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 35 reactions.
+Chemkin file contains 97 reactions.
+Saving current model core and edge to Chemkin file...
