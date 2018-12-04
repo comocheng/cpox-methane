@@ -142,7 +142,7 @@ END
 
 REACTIONS    KCAL/MOLE   MOLES
 
-! Reaction index: Chemkin #1; RMG #15
+! Reaction index: Chemkin #1; RMG #19
 ! Template reaction: R_Recombination
 ! Flux pairs: CH3(9), CH4(2); H(10), CH4(2); 
 ! Matched reaction 57 H + CH3 <=> CH4 in R_Recombination/training
@@ -150,7 +150,7 @@ REACTIONS    KCAL/MOLE   MOLES
 ! family: R_Recombination
 CH3(9)+H(10)=CH4(2)                                 1.930000e+14 0.000     0.270    
 
-! Reaction index: Chemkin #2; RMG #17
+! Reaction index: Chemkin #2; RMG #21
 ! Template reaction: R_Recombination
 ! Flux pairs: OH(13), H2O(5); H(10), H2O(5); 
 ! Matched reaction 64 H + OH <=> H2O in R_Recombination/training
@@ -158,7 +158,7 @@ CH3(9)+H(10)=CH4(2)                                 1.930000e+14 0.000     0.270
 ! family: R_Recombination
 H(10)+OH(13)=H2O(5)                                 1.620000e+14 0.000     0.150    
 
-! Reaction index: Chemkin #3; RMG #18
+! Reaction index: Chemkin #3; RMG #22
 ! Template reaction: R_Recombination
 ! Flux pairs: H(10), H2(6); H(10), H2(6); 
 ! Matched reaction 56 H + H <=> H2 in R_Recombination/training
@@ -166,7 +166,7 @@ H(10)+OH(13)=H2O(5)                                 1.620000e+14 0.000     0.150
 ! family: R_Recombination
 H(10)+H(10)=H2(6)                                   5.450000e+10 0.000     1.500    
 
-! Reaction index: Chemkin #4; RMG #19
+! Reaction index: Chemkin #4; RMG #23
 ! Template reaction: R_Recombination
 ! Flux pairs: HCO(12), CH2O(8); H(10), CH2O(8); 
 ! Matched reaction 63 H + CHO <=> CH2O in R_Recombination/training
@@ -174,15 +174,15 @@ H(10)+H(10)=H2(6)                                   5.450000e+10 0.000     1.500
 ! family: R_Recombination
 H(10)+HCO(12)=CH2O(8)                               4.680000e+10 0.000     -4.530   
 
-! Reaction index: Chemkin #5; RMG #20
+! Reaction index: Chemkin #5; RMG #24
 ! Template reaction: 1,2_Insertion_CO
 ! Flux pairs: CO(7), CH2O(8); H2(6), CH2O(8); 
 ! Matched reaction 2 H2 + CO <=> CH2O in 1,2_Insertion_CO/training
 ! This reaction matched rate rule [CO;H2]
 ! family: 1,2_Insertion_CO
-CO(7)+H2(6)=CH2O(8)                                 2.890000e+09 1.160     82.100   
+H2(6)+CO(7)=CH2O(8)                                 2.890000e+09 1.160     82.100   
 
-! Reaction index: Chemkin #6; RMG #22
+! Reaction index: Chemkin #6; RMG #26
 ! Template reaction: R_Recombination
 ! Flux pairs: OH(13), CH3OH(11); CH3(9), CH3OH(11); 
 ! Matched reaction 73 CH3 + OH <=> CH4O in R_Recombination/training
@@ -190,7 +190,7 @@ CO(7)+H2(6)=CH2O(8)                                 2.890000e+09 1.160     82.10
 ! family: R_Recombination
 CH3(9)+OH(13)=CH3OH(11)                             6.030000e+13 0.000     0.000    
 
-! Reaction index: Chemkin #7; RMG #26
+! Reaction index: Chemkin #7; RMG #30
 ! Template reaction: R_Addition_COm
 ! Flux pairs: CO(7), HCO(12); H(10), HCO(12); 
 ! Matched reaction 4 H + CO <=> CHO in R_Addition_COm/training
@@ -198,7 +198,7 @@ CH3(9)+OH(13)=CH3OH(11)                             6.030000e+13 0.000     0.000
 ! family: R_Addition_COm
 CO(7)+H(10)=HCO(12)                                 1.180000e+11 0.000     2.720    
 
-! Reaction index: Chemkin #8; RMG #49
+! Reaction index: Chemkin #8; RMG #52
 ! Template reaction: CO_Disproportionation
 ! Flux pairs: CH3(9), CH4(2); HCO(12), CO(7); 
 ! Matched reaction 3 HCO + CH3 <=> CO + CH4 in CO_Disproportionation/training
@@ -206,7 +206,7 @@ CO(7)+H(10)=HCO(12)                                 1.180000e+11 0.000     2.720
 ! family: CO_Disproportionation
 CH3(9)+HCO(12)=CH4(2)+CO(7)                         4.000000e+13 0.000     0.000    
 
-! Reaction index: Chemkin #9; RMG #53
+! Reaction index: Chemkin #9; RMG #56
 ! Template reaction: H_Abstraction
 ! Flux pairs: H(10), H2(6); CH4(2), CH3(9); 
 ! Matched reaction 186 CH4b + H <=> CH3_p1 + H2_p in H_Abstraction/training
@@ -214,7 +214,7 @@ CH3(9)+HCO(12)=CH4(2)+CO(7)                         4.000000e+13 0.000     0.000
 ! family: H_Abstraction
 CH4(2)+H(10)=H2(6)+CH3(9)                           4.100000e+03 3.156     8.755    
 
-! Reaction index: Chemkin #10; RMG #55
+! Reaction index: Chemkin #10; RMG #58
 ! Template reaction: H_Abstraction
 ! Flux pairs: HCO(12), CH2O(8); CH4(2), CH3(9); 
 ! Matched reaction 319 HCO_r3 + CH4b <=> CH2O + CH3_p1 in H_Abstraction/training
@@ -222,7 +222,7 @@ CH4(2)+H(10)=H2(6)+CH3(9)                           4.100000e+03 3.156     8.755
 ! family: H_Abstraction
 CH4(2)+HCO(12)=CH2O(8)+CH3(9)                       7.280000e+03 2.850     34.250   
 
-! Reaction index: Chemkin #11; RMG #56
+! Reaction index: Chemkin #11; RMG #59
 ! Template reaction: H_Abstraction
 ! Flux pairs: OH(13), H2O(5); CH4(2), CH3(9); 
 ! Matched reaction 188 CH4b + OH <=> CH3_p1 + H2O_p in H_Abstraction/training
@@ -230,15 +230,15 @@ CH4(2)+HCO(12)=CH2O(8)+CH3(9)                       7.280000e+03 2.850     34.25
 ! family: H_Abstraction
 CH4(2)+OH(13)=H2O(5)+CH3(9)                         1.000000e+06 2.182     2.506    
 
-! Reaction index: Chemkin #12; RMG #108
+! Reaction index: Chemkin #12; RMG #111
 ! Template reaction: CO_Disproportionation
 ! Flux pairs: OH(13), H2O(5); HCO(12), CO(7); 
 ! Estimated using template [O_rad;HCO] for rate rule [O_pri_rad;HCO]
 ! Euclidian distance = 1.0
 ! family: CO_Disproportionation
-HCO(12)+OH(13)=CO(7)+H2O(5)                         1.240000e+23 -3.290    2.355    
+HCO(12)+OH(13)=H2O(5)+CO(7)                         1.240000e+23 -3.290    2.355    
 
-! Reaction index: Chemkin #13; RMG #112
+! Reaction index: Chemkin #13; RMG #115
 ! Template reaction: H_Abstraction
 ! Flux pairs: H2(6), H(10); OH(13), H2O(5); 
 ! Matched reaction 312 H2 + OH <=> H2O_p + H_p in H_Abstraction/training
@@ -246,7 +246,7 @@ HCO(12)+OH(13)=CO(7)+H2O(5)                         1.240000e+23 -3.290    2.355
 ! family: H_Abstraction
 H2(6)+OH(13)=H2O(5)+H(10)                           1.820000e+09 1.210     20.070   
 
-! Reaction index: Chemkin #14; RMG #114
+! Reaction index: Chemkin #14; RMG #117
 ! Template reaction: H_Abstraction
 ! Flux pairs: CH2O(8), HCO(12); OH(13), H2O(5); 
 ! Matched reaction 368 OH_p23 + CH2O <=> H2O + HCO_r3 in H_Abstraction/training
@@ -254,15 +254,15 @@ H2(6)+OH(13)=H2O(5)+H(10)                           1.820000e+09 1.210     20.07
 ! family: H_Abstraction
 CH2O(8)+OH(13)=H2O(5)+HCO(12)                       3.440000e+09 1.180     -0.450   
 
-! Reaction index: Chemkin #15; RMG #115
+! Reaction index: Chemkin #15; RMG #118
 ! Template reaction: CO_Disproportionation
 ! Flux pairs: H(10), H2(6); HCO(12), CO(7); 
 ! Matched reaction 0 HCO + H <=> CO + H2 in CO_Disproportionation/training
 ! This reaction matched rate rule [H_rad;HCO]
 ! family: CO_Disproportionation
-H(10)+HCO(12)=CO(7)+H2(6)                           9.030000e+13 0.000     0.000    
+H(10)+HCO(12)=H2(6)+CO(7)                           9.030000e+13 0.000     0.000    
 
-! Reaction index: Chemkin #16; RMG #119
+! Reaction index: Chemkin #16; RMG #122
 ! Template reaction: H_Abstraction
 ! Flux pairs: HCO(12), CH2O(8); H2(6), H(10); 
 ! Matched reaction 310 H2 + HCO_r3 <=> CH2O + H in H_Abstraction/training
@@ -270,7 +270,7 @@ H(10)+HCO(12)=CO(7)+H2(6)                           9.030000e+13 0.000     0.000
 ! family: H_Abstraction
 H2(6)+HCO(12)=CH2O(8)+H(10)                         1.800000e+06 2.000     48.940   
 
-! Reaction index: Chemkin #17; RMG #120
+! Reaction index: Chemkin #17; RMG #123
 ! Template reaction: CO_Disproportionation
 ! Flux pairs: HCO(12), CH2O(8); HCO(12), CO(7); 
 ! Matched reaction 5 HCO + HCO_Y <=> CO + CH2O in CO_Disproportionation/training

@@ -17,19 +17,17 @@ H(10)               0     145.000     2.050     0.000     0.000     0.000    ! G
 CH3OH(11)           2     481.802     3.626     0.000     0.000     1.000    ! GRI-Mech
 HCO(12)             2     498.002     3.590     0.000     0.000     0.000    ! GRI-Mech
 OH(13)              1      80.000     2.750     0.000     0.000     0.000    ! GRI-Mech
-! CH4X(29)            None
+! CH4X(30)            None
 ! OX(15)              None
-! CH3X(17)            None
+! CH3X(16)            None
 ! HX(14)              None
-! CH2X(85)            None
-! CHX(21)             None
-! HOX(18)             None
-! H2X(32)             None
-! CXHO(22)            None
-! OCX(16)             None
-! H2OX(31)            None
-! CX(19)              None
-! HOCXO(20)           None
-! COX(33)             None
-! CO2X(30)            None
-! CH4OX(37)           None
+! CH2X(22)            None
+! CHX(23)             None
+! CX(21)              None
+! HOX(17)             None
+! OCX(20)             None
+! H2OX(18)            None
+! CHOX(33)            None
+! CO2X(19)            None
+! COX(32)             None
+! H2X(31)             None
